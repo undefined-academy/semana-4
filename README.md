@@ -30,5 +30,5 @@ Crear una función que dada una fecha nos permita "humanizarla" con las siguient
 
     ```scss
         // main.scss
-        $cornFlowerBlue: #6195ED
+        $cornFlowerBlue: #6195ED;
     ```
