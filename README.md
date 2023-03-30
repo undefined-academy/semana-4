@@ -24,11 +24,38 @@ Crear una función que dada una fecha nos permita "humanizarla" con las siguient
 1. Actualizar el código de la CV y Blog para hacer uso de las variables y módulos con SASS.
 2. Crear un set de tres archivos dónde `main.scss` cargara `base.scss` y `desktop.scss` mediante `@use`.
 3. `base.scss` tendrá los estilos mobile first y `desktop.scss` tendrá la variación para escritorio.
-4. Los colores deben ser movidos a variables SASS, ubicados en `main.scss`.
+4. Los colores deben ser movidos a variables SASS, ubicados en `variables.scss`.
 
     **Tip:**  usar nombres de colores con [https://chir.ag/projects/name-that-color/](https://chir.ag/projects/name-that-color/) por ejemplo: `#6195ED` sería `$cornFlowerBlue`
 
     ```scss
-        // main.scss
+        // variables.scss
         $cornFlowerBlue: #6195ED;
     ```
+
+### Estructura del PR
+
+```Markdown
+.
+├── student-cvs/
+│ └── glrodasz-0666/
+│     ├── index.html
+│     ├── form.html
+│     ├── main.scss
+│     ├── styles/
+│     │   ├── variables.scss
+│     │   ├── base.scss
+│     │   └── desktop.scss
+│     └── main.mjs // Agregar función para humanizar fechas
+├── student-blogs/
+│ └── glrodasz-0666/
+│     ├── index.html
+│     ├── main.scss
+│     ├── styles/
+│     │   ├── variables.scss
+│     │   ├── base.scss
+│     │   └── desktop.scss
+│     └── main.mjs // Agregar función para humanizar fechas
+```
+
+⭐ **Usar la función humanize para mostrar las fechas de forma humana en el HTML**
