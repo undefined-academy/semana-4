@@ -36,7 +36,7 @@ Crear una función que dada una fecha nos permita "humanizarla" con las siguient
 ## 🏋Clase 4 [EJERCICIO]
 
 1. Hacer fork del repositorio de la semana-4 `https://github.com/undefined-academy/semana-4`
-2. Usar la función humanize para mostrar las fechas de forma humana en el HTML.
+2. Usar la función humanize realizada en el ejercicio de la clase 2 para mostrar las fechas de forma humana en el HTML.
 3. Subir los cambios realizados en el ejercicio de la semana 3 y crear el `pull request`.
 
 ### Estructura del PR
