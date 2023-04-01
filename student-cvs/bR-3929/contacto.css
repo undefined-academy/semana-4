@@ -86,9 +86,10 @@ input {
 }
 
 footer {
-    margin-top:30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
     bottom: 50px;
-    text-align:left;
     padding: 10px;
 }
 
@@ -102,4 +103,14 @@ textarea {
 .contact span {
     font-weight: bold;
     font-size: 14px;
+}
+
+@media screen and (max-width:800px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        white-space: nowrap;
+    }
 }

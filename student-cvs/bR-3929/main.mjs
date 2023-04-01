@@ -1,3 +1,9 @@
+import dayjs from "dayjs";
+import relativeTime from "dayjs/plugin/relativeTime.js";
+dayjs.extend(relativeTime);
+import es from "dayjs/locale/es.js";
+dayjs.locale(es);
+
 function handleSubmit (event){
     event.preventDefault();
     console.log("Hola mundo");
@@ -6,11 +12,7 @@ function handleSubmit (event){
     const $form = document.querySelector("form");
     $form.addEventListener("submit", handleSubmit);
 
-    import dayjs from "dayjs";
-import relativeTime from "dayjs/plugin/relativeTime.js";
-dayjs.extend(relativeTime);
-import es from "dayjs/locale/es.js";
-dayjs.locale(es);
+
 
 
 
@@ -27,3 +29,8 @@ function humanize(dates){
     return now.to(dates);
     }
 }
+
+const fechaElement = document.getElementById("fecha");
+const fecha = dayjs();
+const fechaHumana = humanize(fecha);
+fechaElement.innerHTML = fechaHumana;
