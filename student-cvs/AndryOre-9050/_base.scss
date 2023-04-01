@@ -1,0 +1,165 @@
+@use 'variables';
+
+body {
+	font-family: variables.$bodyText;
+	font-size: 16px;
+	line-height: 1.4;
+	background-color: variables.$codGray;
+	color: variables.$concrete;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 20px 5%;
+	background-color: variables.$codGray2;
+
+	#badges ul {
+		list-style-type: none;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 5px;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		font-weight: bold;
+	}
+}
+
+main {
+	padding: 2.5% 5%;
+
+	h2 {
+		font-size: 1.75rem;
+		font-weight: 600;
+	}
+
+	h3 {
+		font-size: 1.25em;
+		font-weight: 600;
+	}
+
+	a {
+		color: variables.$cerulean;
+	}
+
+	section {
+		margin-bottom: 2rem;
+	}
+
+	.icon {
+		color: variables.$cerulean;
+	}
+
+	#skillsSection ul {
+		list-style-type: none;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+}
+
+table {
+	border-collapse: collapse;
+	width: auto;
+	margin-bottom: 1rem;
+	color: variables.$concrete;
+
+	th,
+	td {
+		text-align: left;
+		padding: 0.5rem;
+		border: 1px solid variables.$concrete;
+	}
+
+	th {
+		background-color: variables.$codGray2;
+		font-weight: bold;
+		color: variables.$white;
+	}
+
+	tr:nth-child(even) {
+		background-color: variables.$codGray3;
+	}
+
+	code {
+		background-color: variables.$athensGray;
+		color: variables.$mineShaft;
+		padding: 0.1rem 0.25rem;
+		border-radius: 0.25rem;
+		font-family: variables.$code;
+	}
+}
+#contactMeSection {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		fieldset {
+			display: flex;
+			flex-direction: column;
+			border: none;
+			padding: 0;
+			margin: 8px 0;
+			width: 100%;
+		}
+
+		input,
+		textarea,
+		select {
+			border-radius: 5px;
+			border: 1px solid variables.$codGray2;
+			background-color: variables.$codGray2;
+			color: variables.$concrete;
+			padding: 8px 12px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			width: 100%;
+
+			&:placeholder {
+				font-weight: bold;
+			}
+
+			&:focus {
+				outline: none;
+				border: 1px solid variables.$cerulean;
+			}
+		}
+
+		textarea {
+			display: block;
+			resize: none;
+			height: 5rem;
+		}
+
+		label {
+			font-weight: bold;
+		}
+
+		button {
+			background-color: variables.$cerulean;
+			color: variables.$codGray4;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			font-weight: bold;
+
+			&:active {
+				background-color: variables.$lochmara;
+				color: variables.$concrete;
+			}
+		}
+	}
+}
