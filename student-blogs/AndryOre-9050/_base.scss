@@ -1,0 +1,158 @@
+@use 'variables';
+
+body {
+	font-family: variables.$bodyText;
+	font-size: 12px;
+	background-color: variables.$codGray;
+	color: variables.$concrete;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 10px 5%;
+	background-color: variables.$codGray2;
+
+	nav {
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			a {
+				display: block;
+				text-decoration: none;
+				color: #fff;
+				font-weight: 500;
+				text-transform: capitalize;
+				padding: 10px;
+			}
+			li {
+				&:first-child {
+					a {
+						color: #00bfff;
+					}
+				}
+			}
+		}
+	}
+
+	.search {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+
+		input {
+			border-radius: 10px;
+			border: 1px solid #121212;
+			background-color: #121212;
+			color: #f2f2f2;
+			padding: 8px 12px;
+			margin: 8px 0;
+			box-sizing: border-box;
+
+			&:placeholder {
+				font-weight: bold;
+			}
+
+			&:focus {
+				outline: none;
+				border: 1px solid #00bfff;
+			}
+
+			&:focus + span {
+				color: #00bfff;
+			}
+		}
+	}
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;
+	grid-auto-flow: dense;
+	padding: 2.5% 5%;
+
+	.card {
+		display: flex;
+		flex-direction: column;
+		border-radius: 10px;
+		background-color: variables.$codGray2;
+		color: variables.$silver;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
+
+		.cardImage {
+			overflow: hidden;
+			border-radius: 10px 10px 0 0;
+			display: block;
+			max-width: 100%;
+			height: 150px;
+
+			img {
+				max-width: 100%;
+			}
+		}
+
+		.cardContent {
+			padding: 1.25rem;
+
+			.cardDetails {
+				display: flex;
+				justify-content: space-between;
+				font-weight: 600;
+
+				small {
+					display: flex;
+					align-items: center;
+					gap: 5px;
+					text-transform: uppercase;
+					color: variables.$silverChalice;
+				}
+			}
+
+			.cardTitle {
+				h1 {
+					font-size: 1.5rem;
+					font-weight: 500;
+					line-height: 1.25;
+					color: variables.$white;
+				}
+			}
+
+			.cardTags {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 10px;
+
+				.tag {
+					background-color: rgba(variables.$cerulean, 0.6);
+					color: variables.$white;
+					padding: 3px 8px;
+					border-radius: 10px;
+					text-transform: uppercase;
+				}
+			}
+
+			.cardDescription {
+				display: none;
+				visibility: hidden;
+			}
+
+			.cardButton {
+				a {
+					text-decoration: none;
+					display: flex;
+					align-items: center;
+					gap: 5px;
+					color: variables.$cerulean;
+					font-weight: 500;
+					margin-top: 2em;
+				}
+			}
+		}
+	}
+}
