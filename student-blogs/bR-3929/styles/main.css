@@ -79,6 +79,13 @@ nav a {
   height: 350px;
 }
 
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 15px;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
