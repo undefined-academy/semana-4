@@ -1,22 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap");
 body,
 html {
   box-sizing: border-box;
   font-family: arial;
- 
 }
 
 * {
   box-sizing: inherit;
-
 }
 
 body {
-  max-width: 100%;
+  max-width: auto;
   height: 100%;
-  background: #fef2f2;
   margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  background: #fef2f2;
 }
 
 body a {
@@ -28,14 +27,14 @@ body a {
 header {
   font-family: "Rubik Iso", cursive;
   text-align: center;
-  width: 100%;
+  width: auto;
   font-size: 18px;
 }
 
 .container {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
-  margin: 5px 10px;
+  margin: 0;
   padding: 0 10px;
   height: auto;
 }
@@ -44,7 +43,7 @@ table {
   background-color: rgb(255, 255, 255);
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: auto;
   background: #fecaca;
 }
 
@@ -63,9 +62,11 @@ main {
 }
 
 footer {
-  bottom: 50px;
-  text-align: start;
-  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 15px;
 }
 
 @media screen and (min-width: 700px) {
