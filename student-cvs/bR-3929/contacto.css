@@ -30,6 +30,7 @@ fieldset legend {
     text-align: center;
     font-weight: bold;
     font-size: 18px;
+    white-space: nowrap;
 }
 
 fieldset {
@@ -38,7 +39,6 @@ fieldset {
 }
 
 .contact {
-
     margin-top: 5px;
     padding: 3px;
 }
@@ -77,7 +77,6 @@ button:hover {
     padding: 2px 7px;
     margin: 5px 0;
     width: 100%;
-
 }
 
 label,
@@ -85,12 +84,11 @@ input {
     vertical-align: middle;
 }
 
-footer {
+footer{
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    bottom: 50px;
-    padding: 10px;
+    align-items: center;
+    width: 100%;
 }
 
 textarea {
@@ -103,14 +101,16 @@ textarea {
 .contact span {
     font-weight: bold;
     font-size: 14px;
+    
 }
 
 @media screen and (max-width:800px) {
     footer{
         display: flex;
-        flex-direction: column;
+        gap: 35px;
         justify-content: center;
         align-content: center;
         white-space: nowrap;
     }
+
 }
