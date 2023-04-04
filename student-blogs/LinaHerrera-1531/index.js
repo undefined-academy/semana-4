@@ -129,6 +129,18 @@ const entriesFilteredByDesarrolloTag = _.filter(entries, filterByDesarrolloTag)
 
 
 
-//Filtrar las entradas que tenga el tag de Desarrollo , Mapea por titulo y Agrupa por autor.
+//Filtrar las entradas que tenga el tag de Desarrollo , Mapea por 1er titulo y Agrupa por autor.
 const mapeoDllo = _.mapValues(_.groupBy(_.filter(entries, filterByDesarrolloTag), "autor"), mapFirstTitle)
-console.log(mapeoDllo)
+//console.log(mapeoDllo)
+
+//Filtrar las entradas que tenga el tag de Desarrollo , Mapea por titulo y Agrupa por autor.
+const otroFiltroDev= _.filter(entries, function(entry){
+    return _.includes(entry.tags, "Desarrollo")
+});
+const groupByAuthor= _.groupBy(otroFiltroDev, "autor");
+const titleByAuthor= _.mapValues(groupByAuthor, function(entries){
+    return _.map(entries, "titulo")
+});
+
+//console.log(titleByAuthor)
+//NOTA: Hay que comentar los demás ejemplos para q funcione cada uno correctamente
