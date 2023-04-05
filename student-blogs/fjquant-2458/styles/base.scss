@@ -1,0 +1,40 @@
+@use "variables";
+
+body {
+    background-color: var(color-main);
+    max-width: 100%;
+    padding: 20px;
+  }
+
+h3{
+    color: var(font-color);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+input {
+    border-radius: 20px;
+    padding: 0 20px;
+    margin: 10px 20px;   
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
