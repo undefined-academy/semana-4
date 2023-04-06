@@ -62,13 +62,11 @@ const entries = [
 // 1.
 const groupByAuthor = _.groupBy(entries, "autor");
 // 2.
-const filterByDesign = _.filter(entries, (entry) =>
-  _.includes(entry.tags, "Diseño")
+const filterByDevelopment = _.filter(entries, (entry) =>
+  _.includes(entry.tags, "Desarrollo")
 );
 // 3.
-const mapEntriesToAutor = _.mapValues(groupByAuthor, function (entries) {
-  return _.map(entries, "autor");
-});
+const mapEntriesToTitles = _.map(entries, "titulo");
 // 4.
 const orderByTitle = _.orderBy(entries, ["title"], ["desc"]);
 // 5.
