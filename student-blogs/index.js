@@ -63,16 +63,17 @@ const entries = [ //es un arreglo
 
 //para el filtrado 
 
-function filterDess(entry){
+function filterDessarrollo(entry){
 return _.includes(entry.tags, "Desarrollo")
 }
  
- const desarrolloFilter = _.filter(entries, filterDess)
+ const desarrolloFilter = _.filter(entries, filterDessarrollo)
 //console.log(desarrolloFilter);
 
-const mapEntries = _.map(desarrolloFilter, "titulo")
-// console.log(mapEntries);
-
-const groupEntries = _.groupBy(entries, "autor")
+const groupEntries = _.groupBy(desarrolloFilter, "autor")
 console.log(groupEntries);
 
+const mapEntries = _.mapValues(groupEntries, function(entries){
+   return_.map(entries, "titulo")
+    })
+mapEntries
