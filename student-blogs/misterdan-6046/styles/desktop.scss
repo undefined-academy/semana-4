@@ -1,0 +1,52 @@
+@media screen and (min-width: 768px) {
+    header {
+       flex-direction: row;
+    }
+
+    .header-left {
+        display: flex;
+        /*--------------------------------*/
+    }
+
+    .three-cards {
+        flex-direction: row;
+        margin: 0 0 40px 0;
+    }
+
+    .small-card {
+        display: grid;
+        /*--------------------------------*/
+        align-content: space-between;
+        /*--------------------------------*/
+    }
+
+    .card-user {
+        display: flex;
+        /*--------------------------------*/
+        align-items: center;
+        /*--------------------------------*/
+    }
+
+    .card-footer {
+        /*--------------------------------*/
+        display: flex;
+        /*--------------------------------*/
+        justify-content: space-between;
+        /*--------------------------------*/
+        align-items: center;
+        /*--------------------------------*/
+    }
+
+    .wide-card {
+        grid-template-columns: 60% auto;
+        /*--------------------------------*/
+        margin: 0 0 40px 0;
+    }
+
+    .wide-card-right {
+        padding-left: 24px;
+    }
+
+
+
+}
