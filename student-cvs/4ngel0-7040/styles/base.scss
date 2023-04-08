@@ -1,0 +1,325 @@
+@import "variables.scss";
+
+html {
+    font-size: 62.5%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    background: linear-gradient(0deg, #ebe0c9 0%, #e6d8bb 73%, #fcdfa4 100%);
+}
+
+h1,
+h2,
+h3 {
+    font-family: $fuente-titulo;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+a {
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+p,
+li,
+table {
+    font-family: $fuente-texto;
+    font-size: 1.8rem;
+}
+
+form {
+    font-size: 1.8rem;
+}
+
+ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+}
+
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.fa-linkedin,
+.fa-envelope,
+.fa-github {
+    @include enlaces($Meteor);
+}
+
+/* Utilidades*/
+
+.centrar {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.separador {
+    background: linear-gradient(84deg, #ffcfa71f 0%, #ff9b49 32%, rgba(255, 155, 73, 1) 69%, #ffcfa71f 100%);
+    height: .7rem;
+    margin: 0;
+    border: none;
+}
+
+.ocultar {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+}
+
+//Header 
+
+.header-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    .header-logo {
+        font-family: $logo;
+        animation: animacion 2s steps(30), transparent .5s step-end infinite alternate;
+        color: #7b3804;
+        font-size: 2.5rem;
+        width: 12em;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 5px solid;
+    }
+
+    @keyframes animacion {
+        from {
+            width: 0px;
+        }
+    }
+
+    @keyframes transparent {
+        50% {
+            border-color: transparent;
+        }
+    }
+}
+
+.header-barra-img {
+    width: 5rem;
+}
+
+.header-navegacion {
+    @include flex(column);
+    margin-bottom: 2rem;
+    gap: 1.5rem;
+
+    a {
+        @include enlaces($Peru_Tan);
+    }
+}
+
+
+
+//Presentacion
+
+.presentacion {
+    background-color: $Grandis;
+    padding: 2rem;
+
+    .presentacion-header {
+        font-size: 1.6rem;
+        color: $Mine_Shaft;
+        line-height: 1.5;
+    }
+
+    .presentacion-span {
+        display: block;
+        text-shadow: 0.1em 0.1em #2e2e2e28;
+        font-size: 4rem;
+    }
+}
+
+
+
+//Skills
+
+.skill-lista {
+    @include flex(row);
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+
+.skill-language {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid $Black;
+}
+
+.skill-size {
+    font-size: 15rem;
+}
+
+//Proyectos
+
+#proyects {
+    margin-bottom: 2rem;
+}
+
+.proyect {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.proyect-article {
+    @include flex(column);
+    padding: 2rem;
+    background-color: $Driftwood;
+    border-radius: .5rem;
+}
+
+.proyect-img {
+    margin: 3rem 0;
+}
+
+.boton-proyecto {
+    @include botones($White, $Mandalay);
+}
+
+//Comandos Linux
+
+.tabla {
+    border: $Black 1px solid;
+    margin: 3rem auto;
+}
+
+th {
+    font-size: 2rem;
+}
+
+th,
+td {
+    border: $Black 1px solid;
+    border-style: double;
+    padding: 0 2rem;
+}
+
+//Sobre mi
+
+.about-tittle {
+    margin-bottom: 3rem;
+}
+
+.about-content {
+    @include flex(column);
+    gap: 2rem;
+    padding: 0 3rem;
+    margin-bottom: 2rem;
+}
+
+.about-content-img {
+    width: 100%;
+
+    img {
+        border-radius: .5rem;
+    }
+}
+
+.about-content-text {
+    background-color: $Old_Gold;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+//Contacto
+
+.form-group {
+    line-height: 1.8;
+}
+
+label {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+fieldset p {
+    margin: 2rem 0 0 0;
+}
+
+input,
+textarea,
+select {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid $Scorpion;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+textarea {
+    height: 20rem;
+}
+
+input[type="radio"] {
+    margin: 0;
+    width: auto;
+}
+
+.boton-contacto {
+    @include botones($Mine_Shaft, $Macaroni_and_Cheese);
+    border: 1px solid $Cape_Palliser;
+}
+
+//Footer
+
+.footer {
+    background: linear-gradient(0deg, rgba(252, 223, 164, 1) 2%, rgba(235, 222, 199, 1) 32%, rgba(235, 222, 199, 1) 100%);
+    padding: 2rem;
+}
+
+.footer-nav {
+    @include flex(row);
+    justify-content: center;
+    gap: 2rem;
+
+    a {
+        padding: 0 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+}
+
+.footer-text {
+    font-size: 1.5rem;
+    color: $Dove_Gray;
+}

@@ -1,0 +1,58 @@
+//Header
+
+@media (min-width: 992px) {
+    .header-contenedor {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-barra {
+        display: none;
+    }
+
+    .header-navegacion {
+        flex-direction: row;
+        margin-bottom: 0;
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+    }
+}
+
+//Presentación
+
+@media (min-width: 768px) {
+    .presentacion {
+        padding: 10rem 15rem;
+
+        .presentacion-header {
+            font-size: 2rem;
+        }
+
+        .presentacion-span {
+            font-size: 6rem;
+        }
+    }
+}
+
+//Proyectos
+
+@media (min-width: 992px) {
+    .proyect-article:last-child {
+        grid-area: 3 / 1 / 4 / 5;
+    }
+}
+
+//Sobre mi
+
+@media (min-width: 992px) {
+    .about-content {
+        flex-direction: row;
+        padding: 0 7rem;
+        justify-content: space-evenly;
+    }
+
+    .about-content-img {
+        width: 70%;
+    }
+}

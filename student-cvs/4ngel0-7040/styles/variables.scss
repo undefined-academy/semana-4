@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Press+Start+2P&family=Work+Sans&display=swap');
+
+//Fuentes
+$fuente-titulo: 'Nunito Sans', sans-serif;
+$fuente-texto: 'Work Sans', sans-serif;
+$logo: 'Press Start 2P', cursive;
+
+//Colores
+$Meteor: #d08009;
+$Peru_Tan: #92511f;
+$Grandis: #FFD684;
+$Mine_Shaft: #333;
+$Black: #000;
+$Driftwood: #ac914e;
+$White: #fff;
+$Rusty_Nail: #8d550c;
+$Mandalay: #a5691a;
+$Old_Gold: #d7b74d;
+$Scorpion: #575757;
+$Cape_Palliser: #916540;
+$Macaroni_and_Cheese: #ffc477;
+$Dove_Gray: #717171;
+
+
+@mixin botones($color, $bg-Color) {
+    color: $color;
+    padding: 1.5rem 3.5rem;
+    background-color: $bg-Color;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: .5rem;
+
+    &:hover {
+        background-color: darken($bg-Color, 7);
+        cursor: pointer;
+    }
+}
+
+@mixin enlaces($color) {
+    color: $color;
+
+    &:hover {
+        color: darken($color, 7);
+        cursor: pointer;
+    }
+}
+
+@mixin flex($direccion) {
+    display: flex;
+
+    @if ($direccion ==column) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @else {
+        flex-direction: row;
+    }
+}
