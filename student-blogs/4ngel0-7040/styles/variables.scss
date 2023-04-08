@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Nanum+Gothic&family=Share+Tech&display=swap");
+
+//Fuentes de texto
+$fuente_titulo: 'Share Tech', sans-serif;
+$fuente_enlaces: 'Kanit', sans-serif;
+$fuente_texto: 'Nanum Gothic', sans-serif;
+
+//Colores
+
+$Mischka: #dbdbe1;
+$Curious_Blue: #259ade;
+$White: #fff;
+$Tickle_Me_Pink: #fb7ba8;
+$Red :#ff0606;
+$Science_Blue: #075fbd;
+$Black: #010101;
+$Pigeon_Post: #b3c9dc;
+$Di_Serria: #D5A361;
+
+//Mixins
+
+@mixin flex($direccion) {
+    display: flex;
+
+    @if ($direccion ==column) {
+        
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @else {
+        flex-direction: row;
+    }
+}

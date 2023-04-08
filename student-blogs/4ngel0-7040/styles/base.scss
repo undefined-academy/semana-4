@@ -1,0 +1,176 @@
+@import "variables.scss";
+
+/* Estilos Globales*/
+
+html {
+    font-size: 62.5%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    background: $Mischka;
+}
+
+h1,
+h2 {
+    font-family: $fuente_titulo;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+a {
+    font-family: $fuente_enlaces;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+p {
+    font-family: $fuente_texto;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*Header*/
+
+.header-nav {
+    @include flex(column);
+    justify-content: space-around;
+    padding: 2rem 5rem;
+    background-color: $Curious_Blue;
+}
+
+.header-nav-opciones {
+    @include flex(column);
+    gap: 1.5rem;
+    align-items: center;
+
+    a {
+        color: $White;
+
+        &:hover {
+            border-bottom: 1px solid $White;
+        }
+    }
+}
+
+.header-nav-redes {
+    @include flex(row);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.fa-brands {
+    color: $White;
+}
+
+.fa-instagram {
+    &:hover {
+        color: $Tickle_Me_Pink;
+    }
+}
+
+.fa-youtube {
+    &:hover {
+        color: $Red;
+    }
+}
+
+.fa-twitter {
+    &:hover {
+        color: $Science_Blue;
+    }
+}
+
+/*Articulo Destacado*/
+
+.article-main {
+    background-image: url(../img/vr.jpg);
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    width: 35rem;
+    height: 60rem;
+}
+
+.article-main-content {
+    margin-top: 5rem;
+    padding: 20rem 4rem 0;
+}
+
+.article-main-header a {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $White;
+
+    &:hover {
+        color: $Di_Serria;
+    }
+}
+
+.article-main-text p {
+    font-size: 2rem;
+    color: $White;
+}
+
+.separador {
+    margin-bottom: 2rem;
+    background-color: $Black;
+}
+
+.article-featured {
+    @include flex(column);
+}
+
+.article-featured-daily {
+    @include flex(column);
+    margin: 1rem 0;
+    padding: 1.5rem;
+    background-color: $Pigeon_Post;
+    border-radius: .5rem;
+}
+
+.article-featured-header a {
+    font-size: 1.8rem;
+    color: $Black;
+    line-height: 1;
+
+    &:hover {
+        color: $Di_Serria
+    }
+}
+
+/*Footer*/
+
+.footer {
+    background-color: $Curious_Blue;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 1.5rem;
+}

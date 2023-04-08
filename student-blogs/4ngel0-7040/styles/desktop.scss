@@ -1,0 +1,40 @@
+//Header
+
+@media (min-width: 768px) {
+    .header-nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-nav-opciones {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .header-nav-redes {
+        gap: 2rem;
+        margin-top: 0;
+    }
+}
+
+//Aritculos
+
+@media (min-width: 768px) {
+    .article-main {
+        background-position: center center;
+        width: 100%;
+    }
+
+    .article-main-content {
+        padding: 38rem 5rem 0;
+    }
+
+    .article-featured-daily {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 2rem;
+    }
+}
+
