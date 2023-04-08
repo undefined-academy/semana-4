@@ -1,5 +1,6 @@
 import _ from "lodash";
 
+//Lodash Practice
 const entries = [
   {
     titulo: "Introducción a HTML5",
@@ -59,21 +60,25 @@ const entries = [
   },
 ];
 
+console.log("Ejercicios con Lodash:\n");
 // 1.
 const groupByAuthor = _.groupBy(entries, "autor");
+console.log(groupByAuthor);
 // 2.
 const filterByDevelopment = _.filter(entries, (entry) =>
   _.includes(entry.tags, "Desarrollo")
 );
+console.log(filterByDevelopment);
 // 3.
 const mapEntriesToTitles = _.map(entries, "titulo");
+console.log(mapEntriesToTitles);
 // 4.
 const orderByTitle = _.orderBy(entries, ["title"], ["desc"]);
+console.log(orderByTitle);
 // 5.
 const reduceTotalTags = _.reduce(
   entries,
   (totalTags, entry) => totalTags + entry.tags.length,
   0
 );
-
-console.log("Ejercicio con lodash:\n", titleByAuthor);
+console.log(reduceTotalTags);
