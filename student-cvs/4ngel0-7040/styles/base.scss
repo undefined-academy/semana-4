@@ -297,6 +297,7 @@ input[type="radio"] {
 
 .boton-contacto {
     @include botones($Mine_Shaft, $Macaroni_and_Cheese);
+    margin-bottom: 2rem;
     border: 1px solid $Cape_Palliser;
 }
 
