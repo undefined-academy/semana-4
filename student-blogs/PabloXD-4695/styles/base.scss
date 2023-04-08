@@ -38,6 +38,33 @@ nav {
   border: 1px solid $color-border;
 }
 
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 3px;
+  background-color: $color-primary;
+}
+
+.card-footer a {
+  color: $color-black;
+  border: 1px solid $color-border;
+  border-radius: 25px;
+  padding: 3px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card-footer a:hover {
+  background-color: $color-secundary;
+}
+
+time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 img {
   width: 100%;
   height: 100%;
