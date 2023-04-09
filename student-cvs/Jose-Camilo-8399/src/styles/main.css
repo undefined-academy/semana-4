@@ -194,7 +194,7 @@ textarea:focus-visible {
 
 .footer-social {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: stretch;
   flex-direction: row;
   margin-bottom: 1em;
@@ -375,7 +375,7 @@ footer {
 .copy {
   display: block;
   text-align: center;
-  font-size: 0.9em;
+  font-size: 0.7em;
 }
 
 @media screen and (min-width: 768px) {

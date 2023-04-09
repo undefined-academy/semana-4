@@ -19,7 +19,7 @@
 }
 
 .footer-social {
-   @include tools.format-flex(space-evenly, stretch, row);
+   @include tools.format-flex(space-between, stretch, row);
    margin-bottom: 1em;
 
    i {
