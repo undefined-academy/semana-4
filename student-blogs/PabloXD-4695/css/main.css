@@ -36,6 +36,33 @@ nav {
   border: 1px solid gray;
 }
 
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 3px;
+  background-color: antiquewhite;
+}
+
+.card-footer a {
+  color: black;
+  border: 1px solid gray;
+  border-radius: 25px;
+  padding: 3px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card-footer a:hover {
+  background-color: burlywood;
+}
+
+time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 img {
   width: 100%;
   height: 100%;
@@ -57,6 +84,7 @@ footer {
     background-color: white;
     position: sticky;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     margin-bottom: 10px;
     top: 0px;

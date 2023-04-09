@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Viga&display=swap");
-
 p {
   margin: 0px;
   padding: 0px;
@@ -113,6 +112,12 @@ table {
 td {
   border: 2px solid #57238e;
   text-align: center;
+}
+
+.contact-body {
+  padding: 15px;
+  background-color: aliceblue;
+  height: 100%;
 }
 
 @media screen and (min-width: 600px) {
