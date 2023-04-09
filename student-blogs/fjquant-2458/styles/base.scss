@@ -1,17 +1,35 @@
-@use "variables";
-
 body {
-    background-color: var(color-main);
+    background-color: var(--color-Champagne);
     max-width: 100%;
     padding: 20px;
-  }
-
-h3{
-    color: var(font-color);
 }
+
+header{
+    text-align: center;
+    padding: 0;
+    margin:0;
+}
+
+h3 {
+    color: var(--color-Danube);
+}
+
 .container {
     display: flex;
     flex-direction: column;
+    gap: 20px 0;
+}
+
+
+@mixin layout{
+    padding: 10px;
+    background: var(--color-Champagne-Ligth);
+    border-radius: 10px;
+    box-shadow: 8px 6px 16px rgba(127, 121, 110, 8.25)
+}
+
+.articulo,.principal{
+@include layout;
 }
 
 nav {
@@ -31,10 +49,16 @@ ul {
 input {
     border-radius: 20px;
     padding: 0 20px;
-    margin: 10px 20px;   
+    margin: 10px 20px;
 }
 
 img {
     width: 100%;
     height: auto;
+}
+
+a{
+    display: flex;
+    justify-items: end;
+
 }
