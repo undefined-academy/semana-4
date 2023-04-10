@@ -1,0 +1,15 @@
+@use "reset.scss";
+@use "base.scss";
+@use "desktop.scss";
+
+
+$color-main: #0074d9;
+
+@mixin center($ancho,$alto) {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: $ancho;
+    height: $alto;
+}
