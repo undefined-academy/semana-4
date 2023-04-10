@@ -1,0 +1,33 @@
+@use "base.scss";
+@use "variables";
+
+@media screen and (min-width:variables.$type) {
+    .content,.feature ,.feature:last-child,.feature.first{
+        background:variables.$color3;
+    }
+}
+@media screen and (min-width:variables.$type) {
+    body,.signup{
+        background:variables.$color4;
+        
+    }
+}
+@media screen and (min-width: 992px) {
+    .features {
+        display: flex;
+    }
+
+    .feature {
+        width: 100%;
+    }
+
+    .signup {
+        min-height: auto;
+        height: 200px;
+        order: 3;
+    }
+
+    content {
+        order: 3;
+    }
+}
