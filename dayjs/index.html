@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0 auto;
+      max-width: 600px;
+      text-align: center;
+      background-color: darkslategray;
+      color: azure;
+    }
+    h1 {
+      margin: 36px 0;
+    }
+    label {
+      font-weight: bold;
+    }
+    input {
+      display: block;
+      text-align: center;
+      padding: 3px 12px;
+      margin: 12px auto;
+      border-radius: 6px;
+      border: none;
+    }
+    input[type="date"]:hover {
+      outline: 2px solid greenyellow;
+    }
+    input[type="button"] {
+      background-color: greenyellow;
+      padding: 6px 36px;
+    }
+    input[type="button"]:hover {
+      background-color: rgb(93, 154, 1);
+      color: greenyellow;
+    }
+    #answer {
+      background-color: azure;
+      color: darkslategray;
+      font-weight: bold;
+      min-width: 200px;
+      max-width: 500px;
+      padding: 24px 12px;
+      border-radius: 12px;
+      margin: 24px auto;
+    }
+  </style>
+  <title>DAY JS</title>
+</head>
+<body>
+  <h1>Cuanto tiempo difiere ??</h1>
+  <p>Digita una fecha para calcular cual es la diferencia con el dia de hoy.</p>
+  <div>
+    <label for="date">Selecciona una fecha:</label>
+    <input id="user-date" type="date" name="date" id="date">
+  </div>
+  <input id="calc" type="button" value="Calcular">
+  <p id="answer"></p>
+  <script type="module" src="index.js"></script>
+</body>
+</html>
