@@ -21,3 +21,8 @@ function humanize(date) {
     return wrappedDate.format("MMMM DD");
   }
 }
+
+document.getElementById("date1").innerHTML = humanize("2023-02-26");
+document.getElementById("date2").innerHTML = humanize("2022-09-29");
+document.getElementById("date3").innerHTML = humanize("2022-08-15");
+document.getElementById("date4").innerHTML = humanize("2021-05-05");
