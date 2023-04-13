@@ -14,7 +14,7 @@
   }
   
   input[type="search"] {
-    padding: 8px 12px;
+    padding: 8px 12px 3px;
     border-radius: 4px;
     border: 1px solid $color-border;
     width: 400px;
@@ -25,28 +25,41 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 50px auto auto;
-    gap: 22px;
+    gap: 10px;
   }
-  
+
   nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
+    width: 140% !important;
+    justify-content: flex-start;
   }
   
   ul {
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    gap: 14px;
+  }
+
+  li:hover{
+    font-weight: bold;
+    cursor: pointer;
   }
   
   div:last-child {
     grid-column: 1 / 4;
   }
+
+  .hamburger-box{
+    margin-left: -140px;
+    margin-bottom: -5px;
+  }
+
+
+
+
+
+
 
   
 
