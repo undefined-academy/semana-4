@@ -1,0 +1,131 @@
+/*  NAV */
+
+nav{ 
+    place-items: center;
+    background: rgb(53, 54, 54);  
+}
+nav ul{
+    display: flex; 
+    justify-content: space-evenly;
+    font-size: 0.9rem;
+    margin: 0.7rem;
+    padding: 0.2rem; 
+    list-style: none;
+    text-decoration: none; 
+    color: aliceblue; 
+} 
+nav ul li:hover {
+    color: rgb(50, 123, 186);
+}
+nav ul li a{
+    list-style: none;
+    text-decoration: none; 
+    font-weight: bold;
+    color: aliceblue; 
+}
+
+/*  HEADER  */
+
+header{
+    background-image: url("../img/bg-main.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;   
+}
+
+
+/* Body Pages */
+p, .terms{
+    font-size: 14px; 
+    text-align: justify; 
+    margin: 16px 12px;
+}
+p a{ 
+    list-style: none;
+    text-decoration: none; 
+    color: rgb(23, 85, 138);
+    font-weight: bolder;
+}
+.main-title{
+    font-size: 36px;      
+}
+.main-title span{
+    font-size: 20px;
+    text-align: left;
+}
+.main-title a{
+    list-style: none;
+    text-decoration: none; 
+    color: rgb(23, 85, 138);
+    transition: 250ms; 
+}
+.main-title a:hover{
+    color: #d3dbe3;
+    background: #166ab8;
+    padding: 5px;
+    border-radius: 12px;
+}
+.frontend-subtitle{
+    font-size: 17px;    
+    text-align: center;
+}
+.main-title, .frontend-subtitle{
+    padding: 0 12px;
+    margin: 12px;
+} 
+h2{
+    margin: 1rem;
+    text-align: center;
+    font-size: 1.7rem;
+}
+.sub{
+    color: rgb(23, 85, 138);
+}
+.personal-profile{ 
+    font-size: 28px;
+} 
+section, header{  
+    justify-content: center;
+    align-items: center;
+} 
+header {    
+    min-height: 350px;
+}
+
+/*  CONTENT  */
+.main-article{
+    font-size: 26px;
+    font-weight: bold;
+}    
+.feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+.feature-h5{
+    color: rgb(43, 42, 42);  
+} 
+.feature div p{
+    text-align: left;  
+    margin: 0.3rem;
+    padding: 0.3rem;
+}
+.feature{ 
+    padding: 1rem;
+}
+.features{
+    margin: 2rem;
+}
+i{
+    font-size:6rem;
+    color:rgb(43, 42, 42)
+}
+section h3 a{
+    text-decoration: none;
+    color: #166ab8;
+}
+.section-title{
+    color: rgb(23, 85, 138);
+}
