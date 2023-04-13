@@ -1,6 +1,6 @@
 # ⛺ Semana 4
 
-> 🏕️ [Base de conocimientos.](https://undefinedshell.notion.site/Semana-4-30b7ce779d2d4ab1b9de5982fe199561)
+> 🏕️ [Link del proyecto de mi CV con SCSS](https://cv-scss-lucianogarriga.vercel.app/)
 
 Ejercicios de la cuarta semana.
 
