@@ -13,11 +13,15 @@ function humanize(date) {
 
   const isCurrentYear = wrappedDate.year() === new Date().getFullYear();
 
-  if(!isCurrentYear) {
-    return wrappedDate.format("MMMM DD, YYYY");
-  } else if(daysDiff <=30) {
-    return wrappedDate.fromNow();
-  } else {
-    return wrappedDate.format("MMMM DD");
+     if(!isCurrentYear) {
+     return wrappedDate.format("MMMM DD, YYYY");
+   } else if(daysDiff <=30) {
+     return wrappedDate.fromNow();
+   } else {
+     return wrappedDate.format("MMMM DD");
+   }
   }
-}
+  document.getElementById("date-1").innerHTML = humanize("2023-02-26");
+  document.getElementById("date-2").innerHTML = humanize("2022-09-29");
+  document.getElementById("date-3").innerHTML = humanize("2022-08-15");
+  document.getElementById("date-4").innerHTML = humanize("2021-05-05");
