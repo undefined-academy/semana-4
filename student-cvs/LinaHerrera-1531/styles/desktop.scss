@@ -1,11 +1,11 @@
 @use "variables" as v;
 
 * {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {
-  font-size: 20px;
+  font-size: 25px;
   font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   background-color: v.$black;
   color: v.$pink;
@@ -22,7 +22,7 @@ h1, h2 {
   align-items: center;
   place-items: center;
   flex-direction: column;
-  font-size: 30px;
+  font-size: 22px;
 }
 
 nav {
@@ -36,8 +36,8 @@ nav {
 .liHeader {
   display: inline;
   list-style-type: none;
-  font-size: 25px;
-  padding: 10px;
+  font-size: 18px;
+  padding: 4px;
 }
 
 a:hover, a:visited, a:link {
@@ -47,30 +47,29 @@ a:hover, a:visited, a:link {
 header, section {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
   /* min-height: 80px; */
 }
 
 .pPrincipal {
-  font-size: 18px;
+  font-size: 20px;
   text-align: justify;
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 th {
-  font-size: 15px;
+  font-size: 17px;
 }
 
 td {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .liOther {
-  font-size: 15px;
+  font-size: 17px;
 }
 
 footer {
@@ -82,33 +81,44 @@ footer {
 .liFooter {
   display: inline;
   list-style-type: none;
-  font-size: 25px;
-  padding: 10px;
+  font-size: 18px;
+  padding: 4px;
 }
 
 @media screen and (min-width: 992px) {
+  body {
+    font-size: 25px;
+  }
+  
   h1, h2 {
     font-size: 42px;
   }
+  
   .liHeader {
     font-size: 38px;
     padding: 80px;
   }
+  
   .pPrincipal {
     font-size: 30px;
   }
+  
   h3 {
     font-size: 40px;
   }
+  
   th {
     font-size: 37px;
   }
+  
   td {
     font-size: 35px;
   }
+  
   .liOther {
     font-size: 37px;
   }
+  
   .liFooter {
     font-size: 38px;
     padding: 80px;
