@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
+    "serve": "vite --host",
+    "build": "vite build",
     "sass": "sass main.scss styles/main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,7 +1,7 @@
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime.js";
 
-await import("dayjs/locale/es-us.js")
+await import("dayjs/locale/es-us.js");
 
 //fecha en español importancion local
 dayjs.locale("es-us");
@@ -14,11 +14,11 @@ function humanize(date)  {
     const isCurrentYear = wrappedDate.year() === new Date().getFullYear();
 
     if(!isCurrentYear) {
-        return wrappedDate.format("MMMM DD, YYYY")
+        return wrappedDate.format("MMMM DD, YYYY");
     } else if(daysDiff <= 30) {
         return wrappedDate.fromNow();
     } else {
-        return wrappedDate.format("MMMM DD")
+        return wrappedDate.format("MMMM DD");
     }
 } 
 
