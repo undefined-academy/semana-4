@@ -1,9 +1,11 @@
 lockfileVersion: 5.4
 
 specifiers:
+  dayjs: ^1.11.7
   sass: ^1.62.0
 
 dependencies:
+  dayjs: 1.11.7
   sass: 1.62.0
 
 packages:
@@ -41,6 +43,10 @@ packages:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.2
+    dev: false
+
+  /dayjs/1.11.7:
+    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
     dev: false
 
   /fill-range/7.0.1:
