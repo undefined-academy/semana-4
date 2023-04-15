@@ -13,5 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.62.0"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7"
   }
 }
