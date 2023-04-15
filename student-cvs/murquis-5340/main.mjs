@@ -27,11 +27,5 @@ function humanize(date){
 
 }
 
-// humanize(Date.now());
-// console.log(humanize(dayjs().subtract(5, "days"))); 
-// console.log(humanize(dayjs().subtract(60, "days")));
-// console.log(humanize(dayjs().subtract(500, "days")));
-// console.log(humanize(dayjs().add(300, "days")));
-
 let elementDateFooter = document.getElementById("dateFooter");
 elementDateFooter.innerHTML = humanize(dayjs(elementDateFooter.innerHTML, "DD/MM/YYYY"));
