@@ -1,0 +1,22 @@
+@media (max-width:600px){
+
+    *{
+        font-size: 14px;
+    }
+   
+    .informacion-personal{
+        display: flex;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+    }
+    header figure img{
+        width: 90px;
+        height: 90px;
+        border-radius: 100%;
+    }
+
+}

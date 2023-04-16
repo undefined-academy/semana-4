@@ -1,0 +1,40 @@
+@media (max-width:400px){
+    .grid{
+       grid-template-columns: 1fr;
+    } 
+    nav{
+       position: relative;
+       width: 100%;
+    }
+    .soccer-1,.soccer-2,.soccer-3,.soccer-4,.soccer-5,.soccer-6{
+       visibility: hidden;
+    }
+    .inicio{
+       position: absolute;
+       top:25px;
+       left:0px;
+    }
+    .ultima-seccion{
+       position: absolute;
+       top:25px;
+       left:80px;
+    }
+    }
+   @media (min-width:401px)and (max-width:1000px){
+       .grid{
+           grid-template-columns: 1fr 1fr;
+       }
+       .soccer-1,.soccer-2,.soccer-3,.soccer-4,.soccer-5,.soccer-6{
+           visibility: hidden;
+        }
+        .inicio{
+           position: absolute;
+           top:25px;
+           left:250px;
+        }
+        .ultima-seccion{
+           position: absolute;
+           top:25px;
+           left:320px;
+        }
+   }

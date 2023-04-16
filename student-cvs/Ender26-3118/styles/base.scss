@@ -1,0 +1,126 @@
+@use "variables.scss"  as variables;
+body {
+    background-color: rgb(109, 229, 187);
+    max-width: 1000px;
+    max-height: 500px;
+    margin: 0 auto;
+    color: variables.$black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+}
+
+.imagen-perfil{
+    margin: 0;
+}
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    display: block;
+    margin: 0 auto;
+}
+a {
+    color: variables.$black;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color:variables.$Dark-Burgundy;
+}
+
+h2,h4 {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+ li {
+   font-weight: 400;
+}
+
+.form-1 {
+    width: 100%;
+    margin: 10px auto;
+}
+
+.form-1 input {
+    width: 95%;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    align-items: middle;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 32px;
+    border-radius: 5px;
+    background-color: #add8e6;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color:variables.$background-blue;
+    color:variables.$white;
+}
+
+input[type="submit"]:active {
+    background-color:variables.$background-blue ;
+    color:variables.$white;
+}
+    
+input[type="text"],
+input[type="email"] {
+    border-radius: 2px;
+    padding: 4px 8px;
+    border: 1px solid #d3d3d3;
+    background-color: variables.$white;
+}
+
+select {
+    width: 95%;
+}
+
+.form-2 {
+    margin-bottom: 10px;
+}
+.formulario {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.contacto{
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+footer{
+    text-align: center;
+}
+button{
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color:variables.$dark-blue;
+    color: variables.$white;
+}
+.tiempo{
+    display: flex;
+    justify-content: center;
+}

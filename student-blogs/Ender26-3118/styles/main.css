@@ -1,0 +1,235 @@
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+header {
+  width: 100%;
+}
+
+.entry {
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 80px;
+  background-color: #add8e6;
+}
+
+.inicio {
+  padding-right: 10px;
+}
+
+.inicio:hover,
+.soccer-1:hover,
+.soccer-2:hover,
+.soccer-3:hover,
+.soccer-4:hover,
+.soccer-5:hover,
+.soccer-6:hover {
+  background-color: #333030;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.soccer-1 .entrada-1,
+.soccer-2 .entrada-1,
+.soccer-3 .entrada-1,
+.soccer-4 .entrada-1,
+.soccer-5 .entrada-1,
+.soccer-6 .entrada-1 {
+  display: flex;
+  flex-direction: column;
+  background-color: #333030;
+  position: absolute;
+  pointer-events: none;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+}
+
+.soccer-1:hover .entrada-1,
+.soccer-2:hover .entrada-1,
+.soccer-3:hover .entrada-1,
+.soccer-4:hover .entrada-1,
+.soccer-5:hover .entrada-1,
+.soccer-6:hover .entrada-1 {
+  visibility: visible;
+}
+
+.entrada-1 .primera-1,
+.entrada-1 .segunda-1,
+.entrada-1 .tercera-1 {
+  border-bottom: 2px solid #000000;
+  text-align: center;
+}
+
+.soccer-1,
+.soccer-2,
+.soccer-3,
+.soccer-4,
+.inicio,
+.soccer-5,
+.soccer-6,
+.ultima-seccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.imagen {
+  width: 24px;
+  height: 24px;
+  margin-left: 12px;
+  margin-right: 6px;
+}
+
+.imagen-2 {
+  width: 40px;
+  height: 30px;
+  margin-left: 12px;
+  margin-right: 6px;
+}
+
+.ultima-seccion,
+input[type=text] {
+  margin: auto 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px 10px;
+  gap: 20px 10px;
+}
+
+.articulo-1,
+.articulo-2,
+.articulo-3,
+.articulo-4,
+.articulo-5,
+.articulo-6 {
+  border: 2px solid #163c01;
+  height: 100%;
+}
+
+h1 {
+  color: #000000;
+  font-size: 16px;
+  margin: 5px;
+  text-align: center;
+}
+
+.prueba {
+  margin: 5px 5px;
+  height: 500px;
+}
+
+.articulo-1 .imagen-clasico,
+.articulo-2 .ferguson-wenger,
+.articulo-3 .Napoli,
+.articulo-4 .sergio-ramos,
+.articulo-5 .tuchel,
+.articulo-6 .sorteo {
+  width: 100%;
+  height: 200px;
+}
+
+.prueba .country,
+.prueba .division {
+  background-color: #102f9d;
+  color: #ffffff;
+  margin-left: 3px;
+  margin-right: 2px;
+  border-radius: 5px;
+}
+
+.prueba .text {
+  font-size: 12px;
+  text-align: justify;
+  min-height: 140px;
+  margin: 10px 10px;
+}
+
+.perfil {
+  min-height: 40px;
+  display: flex;
+  margin-bottom: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.informacion {
+  min-height: 280px;
+  position: relative;
+}
+
+.perfil .perfil-1 {
+  width: 40px;
+  height: 100%;
+  border-radius: 100%;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.perfil .autor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tiempo {
+  display: flex;
+  justify-content: center;
+}
+
+.tiempo {
+  margin-left: 10px;
+}
+
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  nav {
+    position: relative;
+    width: 100%;
+  }
+  .soccer-1, .soccer-2, .soccer-3, .soccer-4, .soccer-5, .soccer-6 {
+    visibility: hidden;
+  }
+  .inicio {
+    position: absolute;
+    top: 25px;
+    left: 0px;
+  }
+  .ultima-seccion {
+    position: absolute;
+    top: 25px;
+    left: 80px;
+  }
+}
+@media (min-width: 401px) and (max-width: 1000px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .soccer-1, .soccer-2, .soccer-3, .soccer-4, .soccer-5, .soccer-6 {
+    visibility: hidden;
+  }
+  .inicio {
+    position: absolute;
+    top: 25px;
+    left: 250px;
+  }
+  .ultima-seccion {
+    position: absolute;
+    top: 25px;
+    left: 320px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
