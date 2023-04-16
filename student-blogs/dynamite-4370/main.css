@@ -25,10 +25,6 @@ img {
   height: 100%;
 }
 
-footer {
-  padding: 1rem 3.5rem;
-}
-
 .container-header {
   background-color: #dbf7ea;
   display: flex;
@@ -183,6 +179,162 @@ footer {
   .post1 {
     max-width: 90%;
   }
+}
+.suscribete {
+  display: flex;
+  justify-content: center;
+  background-color: #dbf7ea;
+}
+
+.container-subscribe {
+  width: 80%;
+  top: 4rem;
+  height: 30rem;
+  display: grid;
+  place-items: center;
+}
+
+.container-subscribe-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container-subscribe-info h2 {
+  font-size: 2.4rem;
+}
+
+.container-subscribe-info p {
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+
+.container-subscribe-info span {
+  font-size: 1rem;
+}
+
+.container-subscribe-info .form {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-color: gray;
+  padding: 1rem 2rem;
+}
+
+.container-footer {
+  padding-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.contact-me,
+.links,
+.services,
+.social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.6rem;
+}
+
+.contact-me h2,
+.links h2,
+.services h2,
+.social-media h2 {
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+}
+
+.contact-me li,
+.links li,
+.services li {
+  padding: 0.5rem 0;
+  color: darkgrey;
+}
+
+.links a,
+.services a {
+  color: darkgrey;
+}
+
+.icons {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.icono {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  outline: 2px solid #fff;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.25s;
+}
+
+.icono:hover {
+  outline-offset: 4px;
+}
+
+.icono span {
+  margin: auto;
+  font-size: 2.2rem;
+  color: white;
+}
+
+.insta:hover {
+  background-color: #f77737;
+  outline-color: #f77737;
+}
+
+.twitter:hover {
+  background-color: #1da1f2;
+  outline-color: #1da1f2;
+}
+
+.In:hover {
+  background-color: #004182;
+  outline-color: #004182;
+}
+
+.github:hover {
+  background-color: #6cc644;
+  outline-color: #6cc644;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+}
+.icono:hover span {
+  animation: shake 0.25s;
+}
+
+.politics {
+  grid-column: 1/5;
+  padding-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.politics p {
+  color: #fff;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=main.css.map */

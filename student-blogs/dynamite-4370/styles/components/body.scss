@@ -104,3 +104,41 @@
         max-width: 90%;
     }
 }
+
+.suscribete {
+    display: flex;
+    justify-content: center;
+    background-color: #dbf7ea;
+}
+
+.container-subscribe {
+    width: 80%;
+    top: 4rem;
+    height: 30rem;
+    display: grid;
+    place-items: center;
+}
+
+.container-subscribe-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container-subscribe-info h2 {
+    font-size: 2.4rem;
+}
+
+.container-subscribe-info p {
+    font-size: 1.2rem;
+    margin: 2rem 0;
+}
+
+.container-subscribe-info span {
+    font-size: 1rem;
+}
+
+.container-subscribe-info .form {
+    display: flex;
+    justify-content: center;
+}
