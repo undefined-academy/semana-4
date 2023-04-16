@@ -1,0 +1,58 @@
+@use "../variables.scss";
+
+.container-header {
+    background-color: variables.$grannyApple;
+    display: flex;
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+.header-items {
+    margin: 0 auto;
+}
+
+.navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.navbar-menu .logo {
+    font-size: 2.4rem;
+    text-decoration: none;
+}
+
+.navbar-menu .opciones {
+    display: none;
+}
+
+.button-mobile {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.navbar-section {
+    display: grid;
+    place-items: center;
+    height: 25rem;
+    max-width: 600px;
+}
+
+.navbar-section .container-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.navbar-section .container-info h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.navbar-section .container-info p {
+    font-size: 1.6rem;
+    color: #333;
+}
