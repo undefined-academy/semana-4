@@ -1,13 +1,9 @@
-$desktop-media-query: 980px;
-$tablet-media-query: 768px;
-  
+@use "variables";
 
-
-
-@media screen and (min-width: $tablet-media-query) { 
+@media screen and (min-width: variables.$tablet-media-query) { 
     .main-container{
         width: 100%; 
-        background: rgb(233, 241, 241);
+        background: var(--color-seashell);
     } 
     p{
         font-size: 1.2rem;
@@ -54,7 +50,7 @@ $tablet-media-query: 768px;
         font-size: 2.8rem; 
     } 
 }
-@media screen and (min-width: $desktop-media-query){
+@media screen and (min-width: variables.$desktop-media-query){
     p{
         font-size: 1.4rem;
         padding: 1.2rem;

@@ -1,5 +1,6 @@
 @use "./reset.scss";
 @use "./base.scss";
+@use "./variables.scss";
 @use "./contact.scss";
 @use "./footer.scss";
 @use "./desktop.scss";
@@ -18,7 +19,7 @@ main{
 }
 .sections-sub{
     font-size: 1.5rem;
-    color: rgb(23, 85, 138);
+    color: var(--color-astronaut);
 }
 .l-about{
     font-size: 1rem;

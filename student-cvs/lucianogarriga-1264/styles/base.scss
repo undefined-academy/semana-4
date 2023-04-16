@@ -2,7 +2,7 @@
 
 nav{ 
     place-items: center;
-    background: rgb(53, 54, 54);  
+    background: var(--color-mine-shaft);
 }
 nav ul{
     display: flex; 
@@ -12,16 +12,16 @@ nav ul{
     padding: 0.2rem; 
     list-style: none;
     text-decoration: none; 
-    color: aliceblue; 
+    color: var(--color-seashell); 
 } 
 nav ul li:hover {
-    color: rgb(50, 123, 186);
+    color: var(--color-azure);
 }
 nav ul li a{
     list-style: none;
     text-decoration: none; 
     font-weight: bold;
-    color: aliceblue; 
+    color: var(--color-seashell); 
 }
 
 /*  HEADER  */
@@ -45,7 +45,7 @@ p, .terms{
 p a{ 
     list-style: none;
     text-decoration: none; 
-    color: rgb(23, 85, 138);
+    color: var(--color-azure);
     font-weight: bolder;
 }
 .main-title{
@@ -58,12 +58,12 @@ p a{
 .main-title a{
     list-style: none;
     text-decoration: none; 
-    color: rgb(23, 85, 138);
+    color: var(--color-azure);
     transition: 250ms; 
 }
 .main-title a:hover{
-    color: #d3dbe3;
-    background: #166ab8;
+    color: var(--color-seashell); 
+    background: var(--color-azure);
     padding: 5px;
     border-radius: 12px;
 }
@@ -81,7 +81,7 @@ h2{
     font-size: 1.7rem;
 }
 .sub{
-    color: rgb(23, 85, 138);
+    color: var(--color-azure);
 }
 .personal-profile{ 
     font-size: 28px;
@@ -103,9 +103,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center; 
-}
-.feature-h5{
-    color: rgb(43, 42, 42);  
 } 
 .feature div p{
     text-align: left;  
@@ -119,13 +116,12 @@ header {
     margin: 2rem;
 }
 i{
-    font-size:6rem;
-    color:rgb(43, 42, 42)
+    font-size:6rem; 
 }
 section h3 a{
     text-decoration: none;
-    color: #166ab8;
+    color: var(--color-azure);
 }
 .section-title{
-    color: rgb(23, 85, 138);
+    color: var(--color-azure);
 }
