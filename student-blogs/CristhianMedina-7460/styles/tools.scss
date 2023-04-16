@@ -1,0 +1,19 @@
+@use "variables" as *;
+
+@mixin image-centered {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin desktop {
+  @media screen and (min-width: $breackpoint-large) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $breackpoint-middle) {
+    @content;
+  }
+}

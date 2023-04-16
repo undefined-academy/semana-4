@@ -1,0 +1,186 @@
+@use 'styles/variables.scss' as *;
+@use 'styles/base.scss';
+@use 'styles/desktop.scss';
+
+@mixin image-centered {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  font-family: $font;
+  margin: 0 auto;
+  max-width: 60em;
+  min-height: 100vh;
+  line-height: 1.5;
+  color: $color-cutty-sark;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 85%;
+}
+
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+h1,
+h2,
+strong {
+  color: $color-navy-blue;
+}
+
+a {
+  color: $color-amaranth;
+  text-decoration: none;
+}
+
+header {
+  background-color: $color-bahama-blue;
+  background-image: url("./unsplash.jpg");
+  @include image-centered;
+  line-height: 1.2;
+  padding: 10vw 0;
+  text-align: center;
+
+  & h1 {
+    color: $color-navy-blue;
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+
+  & p {
+    color: $color-athens-gray;
+    background: $color-bahama-blue;
+    padding: 10px 20px;
+  }
+
+  & strong {
+    font-weight: 400;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  & ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 32px;
+
+    & li {
+      border-bottom: 2px solid $color-cutty-sark;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
+      & a {
+        color: $color-cutty-sark;
+      }
+    }
+  }
+}
+
+.contact-form {
+  & h2 {
+  padding: 0;
+  text-align: center;
+  }
+
+  & form {
+    background-color: $color-bahama-blue;
+    color: $color-athens-gray;
+    padding: 20px;
+    margin: 0;
+    border-radius: 20px;
+  }
+  
+  & button,
+  & input,
+  & select,
+  & fieldset {
+    font-family: inherit;
+    font-size: 100%;
+    margin-bottom: 14px;
+  }
+  
+  & fieldset label:after {
+    content: "\A";
+    white-space: pre-wrap;
+  }
+  
+  & textarea {
+    font-family: inherit;
+    font-size: 100%;
+    display: block;
+    width: 100%;
+    resize: vertical;
+  
+    &  + p {
+      font-size: 80%;
+      margin: 0;
+      text-align: end;
+      margin-bottom: 14px;
+    }
+  }
+  
+  & label, input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+  }
+  
+  & input[type="text"], input[type="email"], textarea {
+    border: 1px solid $color-cutty-sark;
+    border-radius: 5px;
+    padding: 8px 10px;
+  }
+  
+  & .terms {
+    font-size: 8px;
+  }
+  
+  & label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 80%;
+    letter-spacing: 1px;
+  }
+  
+  & button[type="submit"] {
+    padding: 10px 60px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 8px;
+  
+    &:hover {
+      background-color: $color-bahama-blue;
+      color: $color-athens-gray;
+    }
+  }
+}
+
+footer {
+  background-color: $color-bahama-blue;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 4rem;
+
+  & p {
+    color: $color-athens-gray;
+    text-align: center;
+    font-size: 14px;
+    padding: 1rem;
+    margin: 0;
+  }
+}

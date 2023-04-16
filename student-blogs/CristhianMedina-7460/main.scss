@@ -1,0 +1,124 @@
+@use 'styles/variables.scss' as *;
+@use 'styles/base.scss';
+@use 'styles/tools.scss';
+@use 'styles/card.scss';
+
+main {
+  margin: 0 auto;
+  max-width: 85%;
+}
+
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+h1,
+h2,
+strong {
+  color: $color-navy-blue;
+}
+
+a {
+  color: $color-amaranth;
+  text-decoration: none;
+}
+
+header {
+  background-color: $color-bahama-blue;
+  background-image: url("./unsplash.jpg");
+  @include tools.image-centered;
+  line-height: 1.2;
+  padding: 10vw 0;
+  text-align: center;
+
+  & h1 {
+    color: $color-navy-blue;
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+
+  & p {
+    color: $color-athens-gray;
+    background: $color-bahama-blue;
+    padding: 10px 20px;
+  }
+
+  & strong {
+    font-weight: 400;
+  }
+}
+
+nav {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @include tools.tablet {
+    justify-content: end;
+    padding: 16px 32px;
+  }
+
+  & ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 32px;
+
+    @include tools.tablet {
+      gap: 50px;
+    }
+
+    & li {
+      border-bottom: 2px solid $color-cutty-sark;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
+      & a {
+        color: $color-cutty-sark;
+
+        @include tools.tablet {
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}
+
+.cards-container {
+  max-width: 100%;
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  
+  @include tools.tablet {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(400px, auto) 350px;
+  }
+  
+  @include tools.desktop {
+    padding: 0;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.footer {
+  background-color: $color-bahama-blue;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 4rem;
+
+  & p {
+    color: $color-athens-gray;
+    text-align: center;
+    font-size: 14px;
+    padding: 1rem;
+    margin: 0;
+  }
+}

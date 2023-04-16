@@ -1,0 +1,24 @@
+@media (min-width: 576px) {
+  header {
+    padding: 10vw 2em;
+
+    & p {
+      display: inline-block;
+      border-radius: 30px;
+      padding: 10px 20px;
+    }
+  }
+
+  nav {
+    justify-content: end;
+    padding: 0 32px;
+
+    & ul {
+      gap: 50px;
+
+      & li a {
+        padding: 0 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0">
+  <link rel="stylesheet" href="main.scss">
+  <title>Contact</title>
+</head>
+<body>
+  <header>
+    <h1>Cristhian Medina</h1>
+    <p>
+      Soy <strong>diseñador gráfico</strong> y <strong>desarrollador front-end</strong> colombiano.
+    </p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="index.html">CV</a></li>
+      <li>Contact me</li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="contact-form">
+      <h2>Quieres contactarme ??</h2>
+      <form>
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name" placeholder="Ingrese su nombre completo" required>
+
+        <label for="email">Correo</label>
+        <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico" required>
+
+        <fieldset>
+          <legend>¿En que te puedo ayudar?</legend>
+          <div>
+            <input type="radio" name="contact-type" id="project" value="project" required>
+            <label for="project">Proyecto</label>
+          </div>
+          <div>
+            <input type="radio" name="contact-type" id="job" value="job" required>
+            <label for="job">Trabajo</label>
+          </div>
+          <div>
+            <input type="radio" name="contact-type" id="talk" value="talk" required>
+            <label for="talk">Conferencia</label>
+          </div>
+        </fieldset>
+
+        <label for="lenguage">Idíoma</label>
+        <input list="datalistOptions" name="lenguage" id="lenguage" placeholder="Doble click para seleccionar..." required>
+        <datalist id="datalistOptions">
+          <option value="Español">
+          <option value="Ingles">
+          <option value="Portugues">
+        </datalist>
+        
+        <label for="description">Descripción</label>
+        <textarea name="contact-description" id="description" rows="3" required></textarea>
+        <p>Escribe una descripción del tema a tratar.</p>
+
+        <div for="terms">
+          <input type="checkbox" name="terms" id="terms" value="termsAccepted" required>
+          <label for="terms">Acepto los terminos y condiciones</label>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Todos los derechos reservados 2023</p>
+  </footer>
+
+  <script type="module" src="main.mjs"></script>
+</body>
+</html>

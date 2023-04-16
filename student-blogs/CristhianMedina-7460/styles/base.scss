@@ -1,0 +1,23 @@
+@use 'styles/variables.scss' as *;
+@use "tools";
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-primary;
+  line-height: 1.5;
+  color: $color-cutty-sark;
+  
+  @include tools.desktop {
+    max-width: 60em;
+    margin: 0 auto;
+  }
+}
