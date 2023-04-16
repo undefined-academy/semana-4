@@ -1,58 +1,75 @@
 @use "../variables.scss";
 
+// Estilos del contenedor del encabezado
 .container-header {
     background-color: variables.$grannyApple;
     display: flex;
     width: 100%;
     padding: 1rem 2rem;
+
+    // Estilos de los elementos del encabezado
+    .header-items {
+        margin: 0 auto;
+    }
+
+    // Estilos del menú de navegación
+    .navbar-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+
+        // Estilos del logo
+        .logo {
+            font-size: 2.4rem;
+            text-decoration: none;
+        }
+
+        // Estilos de las opciones del menú
+        .opciones {
+            display: none;
+        }
+
+        // Estilos del botón mobile
+        .button-mobile {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    }
 }
 
-.header-items {
-    margin: 0 auto;
-}
-
-.navbar-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1rem;
-}
-
-.navbar-menu .logo {
-    font-size: 2.4rem;
-    text-decoration: none;
-}
-
-.navbar-menu .opciones {
-    display: none;
-}
-
-.button-mobile {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
+// Estilos de la sección de la barra de navegación
 .navbar-section {
-    display: grid;
-    place-items: center;
+    @extend .center-items; // Clase de utilidad para centrar elementos
     height: 25rem;
     max-width: 600px;
+
+    // Estilos del contenedor de información
+    .container-info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        // Estilos del título
+        h1 {
+            font-size: 3.6rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+
+        // Estilos del párrafo
+        p {
+            font-size: 1.6rem;
+            color: #333;
+        }
+    }
+
+    // ...
 }
 
-.navbar-section .container-info {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.navbar-section .container-info h1 {
-    font-size: 3.6rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-}
-
-.navbar-section .container-info p {
-    font-size: 1.6rem;
-    color: #333;
+// Clase de utilidad para centrar elementos con display: grid y place-items: center
+.center-items {
+    display: grid;
+    place-items: center;
 }
