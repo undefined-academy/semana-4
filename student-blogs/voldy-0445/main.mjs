@@ -3,26 +3,19 @@ import relativeTime from "dayjs/plugin/relativeTime.js"
 
 await import("dayjs/locale/es-us.js")
 
-dayjs.locale("es-us")
+dayjs.locale("es")
 dayjs.extend(relativeTime)
 
 function humanize(date) {
     const wrappedDate = dayjs(date)
     const daysDiff = Math.abs(wrappedDate.diff(Date.now(), "days"));
+    return daysDiff + " days ago"
+}
 
-    const isCurrentYear = wrappedDate.year() === new Date ().getFullYear();
-
-    if(!isCurrentYear) {
-        return wrappedDate.format("MMM DD, YYYY")
-    } else if(daysDiff <= 30) {
-        return wrappedDate.fromNow();
-    } else {
-        return wrappedDate.format("MMM DD")
-    }
+function humanizeDate (htmlElement){
+    let datePublication = document.getElementById(htmlElement);
+    datePublication.innerHTML = humanize(dayjs(datePublication.innerHTML, "DD/MM/YYYY"));
 }
     
-    console.log(humanize(Date.now()))
-    console.log(humanize(dayjs().subtract(5, "days")))
-    console.log(humanize(dayjs().subtract(60, "days")))
-    console.log(humanize(dayjs().subtract(500, "days")))
-    console.log(humanize(dayjs().add(300, "days")))
+humanizeDate("date1");
+

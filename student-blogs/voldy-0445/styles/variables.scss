@@ -77,3 +77,10 @@ $gunpowder: #40465d;
     padding: 16px;
     background-color: $gunpowder;
 }
+
+@mixin style-date {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 12px;
+    color: $logan;
+}

@@ -46,9 +46,13 @@
     }
       
     .example-img {
-        @include style-exampleimg
+        @include style-exampleimg;
     }
-      
+     
+    .date {
+        @include style-date;
+    }
+    
     .name {
         font-weight: bold;
         font-size: 24px;
