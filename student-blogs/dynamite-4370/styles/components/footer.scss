@@ -26,7 +26,7 @@ footer {
         padding-top: 6rem;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         gap: 20px;
 
         .contact-me,
@@ -106,10 +106,9 @@ footer {
 }
 
 .politics {
-    grid-column: 1 / 5;
     padding-top: 4rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     p {
         color: #fff;
