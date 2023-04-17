@@ -88,64 +88,54 @@ header {
   background-color: rgba(0, 188, 212, 0.5098039216);
   height: 100vh;
 }
-
-.header-items {
+header .header-items {
   height: 100%;
 }
-
-/* --- Header - Navbar --- */
-.navbar-menu {
+header .header-items .navbar-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.navbar-menu .logo {
+header .header-items .navbar-menu .logo {
   font-size: 2.4rem;
   text-decoration: none;
   padding: 2rem 0;
   color: black;
   font-weight: 600;
 }
-
-.header-items .menu-desktop {
-  display: none;
-}
-
-.header-items .button-mobile {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-/* --- Header - Section --- */
-.navbar-section {
+header .header-items .navbar-section {
   display: grid;
   place-items: center;
   height: 80%;
 }
-
-.navbar-section .container-info {
+header .header-items .navbar-section .container-info {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-
-.navbar-section .container-info h1 {
+header .header-items .navbar-section .container-info img {
+  border-radius: 50%;
+  height: 12rem;
+}
+header .header-items .navbar-section .container-info h1 {
   font-size: 3.6rem;
   font-weight: 700;
   margin: 2rem 0 1rem 0;
 }
-
-.navbar-section .container-info p {
+header .header-items .navbar-section .container-info p {
   font-size: 1.6rem;
   color: #333;
   font-weight: 600;
 }
 
-.container-info img {
-  border-radius: 50%;
-  height: 12rem;
+.menu-desktop {
+  display: none;
+}
+
+.button-mobile {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 /* --------------------------- CONTENIDO ----------------------------------- */
@@ -617,28 +607,28 @@ footer {
   header {
     padding: 1rem 4rem;
   }
-  .navbar-section .container-info h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    margin: 2rem 0 1rem 0;
-  }
-  .navbar-section .container-info p {
-    font-size: 2rem;
-    color: #333;
-  }
-  .container-info img {
-    border-radius: 50%;
-    height: 15rem;
-  }
-  .header-items .button-mobile {
-    display: none;
-  }
-  .header-items .navbar-menu {
+  header .header-items .navbar-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .navbar-menu .menu-desktop {
+  header .header-items .navbar-section .container-info img {
+    border-radius: 50%;
+    height: 15rem;
+  }
+  header .header-items .navbar-section .container-info h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 2rem 0 1rem 0;
+  }
+  header .header-items .navbar-section .container-info p {
+    font-size: 2rem;
+    color: #333;
+  }
+  .button-mobile {
+    display: none;
+  }
+  .menu-desktop {
     padding: 0;
     display: flex;
     gap: 20px;
@@ -648,7 +638,7 @@ footer {
   .menu-desktop a {
     color: #333;
   }
-  .navbar-menu .button-nav {
+  .menu-desktop .button-nav {
     background-color: #0db769;
     border-radius: 5px;
     padding: 0.9rem 2rem;

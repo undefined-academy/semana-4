@@ -2,50 +2,56 @@
 
     header {
         padding: 1rem 4rem;
+
+        .header-items {
+            .navbar-menu {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .navbar-section {
+                .container-info {
+                    img {
+                        border-radius: 50%;
+                        height: 15rem;
+                    }
+
+                    h1 {
+                        font-size: 4rem;
+                        font-weight: 700;
+                        margin: 2rem 0 1rem 0;
+                    }
+
+                    p {
+                        font-size: 2rem;
+                        color: #333;
+                    }
+                }
+            }
+        }
     }
 
-    .navbar-section .container-info h1 {
-        font-size: 4rem;
-        font-weight: 700;
-        margin: 2rem 0 1rem 0;
-    }
-
-    .navbar-section .container-info p {
-        font-size: 2rem;
-        color: #333;
-    }
-
-    .container-info img {
-        border-radius: 50%;
-        height: 15rem;
-    }
-
-    .header-items .button-mobile {
+    .button-mobile {
         display: none;
     }
 
-    .header-items .navbar-menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .navbar-menu .menu-desktop {
+    .menu-desktop {
         padding: 0;
         display: flex;
         gap: 20px;
         font-size: 1.6rem;
         font-weight: 600;
-    }
 
-    .menu-desktop a {
-        color: #333;
-    }
+        a {
+            color: #333;
+        }
 
-    .navbar-menu .button-nav {
-        background-color: #0db769;
-        border-radius: 5px;
-        padding: 0.9rem 2rem;
+        .button-nav {
+            background-color: #0db769;
+            border-radius: 5px;
+            padding: 0.9rem 2rem;
+        }
     }
 
     .section-education-body,
