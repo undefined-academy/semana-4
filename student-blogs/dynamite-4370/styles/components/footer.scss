@@ -1,94 +1,5 @@
 @use "../variables.scss";
 
-footer {
-    background-color: gray;
-    padding: 1rem 2rem;
-}
-
-.container-footer {
-    padding-top: 3rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.contact-me,
-.links,
-.services,
-.social-media {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    font-size: 1.6rem;
-}
-
-.contact-me h2,
-.links h2,
-.services h2,
-.social-media h2 {
-    font-size: 2rem;
-    color: white;
-    font-weight: 600;
-}
-
-.contact-me li,
-.links li,
-.services li {
-    padding: 0.5rem 0;
-    color: darkgrey;
-}
-
-.links a,
-.services a {
-    color: darkgrey;
-}
-
-.icons {
-    display: flex;
-    gap: 1.6rem;
-}
-
-.icono {
-    display: inline-flex;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    outline: 2px solid #fff;
-    transition-property: outline-offset, outline-color, background-color;
-    transition-duration: 0.25s;
-}
-
-.icono:hover {
-    outline-offset: 4px;
-}
-
-.icono span {
-    margin: auto;
-    font-size: 2.2rem;
-    color: white;
-}
-
-.insta:hover {
-    background-color: #f77737;
-    outline-color: #f77737;
-}
-
-.twitter:hover {
-    background-color: #1da1f2;
-    outline-color: #1da1f2;
-}
-
-.In:hover {
-    background-color: #004182;
-    outline-color: #004182;
-}
-
-.github:hover {
-    background-color: #6cc644;
-    outline-color: #6cc644;
-}
-
 @keyframes shake {
     10% {
         transform: rotate(15deg);
@@ -107,8 +18,91 @@ footer {
     }
 }
 
-.icono:hover span {
-    animation: shake 0.25s;
+footer {
+    background-color: gray;
+    padding: 1rem 2rem;
+
+    .container-footer {
+        padding-top: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+
+        .contact-me,
+        .links,
+        .social-media {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            font-size: 1.6rem;
+
+            h2 {
+                font-size: 2rem;
+                color: white;
+                font-weight: 600;
+            }
+
+            li {
+                padding: 0.5rem 0;
+                color: darkgrey;
+
+                a {
+                    color: darkgrey;
+                }
+            }
+        }
+    }
+}
+
+
+.icons {
+    display: flex;
+    gap: 1.6rem;
+
+    .icono {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        outline: 2px solid #fff;
+        transition-property: outline-offset, outline-color, background-color;
+        transition-duration: 0.25s;
+
+        &:hover {
+            outline-offset: 4px;
+
+            span {
+                animation: shake 0.25s;
+            }
+        }
+
+        span {
+            margin: auto;
+            font-size: 2.2rem;
+            color: white;
+        }
+
+        &.insta:hover {
+            background-color: #f77737;
+            outline-color: #f77737;
+        }
+
+        &.twitter:hover {
+            background-color: #1da1f2;
+            outline-color: #1da1f2;
+        }
+
+        &.In:hover {
+            background-color: #004182;
+            outline-color: #004182;
+        }
+
+        &.github:hover {
+            background-color: #6cc644;
+            outline-color: #6cc644;
+        }
+    }
 }
 
 .politics {
@@ -116,9 +110,9 @@ footer {
     padding-top: 4rem;
     display: flex;
     justify-content: space-between;
-}
 
-.politics p {
-    color: #fff;
-    font-size: 1.2rem;
+    p {
+        color: #fff;
+        font-size: 1.2rem;
+    }
 }
