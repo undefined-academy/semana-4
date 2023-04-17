@@ -1,0 +1,88 @@
+@media screen and (min-width: 768px) {
+
+    header {
+        padding: 1rem 4rem;
+    }
+
+    .navbar-section .container-info h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        margin: 2rem 0 1rem 0;
+    }
+
+    .navbar-section .container-info p {
+        font-size: 2rem;
+        color: #333;
+    }
+
+    .container-info img {
+        border-radius: 50%;
+        height: 15rem;
+    }
+
+    .header-items .button-mobile {
+        display: none;
+    }
+
+    .header-items .navbar-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-menu .menu-desktop {
+        padding: 0;
+        display: flex;
+        gap: 20px;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    .menu-desktop a {
+        color: #333;
+    }
+
+    .navbar-menu .button-nav {
+        background-color: #0db769;
+        border-radius: 5px;
+        padding: 0.9rem 2rem;
+    }
+
+    .section-education-body,
+    .section-services-body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .content {
+        padding: 5rem 4rem;
+    }
+
+    .container-footer {
+        text-align: left;
+    }
+
+    footer {
+        padding: 3rem 4rem;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .header-items {
+        max-width: 100rem;
+        margin: 0 auto;
+    }
+
+    .desktop,
+    .content-services,
+    .content-education,
+    .content-form,
+    .container-footer {
+        max-width: 100rem;
+        margin: 0 auto;
+    }
+
+
+}
