@@ -1,117 +1,116 @@
-/* --------------------------- CONTENIDO ----------------------------------- */
+//Clases Utilidades
+.titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid #ddd;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0 10px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #111;
+}
+
+.after__titulo {
+    background: #00BCD4;
+    height: 8px;
+    width: 50px;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    transform: skew(-36deg);
+    -webkit-transform: skew(-36deg);
+}
+
+/* --- SECTION - ABOUT --- */
 .content {
     padding: 3rem 2rem;
     background-color: #f3f4f6;
+
+    .content-about {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            @extend .titulo;
+
+            &::after {
+                @extend .after__titulo;
+            }
+        }
+
+        p {
+            padding-top: 2rem;
+            font-size: 1.4rem;
+        }
+    }
 }
 
-/* --- Article - About --- */
-.content-about {
-    display: flex;
-    flex-direction: column;
+
+/* --- SECTION - SERVICES --- */
+.section-services {
+    .section-education {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
-.content-about h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    position: relative;
-    z-index: 1;
-    border-bottom: 1px solid #ddd;
-    display: inline-block;
-    vertical-align: top;
-    padding: 0 0 10px;
-    text-transform: uppercase;
-    margin: 0;
-    color: #111;
+.section-services-header {
+    .title {
+        width: 100%;
+        @extend .titulo;
+
+        &::after {
+            @extend .after__titulo;
+        }
+    }
+
+    p {
+        margin: 1rem 0;
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+        font-weight: 700;
+        color: grey;
+    }
 }
 
-.content-about h2::after {
-    background: #00BCD4;
-    height: 8px;
-    width: 50px;
-    bottom: -4px;
-    left: 0;
-    right: 0;
-    position: absolute;
-    content: "";
-    z-index: -1;
-    transform: skew(-36deg);
-    -webkit-transform: skew(-36deg);
-}
-
-.content-about p {
-    padding-top: 2rem;
-    font-size: 1.4rem;
-}
-
-.section-services,
-.section-education {
-    display: flex;
-    flex-direction: column;
-}
-
-/* header */
-.section-services-header .title {
-    width: 100%;
-    font-size: 2rem;
-    font-weight: 700;
-    position: relative;
-    z-index: 1;
-    border-bottom: 1px solid #ddd;
-    display: inline-block;
-    vertical-align: top;
-    padding: 0 0 10px;
-    text-transform: uppercase;
-    margin: 0;
-    color: #111;
-}
-
-.section-services-header .title::after {
-    background: #00BCD4;
-    height: 8px;
-    width: 50px;
-    bottom: -4px;
-    left: 0;
-    right: 0;
-    position: absolute;
-    content: "";
-    z-index: -1;
-    transform: skew(-36deg);
-    -webkit-transform: skew(-36deg);
-}
-
-.section-services-header p {
-    margin: 1rem 0;
-    font-size: 1.4rem;
-    line-height: 2.5rem;
-    font-weight: 700;
-    color: grey;
-}
-
-/* cards body */
 .section-services-body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+
+    .service-card {
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-top: 2rem;
+        background-color: #fff;
+        transition: all 0.4s ease;
+
+        .card {
+            padding: 3.6rem 1.5rem;
+
+            h3 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1.4rem;
+            }
+        }
+
+        .icon-card {
+            padding-bottom: 1.2rem;
+        }
+    }
 }
 
-.service-card {
-    text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-top: 2rem;
-    background-color: #fff;
-    transition: all 0.4s ease;
-}
-
-.service-card .card {
-    padding: 3.6rem 1.5rem;
-}
-
-.card .icon-card {
-    padding-bottom: 1.2rem;
-}
-
-.card .icon-card span {
+.icon-card span {
     background: #373737;
     border: 1px solid #464646;
     color: #00BCD4;
@@ -125,13 +124,12 @@
     display: inline-block;
 }
 
-.service-card h3 {
-    font-size: 1.8rem;
+.icon-card span:hover {
+    color: #373737;
+    background: #00BCD4;
+    border: 1px solid #00BCD4;
 }
 
-.service-card p {
-    font-size: 1.4rem;
-}
 
 /* --- SECTION -EDUCATION --- */
 .section-education {
@@ -139,92 +137,75 @@
     flex-direction: column;
 }
 
-/* header */
-.section-education-header .title {
-    width: 100%;
-    font-size: 2rem;
-    font-weight: 700;
-    position: relative;
-    z-index: 1;
-    border-bottom: 1px solid #ddd;
-    display: inline-block;
-    vertical-align: top;
-    padding: 0 0 10px;
-    text-transform: uppercase;
-    margin: 0;
-    color: #111;
+.section-education-header {
+    .title {
+        width: 100%;
+        @extend .titulo;
+
+        &::after {
+            @extend .after__titulo;
+        }
+    }
+
+    p {
+        margin: 1rem 0;
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+        font-weight: 700;
+        color: grey;
+    }
 }
 
-.section-education-header .title::after {
-    background: #00BCD4;
-    height: 8px;
-    width: 50px;
-    bottom: -4px;
-    left: 0;
-    right: 0;
-    position: absolute;
-    content: "";
-    z-index: -1;
-    transform: skew(-36deg);
-    -webkit-transform: skew(-36deg);
-}
-
-.section-education-header p {
-    margin: 1rem 0;
-    font-size: 1.4rem;
-    line-height: 2.5rem;
-    font-weight: 700;
-    color: grey;
-}
-
-/* Card -Body */
 .section-education-body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+
+    .education-card {
+        border: 1px solid #ddd;
+        background-color: #fff;
+        border-radius: 4px;
+        margin-top: 2rem;
+        position: relative;
+    }
 }
 
 .education-card {
-    border: 1px solid #ddd;
-    background-color: #fff;
-    border-radius: 4px;
-    margin-top: 2rem;
-    position: relative;
+    .card {
+        padding: 3.6rem 1.5rem;
+
+        span {
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+        }
+    }
+
+    &::after {
+        content: "";
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 90%;
+        height: 2px;
+        background: #00BCD4;
+        position: absolute;
+        transition: all 0.3s ease;
+    }
+
+    &:hover:after {
+        width: 100%;
+    }
 }
 
-.education-card .card::after {
-    content: "";
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 90%;
-    height: 2px;
-    background: #00BCD4;
-    position: absolute;
-    transition: all 0.3s ease;
-}
-
-.education-card .card:hover:after {
-    width: 100%;
-}
-
-.education-card .card {
-    padding: 3.6rem 1.5rem;
-}
-
-.education-card span {
-    font-size: 1.4rem;
-    font-weight: bold;
-}
-
-.education-card h3 {
-    font-size: 1.8rem;
-}
-
-.education-card p {
-    font-size: 1.4rem;
-}
 
 /* --- SECTION - FORM --- */
 .section-form {
@@ -232,77 +213,55 @@
     flex-direction: column;
 }
 
-/* header form*/
-.section-form-header .title {
-    width: 100%;
-    font-size: 2rem;
-    font-weight: 700;
-    position: relative;
-    z-index: 1;
-    border-bottom: 1px solid #ddd;
-    display: inline-block;
-    vertical-align: top;
-    padding: 0 0 10px;
-    text-transform: uppercase;
-    margin: 0;
-    color: #111;
+.section-form-header {
+    .title {
+        width: 100%;
+        @extend .titulo;
+
+        &::after {
+            @extend .after__titulo;
+        }
+    }
+
+    p {
+        margin: 1rem 0;
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+        font-weight: 700;
+        color: grey;
+    }
 }
 
-.section-form-header .title::after {
-    background: #00BCD4;
-    height: 8px;
-    width: 50px;
-    bottom: -4px;
-    left: 0;
-    right: 0;
-    position: absolute;
-    content: "";
-    z-index: -1;
-    transform: skew(-36deg);
-    -webkit-transform: skew(-36deg);
-}
-
-.section-form-header p {
-    margin: 1rem 0;
-    font-size: 1.4rem;
-    line-height: 2.5rem;
-    font-weight: 700;
-    color: grey;
-}
 
 /* Form */
-fieldset {
-    border: none;
-}
-
 .form label {
     display: none;
 }
 
 .field {
     padding-top: 2rem;
-}
 
-.field .input {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    outline: none;
-    transition: border 0.3s ease-in-out;
-}
+    .input {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        outline: none;
+        transition: border 0.3s ease-in-out;
+    }
 
-.field .input:focus {
-    border: 1px solid #00BCD4;
-}
+    &:focus {
+        border: 1px solid #00BCD4;
+    }
 
-.field textarea {
-    width: 100%;
-    height: 10rem;
-    resize: none;
+    textarea {
+        width: 100%;
+        height: 10rem;
+        resize: none;
+    }
 }
 
 .send {
