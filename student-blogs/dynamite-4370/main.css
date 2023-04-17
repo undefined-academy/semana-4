@@ -121,14 +121,14 @@ img {
   box-shadow: 11px 22px 21px -5px rgba(0, 0, 0, 0.1);
   max-width: 340px;
 }
-.content .container-main .container-post .post1 .post-principal {
-  padding: 1rem 1.2rem;
-}
-.content .container-main .container-post .post1 .post-principal .post-image {
+.content .container-main .container-post .post1 .post-image {
   margin-bottom: 1rem;
 }
-.content .container-main .container-post .post1 .post-principal .post-image img {
+.content .container-main .container-post .post1 .post-image img {
   border-radius: 5px 5px 0 0;
+}
+.content .container-main .container-post .post1 .post-principal {
+  padding: 1rem 1.2rem;
 }
 .content .container-main .container-post .post1 .post-principal .post-readtime {
   display: flex;
@@ -163,11 +163,6 @@ img {
 .content .container-main .container-post .post {
   display: none;
 }
-@media screen and (max-width: 760px) {
-  .content .container-main .post1 {
-    max-width: 100%;
-  }
-}
 
 .suscribete {
   display: flex;
@@ -201,6 +196,11 @@ img {
   justify-content: center;
 }
 
+@media screen and (max-width: 760px) {
+  .content .container-main .container-post .post1 {
+    max-width: 100%;
+  }
+}
 @keyframes shake {
   10% {
     transform: rotate(15deg);
@@ -216,11 +216,11 @@ img {
   }
 }
 footer {
-  background-color: gray;
+  background-color: #042940;
   padding: 1rem 2rem;
 }
 footer .container-footer {
-  padding-top: 3rem;
+  padding-top: 6rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

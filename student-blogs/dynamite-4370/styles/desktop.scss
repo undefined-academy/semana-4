@@ -1,8 +1,37 @@
-.navbar-menu .button-nav {
-    background-color: #0db769;
-    border-radius: 5px;
-}
+@media screen and (min-width: 768px) {
 
-@media screen and (min-width: 768px) {}
+    //Header
+    .button-mobile {
+        display: none;
+    }
+
+    .container-header {
+        .header-items {
+            width: 90%;
+        }
+
+        .navbar-menu {
+            .opciones {
+                padding: 0;
+                display: flex;
+                gap: 20px;
+                font-size: 1.6rem;
+                font-weight: 700;
+            }
+        }
+
+        .navbar-section {
+            max-width: 100%;
+        }
+    }
+
+    //Body
+    .content {
+        .container-main {
+            width: 90%;
+        }
+    }
+
+}
 
 @media screen and (min-width: 992px) {}

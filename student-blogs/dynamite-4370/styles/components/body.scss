@@ -49,16 +49,16 @@
                 box-shadow: 11px 22px 21px -5px rgba(0, 0, 0, 0.1);
                 max-width: 340px;
 
+                .post-image {
+                    margin-bottom: 1rem;
+
+                    img {
+                        border-radius: 5px 5px 0 0;
+                    }
+                }
+
                 .post-principal {
                     padding: 1rem 1.2rem;
-
-                    .post-image {
-                        margin-bottom: 1rem;
-
-                        img {
-                            border-radius: 5px 5px 0 0;
-                        }
-                    }
 
                     .post-readtime {
                         display: flex;
@@ -104,11 +104,7 @@
             }
         }
 
-        @media screen and (max-width: 760px) {
-            .post1 {
-                max-width: 100%;
-            }
-        }
+
     }
 }
 
@@ -145,6 +141,18 @@
             .form {
                 display: flex;
                 justify-content: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .content {
+        .container-main {
+            .container-post {
+                .post1 {
+                    max-width: 100%;
+                }
             }
         }
     }
