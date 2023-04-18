@@ -1,0 +1,213 @@
+@use "variables.scss" as variables;
+
+body {
+    margin: 100px auto;
+    max-width: 800px;
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 0 40px;
+    background-color: variables.$principal-color;
+}
+body header {
+    display: flex;
+    justify-content: end;
+}
+
+nav {
+    background-color: variables.$secondary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.toggle-menu {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer
+}
+
+.menu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;  
+}
+
+.hide{
+    display: none;
+}
+
+.menu li {
+    border-bottom: 2px solid variables.$secondary-color;
+
+ }
+
+.menu li:hover {
+    border-bottom: 2px solid white;
+
+}
+
+nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+ }
+
+p a {
+    color: #333;
+}
+
+h2, h3 {
+    margin-top: 1em;
+    padding-top: 1em;
+    text-align: center;
+}
+
+h1, h2 {
+    color: white;
+}
+    
+strong {
+    color: #333;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+label, input[type='text'], input[type='email']{
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    display: block;
+    resize: vertical;
+}
+
+label, legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #444;
+}
+
+input, label {
+    vertical-align: middle;
+}
+
+input[type='text'], input[type='email'], textarea{
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+ .sendButton {
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: variables.$secondary-color;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background: variables.$accent-color;
+}
+
+form {
+    accent-color: variables.$accent-color;
+}
+input:focus-visible, textarea:focus-visible {
+    border: 1px solid variables.$accent-color;
+    outline: 3px solid variables.$accent-color;;
+}
+
+.hobby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    padding: 10px;
+  }
+
+.hobby p {
+    text-align: center;
+}
+
+section header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobby img, figure img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+figcaption {
+    padding: 10px;
+}
+
+.basicInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.socialMedia {
+    display: flex;
+    justify-content: center;
+}
+.socialMedia p a img {
+    width: 50px;
+    height: 50px;
+}
+
+.hobbies {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 30px;
+}
+
+p {
+    padding: 0 10px;
+}
+
+section {
+    background-color: rgba(245, 245, 245, 0.578);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px;
+
+}
