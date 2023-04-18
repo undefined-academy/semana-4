@@ -1,0 +1,79 @@
+@import "variables.scss";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: $WhiteBC;
+    color: $Emperor;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1,
+h2,
+strong {
+    color: $MineShaft;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+section {
+    min-height: 300px;
+    border: $WildSand solid 1px;
+
+}
+
+.content1 {
+    background-color: $Negroni;
+}
+
+.content {
+    background-color: $Porcelain;
+}
+
+.content:last-child {
+    background-color: $Wheat;
+
+}
+
+header {
+    background-color: $Seagull;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    background-color: $Apricot;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    margin: 0 15px;
+}
