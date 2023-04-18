@@ -1,0 +1,14 @@
+@media screen and (min-width: 480px) {
+  .button-group{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  fieldset{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+   
+  }
+
+}
