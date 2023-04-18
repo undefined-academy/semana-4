@@ -342,7 +342,7 @@ header .header-items .navbar-section .container-info p {
   outline: none;
   transition: border 0.3s ease-in-out;
 }
-.field:focus {
+.field .input:focus {
   border: 1px solid #00BCD4;
 }
 .field textarea {
@@ -398,17 +398,15 @@ footer {
   background-color: #333;
   width: 100%;
 }
-
-.container-footer {
+footer .container-footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   column-gap: 3rem;
-  padding-top: 4rem;
+  padding-top: 8rem;
   text-align: center;
 }
 
-.contact-me,
 .links,
 .services,
 .social-media {
@@ -417,10 +415,7 @@ footer {
   padding-bottom: 4rem;
   gap: 2rem;
   font-size: 1.4rem;
-  width: 120px;
 }
-
-.contact-me h2,
 .links h2,
 .services h2,
 .social-media h2 {
@@ -428,37 +423,16 @@ footer {
   color: white;
   font-weight: 600;
 }
-
-.contact-me li,
 .links li,
-.services li {
+.services li,
+.social-media li {
   padding: 0.5rem 0;
   color: darkgrey;
 }
-
 .links a,
-.services a {
+.services a,
+.social-media a {
   color: darkgrey;
-}
-
-.social-media ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.social-media ul a {
-  color: #fff;
-}
-
-.social-media .icons {
-  font-size: 25px;
-}
-
-.logo-footer {
-  font-size: 1.6rem;
-  color: #fff;
-  font-weight: 600;
 }
 
 .icons {
@@ -503,7 +477,14 @@ footer {
   outline-color: #6cc644;
 }
 
+.logo-footer {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 600;
+}
+
 .politics {
+  padding-top: 5rem;
   text-align: center;
   color: grey;
   font-size: 1.2rem;

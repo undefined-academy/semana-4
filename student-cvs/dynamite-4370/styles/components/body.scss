@@ -251,11 +251,13 @@
         cursor: pointer;
         outline: none;
         transition: border 0.3s ease-in-out;
+
+        &:focus {
+            border: 1px solid #00BCD4;
+        }
     }
 
-    &:focus {
-        border: 1px solid #00BCD4;
-    }
+
 
     textarea {
         width: 100%;
