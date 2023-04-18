@@ -1,0 +1,6 @@
+@import "variables.scss";
+
+@media only screen and (min-width: 768px) {
+    /* Estilos para la versión de computadora */
+.container{background-color: $Driftwood;}
+}
