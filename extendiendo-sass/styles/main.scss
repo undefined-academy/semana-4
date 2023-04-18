@@ -1,0 +1,38 @@
+@use "base.scss";
+
+main{
+    padding: 0 20px;
+}
+
+$color-main: #f00;
+
+@mixin center($ancho, $alto){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: $ancho;
+    height: $alto;
+}
+
+.button{
+    background-color: $color-main;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    @include center(200px, 50px);
+
+    @if $color-main == #f00{
+       &:hover{
+           background-color: #505050;
+       }
+    }
+}
+
+@for $i from 1 through 5{
+    .text-#{$i}{
+        font-size: 10px * $i;
+    }
+}
+

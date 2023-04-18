@@ -1,0 +1,436 @@
+$mainColor: #111;
+$linkColor: #fff;
+$menuColor: #191414;
+$selectionColor: #fff;
+
+@mixin menuLink {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  margin-left: 10px;
+}
+@mixin menuPlaylist {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 17px;
+  margin-top: 25px;
+  margin-left: 10px;
+}
+
+@mixin icone {
+  width: 30px;
+  cursor: pointer;
+}
+
+@mixin titles {
+  margin-top: 10px;
+  color: #fff;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 13px;
+  padding: 21px;
+  margin-top: -24px;
+}
+
+@mixin selecciones {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-content: center;
+  justify-items: center;
+}
+
+@mixin selecciones_A {
+  width: 12rem;
+  height: 270px;
+  background-color: $mainColor;
+  border-radius: 5px;
+}
+
+%reproductor{
+  width: 1rem;
+  cursor: pointer;
+  margin: 10px;
+}
+
+@mixin icons($size, $division, $type){
+  width: $size;
+  margin: $division;
+  cursor: $type;
+}
+
+@mixin imgSize($size, $type){
+  width: $size;
+  cursor: $type;
+}
+
+@mixin mobile {
+  @media screen and (max-width: 399px) { @content }
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+
+  .header {
+    
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    z-index: 10;
+    margin-top: 817px;
+    background-color: $mainColor;  
+    padding: 6px 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+   
+    @include mobile {
+      margin-top: 880px;
+    }
+  }
+  
+  
+.header__img{
+  @include mobile {
+    width: 5rem;
+  }
+}
+
+
+.header__users{
+  width: 22rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__title{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  @include mobile {
+    font-size: 13px;
+  }
+
+  
+}
+
+.header__text-link {
+  text-decoration: none;
+  color: $linkColor;
+  font-weight: 800;
+}
+
+.header__text-link2 {
+  text-decoration: none;
+  color: $linkColor;
+  font-weight: 300;
+}
+
+.header__reproduction{
+  width: 45rem;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include mobile {
+    width: 30rem;
+  }
+}
+
+.header__reproduction-img {
+  @include icons(1.5rem, 10px, pointer);
+  @include mobile {
+    @include icons(1.5rem, 1px, pointer);
+  }
+}
+
+.header__reproduction-img:hover {
+  scale: 1.2;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.header__reproduction-rep{
+  @extend %reproductor;
+  @include icons(1.5rem, 10px, pointer);
+  @include mobile {
+    @include icons(1.5rem, 1px, pointer);
+  }
+}
+
+.header__reproduction-rep:hover {
+  scale: 1.2;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.header__img-play{
+  @include imgSize(2.5rem, pointer);
+  @include icons(1.5rem, 10px, pointer);
+  @include mobile {
+    @include icons(1.5rem, 1px, pointer);
+  }
+}
+
+.header__img-play:hover {
+  scale: 1.2;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.header__barra{
+  width: 39rem;
+  @include mobile {
+    width: 17rem;
+  }
+  
+}
+
+.header__volumen{
+  width: 19rem;
+  height: 100px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  @include mobile {
+    display: none;
+  }
+}
+
+.header__volumen-img{
+  @include icons(1.5rem, 4px, pointer);
+}
+
+.header__volumen-img:hover {
+  scale: 1.2;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.header__volumen-bar{
+  @include imgSize(10rem, pointer);
+}
+
+.aside {
+  width: 21%;
+  background-color: $mainColor;
+  height: 1250px;
+
+  .aside__logo {
+    width: 9em;
+    padding: 10px;
+  }
+
+  .aside__icone {
+    @include icone;
+  }
+
+  .aside__icone:hover {
+    scale: 1.1;
+    opacity: 1;
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+
+  .aside__menu {
+    @include menuLink;
+  }
+
+  .aside__link {
+    text-decoration: none;
+    color: $linkColor;
+  }
+
+  .aside__link:hover {
+    
+    scale: 1.05;
+    opacity: 1;
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+
+  .aside__playlist {
+    @include menuPlaylist;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.main {
+  width: 79%;
+  background-color: $menuColor;
+  height: 1250px;
+  position: absolute;
+  top: 0;
+  left: 21%;
+
+  .main__arrow {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  .main__arrow-left,
+  .main__arrow-right {
+    @include icone;
+    background-color: $mainColor;
+    border-radius: 20px;
+  }
+
+  .main__users {
+    display: flex;
+    gap: 10px;
+  }
+
+  .main__users > p {
+    color: $linkColor;
+    text-size-adjust: 20px;
+  }
+
+  .main__user {
+    @include icone;
+  }
+
+  /*Podcast menu*/
+  /*-------------*/
+
+  .main__podcast {
+    @include titles;
+  }
+
+  .main__podcast-grid {
+    @include grid;
+    @include mobile {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .main__podcast-img {
+    @include selecciones;
+  }
+
+  .main__podcast-img {
+    @include selecciones_A;
+  }
+
+  .main__img {
+    width: 82%;
+  }
+
+  .main__text-link {
+    text-decoration: none;
+    color: $linkColor;
+    font-weight: 800;
+  }
+
+  .main__text-link2 {
+    text-decoration: none;
+    color: $linkColor;
+    margin-top: -13px;
+  }
+
+  .main__podcast-img:hover{
+    background: #494949;
+    opacity: 1;
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+
+  /*rock menu*/
+  /*-------------*/
+
+  .main__rock {
+    @include titles;
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .main__rock-grid {
+    @include grid;
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .main__rock-img {
+    @include selecciones;
+  }
+
+  .main__rock-img {
+    @include selecciones_A;
+  }
+
+  .main__rock-img:hover{
+    background: #494949;
+    opacity: 1;
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+
+  /*recently menu*/
+  /*-------------*/
+
+  .main__recently {
+    @include titles;
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .main__recently-grid {
+    @include grid;
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .main__recently-img {
+    @include selecciones;
+  }
+
+  .main__recently-img {
+    @include selecciones_A;
+  }
+
+  .main__recently-img:hover{
+    background: #494949;
+    opacity: 1;
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+
+  @include mobile {
+    width: 127%;
+    left: 0;
+    height: 1400px;
+  }
+
+  
+}
+
+
+ 

@@ -1,0 +1,33 @@
+.nav-list{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 24px;
+}
+
+.tags-filter{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.post-list-container{
+    display: flex;
+    flex-direction: column;
+    gap: 48px 0;
+}
+
+.post-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);      
+    grid-template-rows: 50px auto auto;
+    gap: 80px 24px;
+}
+
+.post-list article:nth-child(4n){
+    grid-column: 1 / 4;
+    background: var(--color-aquarius-100);
+}
+
+.post-list article{
+    background: var(--color-white);
+}
