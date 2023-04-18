@@ -181,7 +181,8 @@ header .header-items .navbar-section .container-info p {
 }
 .content .content-about p {
   padding-top: 2rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
 
 /* --- SECTION - SERVICES --- */
@@ -396,7 +397,6 @@ header .header-items .navbar-section .container-info p {
 footer {
   padding: 3rem 2rem;
   background-color: #333;
-  width: 100%;
 }
 footer .container-footer {
   display: flex;
@@ -539,11 +539,12 @@ footer .container-footer {
   .content {
     padding: 5rem 4rem;
   }
-  .container-footer {
-    text-align: left;
-  }
   footer {
     padding: 3rem 4rem;
+  }
+  .links,
+  .services {
+    text-align: left;
   }
 }
 @media screen and (min-width: 992px) {
