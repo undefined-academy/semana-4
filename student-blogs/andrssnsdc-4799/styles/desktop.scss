@@ -81,10 +81,20 @@ html {
   }
   
   .container {
+    font-weight: 800;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 64px 36px;
   }
+  .container .fecha-publicacion {
+    font-weight: 100;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-end;
+    margin-top: auto;
+    }
   
   .container nav {
     display: flex;
@@ -104,4 +114,5 @@ html {
    div:last-child {
     grid-column: 1 / 4;
   }
+  
   
