@@ -1,0 +1,23 @@
+@media screen and (min-width: 1024px) {
+    .div-ul, #contact-form{
+        width: 60%;
+    }
+    
+    textarea{
+        width: 100%;
+    }
+
+    h3{
+        font-size: 1em;
+    }
+
+    fieldset{
+        width: 70%;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

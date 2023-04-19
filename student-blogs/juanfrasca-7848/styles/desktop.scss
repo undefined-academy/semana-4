@@ -1,0 +1,33 @@
+@media screen and (min-width: 1024px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: (33% 33% 33%);
+        grid-template-areas: "header header header" 
+        "input-1 input-1 ."
+        ". input-2 input-2"
+        "input-3 input-3 ."
+        ". input-4 input-4";
+        padding: 2em;
+    }
+    
+    #enter-2{
+        justify-self: end;
+    }
+    
+    #enter-4{
+        justify-self: end;
+    }
+    
+    ul{
+        flex-wrap: nowrap;
+        font-size: 16px;
+        gap: auto;
+    }
+    
+    input[type="search"] {
+        font-size: 16px;
+        height: auto;
+        margin: auto;
+    }
+}

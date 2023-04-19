@@ -1,0 +1,26 @@
+@use "base.scss";
+@use "desktop.scss";
+
+$background-wheat: #f5deb3;
+$gainsboro: #dcdcdc;
+$conrsilk: #fff8dc;
+
+
+body {
+    background: $background-wheat;
+}
+
+div {
+    border: 1px solid $gainsboro;
+}
+
+input[type="search"] {
+    border: 1px solid $gainsboro;
+    background: $conrsilk;
+}
+
+.input-blog{
+    background: $conrsilk;
+}
+
+

@@ -1,0 +1,58 @@
+@use "base.scss";
+@use "desktop.scss";
+
+$Mine-Shaft: #333;
+$Royal-Blue: #6c5ce7;
+$White: #FFF;
+$Cutty-Sark: #566b78;
+$Iron: #e1e3e4;
+$Melrose: #a29bfe;
+$Emperor: #555;
+$Valencia: #d63031;
+$Danube: #69c;
+$Salmon: #ff7675;
+
+h1, h2, strong {
+    color: $Mine-Shaft;
+}
+
+header{
+    background: $Royal-Blue;
+}
+
+header, header h1, header h2, header strong, header em, header a {
+    color: $White;
+}
+
+main{
+    color: $Cutty-Sark;
+}
+
+.div-ul{
+    background: $Iron;
+    border-left: 2px solid $Melrose;
+}
+
+a{
+    color: $Emperor;
+}
+
+a:hover{
+    color: $Valencia;
+}
+
+#contact-form{
+    background: $Iron;
+    border-left: 2px solid $Danube;
+}
+
+#button-submit{
+    background: $Valencia;
+    border: 1px solid $Valencia;
+    color: $White;
+}
+
+#button-submit:hover{
+    background: $Salmon;
+    border: 1px solid $Salmon;
+}
