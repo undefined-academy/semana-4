@@ -29,7 +29,6 @@ a {
   color: #000000;
   text-decoration: none;
 }
-
 a:hover {
   color: #6e0909;
 }
@@ -48,7 +47,11 @@ li {
 
 .form-1 {
   width: 100%;
-  margin: 10px auto;
+  margin: 20px auto;
+}
+
+.form-2 {
+  margin-bottom: 20px;
 }
 
 .form-1 input {
@@ -72,12 +75,10 @@ input[type=submit] {
   background-color: #add8e6;
   cursor: pointer;
 }
-
 input[type=submit]:hover {
   background-color: #0000ff;
   color: #ffffff;
 }
-
 input[type=submit]:active {
   background-color: #0000ff;
   color: #ffffff;
@@ -93,10 +94,6 @@ input[type=email] {
 
 select {
   width: 95%;
-}
-
-.form-2 {
-  margin-bottom: 10px;
 }
 
 .formulario {

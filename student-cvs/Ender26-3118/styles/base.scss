@@ -26,13 +26,10 @@ img {
 a {
     color: variables.$black;
     text-decoration: none;
+    &:hover{
+        color:variables.$Dark-Burgundy;
+    }
 }
-
-a:hover
-{
-    color:variables.$Dark-Burgundy;
-}
-
 h2,h4 {
     text-align: center;
 }
@@ -47,7 +44,11 @@ footer p {
 
 .form-1 {
     width: 100%;
-    margin: 10px auto;
+    margin: 20px auto;
+  
+}
+.form-2 {
+    margin-bottom: 20px;
 }
 
 .form-1 input {
@@ -70,17 +71,16 @@ input[type="submit"] {
     border-radius: 5px;
     background-color: #add8e6;
     cursor: pointer;
+    &:hover {
+        background-color:variables.$background-blue;
+        color:variables.$white;
+    }
+    &:active {
+        background-color:variables.$background-blue ;
+        color:variables.$white;
+    }
 }
 
-input[type="submit"]:hover {
-    background-color:variables.$background-blue;
-    color:variables.$white;
-}
-
-input[type="submit"]:active {
-    background-color:variables.$background-blue ;
-    color:variables.$white;
-}
     
 input[type="text"],
 input[type="email"] {
@@ -94,9 +94,7 @@ select {
     width: 95%;
 }
 
-.form-2 {
-    margin-bottom: 10px;
-}
+
 .formulario {
     max-width: 500px;
     margin: 0 auto;

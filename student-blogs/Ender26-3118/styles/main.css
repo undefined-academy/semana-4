@@ -124,7 +124,7 @@ h1 {
 }
 
 .prueba {
-  margin: 5px 5px;
+  margin: 8px;
   height: 500px;
 }
 
@@ -136,12 +136,19 @@ h1 {
 .articulo-6 .sorteo {
   width: 100%;
   height: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.info-paises {
+  margin-top: 5px;
 }
 
 .prueba .country,
 .prueba .division {
   background-color: #102f9d;
   color: #ffffff;
+  padding: 4px;
   margin-left: 3px;
   margin-right: 2px;
   border-radius: 5px;
@@ -155,7 +162,7 @@ h1 {
 }
 
 .perfil {
-  min-height: 40px;
+  min-height: 30px;
   display: flex;
   margin-bottom: 5px;
   position: absolute;
@@ -164,8 +171,9 @@ h1 {
 }
 
 .informacion {
-  min-height: 280px;
+  min-height: 270px;
   position: relative;
+  margin-top: 10px;
 }
 
 .perfil .perfil-1 {
