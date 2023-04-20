@@ -5,7 +5,7 @@ import { constant } from "lodash";
 await import("dayjs/locale/es-us.js"); // cargar la localizacion en español
 dayjs.locale("es-us"); // activar la localizacion en español
 
-dayjs.extend(relativeTime) // activar el 
+dayjs.extend(relativeTime) // activar el reletiveTime
 
 //var nowN = dayjs();
 
