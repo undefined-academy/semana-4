@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 2</title>
-    <link rel="stylesheet" href="/src/styles/main.scss">
+    <link rel="stylesheet" href="main.scss">
+    <script type="module" src="main.mjs" defer></script>
 </head>
 <body>
     <header>
@@ -139,20 +140,7 @@
             </form>
         </section>
     </article>
-    <script>
-        const form = document.getElementsByClassName("contactMeForm");
-        form[0].addEventListener("submit", function(event) {
-            event.preventDefault();
-        })
-
-        const burger = document.querySelector('.toggle-menu');
-        const navLinks = document.querySelector('.menu');
-
-        burger.addEventListener('click', () => {
-            navLinks.classList.toggle('show');
-        });
-        
-
-    </script>
+    <h2>Humanize Dates</h2>
+    <p id="humanizedDateId"> </p>
 </body>
 </html>
