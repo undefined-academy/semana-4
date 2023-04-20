@@ -19,8 +19,8 @@ function fechaatexto(date){
     }
 }
 
-document.getElementById("date").innerHTML = fechaatexto("2023-04-02");
-document.getElementById("date2").innerHTML = fechaatexto("2023-01-15");
-document.getElementById("date3").innerHTML = fechaatexto("2023-02-06");
-document.getElementById("date4").innerHTML = fechaatexto("2023-03-02");
-document.getElementById("date5").innerHTML = fechaatexto("2023-03-10");
+document.getElementById("date").innerHTML = fechaatexto("2023-04-10");
+document.getElementById("date2").innerHTML = fechaatexto("2023-02-25");
+document.getElementById("date3").innerHTML = fechaatexto("2022-03-06");
+document.getElementById("date4").innerHTML = fechaatexto("2021-04-02");
+document.getElementById("date5").innerHTML = fechaatexto("2020-05-20");
