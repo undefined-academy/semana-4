@@ -26,5 +26,3 @@ console.log(humanize(dayjs().subtract(5, "days")));
 console.log(humanize(dayjs().subtract(60, "days")));
 console.log(humanize(dayjs().subtract(500, "days")));
 console.log(humanize(dayjs().add(300, "days")));
-
-//console.log(dayjs().format("YYY-MM-DD"))

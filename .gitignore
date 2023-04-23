@@ -376,3 +376,7 @@ $RECYCLE.BIN/
 .vite
 *:Zone.Identifier
 *.dropbox.attributes
+
+node_modules
+package-lock.json
+
