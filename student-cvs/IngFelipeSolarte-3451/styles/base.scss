@@ -9,6 +9,89 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*\
+font-family: 'Inter', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+nav {
+    width: 100%;
+}
+
+h1,h2,h3{
+    font-family: 'Inter', sans-serif;
+    padding: 10px 0px;
+}
+
+h1{
+    font-size: 2.4em;
+}
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 1.7em;
+}
+
+h4,h5,p{
+    font-family: 'Open Sans', sans-serif;;
+}
+h4{
+    font-size: 1.6em;
+}
+h5{
+    font-size: 1.5em;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 18px;
+    background-color: v.$color-first;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+}
+
+.navbar-toggle {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.main-nav li a:hover{
+    color: white;
+}
+
+.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
 section {
     margin-bottom: 50px;
 }
@@ -185,25 +268,6 @@ p {
     gap: 20px;
 }
 
-@media screen and (min-width: v.$desktop-screen) {
-
-    .first-article {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        //  border: 1px dotted dodgerblue;
-
-    }
-
-
-
-    .first-article-text {
-        max-width: 350px;
-        text-align: justify;
-    }
-}
-
 
 
 
@@ -218,23 +282,7 @@ p {
     border-radius: 10px 10px 10px 10px;
 
 
-    @media screen and (min-width: v.$laptop-screen) {
-
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        height: 300px;
-
-
-
-    }
-
-    @media screen and (min-width: v.$desktop-screen) {
-
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        height: 300px;
-
-    }
+    
 }
 
 .skill {
@@ -270,63 +318,6 @@ p {
     @include v.transition03s;
 }
 
-@media screen and (min-width: v.$laptop-screen) {
-    .skills .skill:nth-last-child(3n) {
-        background-color: v.$color-second;
-    }
-
-    .skills .skill:nth-last-child(2n) {
-        background-color: v.$color-first;
-    }
-
-    .skills .skill:nth-child(1),
-    .skills .skill:nth-child(3),
-    .skills .skill:nth-child(9) {
-        background-color: v.$color-third;
-    }
-
-    .skill:last-child {
-        grid-column-end: 4;
-    }
-
-    .skills .skill:nth-child(8) {
-        background-color: v.$color-third;
-    }
-}
-
-@media screen and (min-width: v.$desktop-screen) {
-    .skills .skill:nth-child(2n) {
-        background-color: v.$color-second;
-    }
-
-    .skills .skill:nth-child(3n) {
-        background-color: v.$color-third;
-    }
-
-    .skills .skill:nth-child(5) {
-        background-color: v.$color-third;
-    }
-
-    .skills .skill:nth-child(6) {
-        background-color: v.$color-second;
-    }
-
-    .skills .skill:nth-child(7) {
-        background-color: v.$color-third;
-    }
-
-    .skill:hover,
-    .skills .skill:nth-child(2n):hover,
-    .skills .skill:nth-child(3n):hover {
-        background-color: whitesmoke;
-        color: v.$color-first;
-        @include v.transition03s;
-    }
-
-    .skill:last-child {
-        grid-column-end: 6;
-    }
-}
 
 
 .leadership{
