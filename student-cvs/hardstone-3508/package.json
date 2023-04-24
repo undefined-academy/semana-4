@@ -3,7 +3,7 @@
     "sass": "^1.62.0",
     "vite": "^4.2.1"
   },
-  "name": "HardStone CV",
+  "name": "hardstone-cv",
   "version": "0.0.1",
   "description": "Vite with Sass",
   "main": "index.html",

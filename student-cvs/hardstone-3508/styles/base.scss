@@ -1,3 +1,11 @@
+//color variables
+$daintree: #011F26;
+$mosque: #026873;
+$froly: #F2668B;
+$tim-green: #1d3235;
+$silver: #C8C8C8;
+$shark: #202328;
+$azure-rad: #0080ff;
 //reset css
 html {
     margin: 0;
@@ -8,9 +16,9 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: #011F26;
+    background-color: $daintree;
     font-family: 'Manrope', sans-serif;
-    color: #026873;
+    color: $mosque;
   }
 * {
     box-sizing: inherit;
@@ -19,21 +27,21 @@ p {
     font-size: 1rem;
 }
 h1 {
-    color: #F2668B;
+    color: $froly;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 300;
     font-size: 2.5rem;
     text-align: center;
 }
 h2 {
-    color: #025E73;
+    color: $mosque;
     font-family: 'Space Grotesk', sans-serif;
     margin: 1rem 2rem;
     font-size: 2.5rem;
     font-weight: 300;
 }
 h4 {
-    color: #F2668B;
+    color: $froly;
     font-family: 'Space Grotesk', sans-serif;
 }
 li {
@@ -41,7 +49,7 @@ li {
 }
 hr {
     width: 100%;
-    color: #1d3235;
+    color: $tim-green;
 }
 //principal
 header {
@@ -88,7 +96,7 @@ section {
         opacity: 1;
     }
     > * {
-        background: #011F26;
+        background: $daintree;
         margin: 5px;
         border-radius: 18px;
         padding: 1.5rem;
@@ -110,9 +118,9 @@ section {
     color: white;
     font-size: 1.3rem;
     font-family: 'Space Mono', monospace;
-    text-shadow: 0 0 5px #c8c8c8;
+    text-shadow: 0 0 5px $silver;
     border-radius: 10px;
-    border: 2px solid #202328;
+    border: 2px solid $shark;
     /* box-shadow : 0px 7px 5px rgba(0, 0, 0, 0.75); */
     &::after {
         content: "";
@@ -131,7 +139,7 @@ section {
         pointer-events: none;
     }
     &::selection {
-        background: #0080ff;
+        background: $azure-rad;
         text-shadow: none;
     }
 }
