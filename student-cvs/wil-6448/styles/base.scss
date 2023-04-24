@@ -1,0 +1,343 @@
+@use "variables";
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  /* estudiarlo */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  background: variables.$white;
+  color: variables.$cuttySark;
+  line-height: 1.5;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
+  margin: 0 auto;
+  max-width: 50rem;
+}
+
+//header
+
+.header {
+  background: linear-gradient(to right, variables.$ceriseRed, variables.$outrageousOrange);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 4rem 4rem;
+  text-align: center;
+  max-width: none;
+
+}
+
+.header__img {
+  display: inline-block;
+  height: 120px;
+  vertical-align: top;
+  width: 120px;
+}
+
+.header__title {
+  color: variables.$white;
+  font-size: 2.5em;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 0px 3px 10px #00000040;
+
+}
+
+.header__github--link {
+  /* border: 1px solid #e81c4f; */
+  border: 2px solid variables.$mineShaft;
+  border-radius: 290486px;
+  color: variables.$mineShaft;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  padding: 1em 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+  box-shadow: 0px 3px 10px #00000040;
+}
+
+.header__github--link:hover {
+  /* background:  #e81c4f; */
+  Background: variables.$mineShaft;
+  color: variables.$white;
+}
+
+
+.header__parrafo {
+  text-align: center;
+  padding-top: 1rem;
+  color: variables.$white;
+  margin-top: 2rem;
+}
+
+.inicio__form {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inicio__form>a {
+
+  padding: 0.5rem;
+  text-decoration: none;
+  border-radius: 50px;
+  border: 2px solid variables.$mineShaft;
+  color: variables.$mineShaft;
+  font-size: 1.5rem;
+  font-weight: 500;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.inicio__form>a:hover {
+  background-color: variables.$espresso;
+  color: variables.$wildSand;
+  border: none;
+}
+
+//presentation
+
+.presentation__subtitle {
+  color: variables.$mineShaft;
+  text-align: center;
+}
+
+.presentation__parrafo {
+  text-align: justify;
+}
+
+.presentation__parrafo a {
+  color: variables.$amaranth;
+
+}
+
+// skills
+
+.skills__title {
+  text-align: center;
+}
+
+.skills__subtitle {
+  text-align: center;
+}
+
+.skills__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+ol {
+  padding: 0;
+}
+
+.skills__list img {
+  width: 20px;
+}
+
+//socialmedia
+
+.socialmedia__title {
+  text-align: center;
+}
+
+.socialmedia__button {
+  display: none;
+}
+
+.socialmedia__buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.socialmedia__icon {
+  font-size: 32px;
+  color: variables.$scorpion;
+  padding: 0 1rem;
+}
+
+.socialmedia__icon:hover {
+  color: variables.$sunsetOrange;
+}
+
+//formcontact
+
+.form__group {
+  /* border: 1px solid tomato; */
+  margin: 1.25rem 0;
+}
+
+.form__title,
+.form__parrafo {
+  text-align: center;
+  margin: 0;
+
+}
+
+.form__title {
+  margin-top: 1.25rem;
+}
+
+label,
+input {
+  vertical-align: middle;
+  /* sirve para alinear de forma vertical a elementos inline */
+}
+
+/* label, input:not([type="radio"], input[type="checkbox"]) */
+label,
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+
+}
+
+label,
+legend {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.750rem;
+  color: variables.$tundora;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  resize: vertical;
+  /* bloquea el lado vertical */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background: variables.$white;
+  border: 1px solid variables.$alto;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+  color: variables.$mineShaft;
+}
+
+.help {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.form__button {
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+
+  font-weight: bold;
+  border: 1px solid variables.$wellRead;
+  background: variables.$amaranth;
+  /* text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5); */
+  color: variables.$mineShaft;
+  border-radius: 50px;
+  box-shadow: 2px 2px 3px #00000080;
+  cursor: pointer;
+  display: flex;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.form__button:hover {
+  background: variables.$amaranth;
+  color: variables.$white !important;
+}
+
+.form__button:active {
+  background: variables.$brickRed;
+  box-shadow: none;
+  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.form__contact {
+  accent-color: variables.$cardinal;
+  background: variables.$ebb;
+  padding: 0.5rem 2rem;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  /* border: 1px solid #bd1c3c; */
+  outline: 2px solid variables.$amaranth;
+}
+
+.form__contact--title {
+  text-align: center;
+}
+
+.form__group--button {
+  display: flex;
+  justify-content: center;
+}
+
+
+//footer
+
+.footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: variables.$softPeach;
+  padding: 2rem;
+  border-top: 1px solid variables.$nobel;
+
+}
+
+.footer__button strong {
+  color: variables.$amaranth;
+
+
+}
+
+.footer__button:hover {
+  background: variables.$amaranth;
+  border-color: transparent;
+  color: #ffffff80;
+  box-shadow: 0px 3px 10px #00000040;
+}
+
+.footer__button {
+  font-size: 0.8em;
+  padding: 1em 2em;
+  color: variables.$towerGray;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+.footer__button:hover strong {
+  color: variables.$white !important;
+}
