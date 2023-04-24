@@ -1,0 +1,36 @@
+@media screen and (min-width:768px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        margin-top: 2rem;
+        gap: 20px;
+    }
+
+    .card:last-child {
+        grid-column: 1 / 4;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav__list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .search {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        order: 0;
+    }
+}
