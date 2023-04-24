@@ -1,0 +1,15 @@
+@use "variables.scss";
+
+.container {
+    max-width: variables.$container-max-width;
+    margin: 30px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.main-article {
+    grid-column: 1 / 5;
+    margin: 40px 0;
+}
