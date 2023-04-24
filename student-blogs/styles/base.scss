@@ -1,0 +1,215 @@
+@use "variables";
+
+/* Header */
+
+.header {
+    background-color: var(---primario);
+    background-image: url(../imagenes/photo-1505238680356-667803448bb6.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.6;
+    text-align: center;
+    padding: 3rem 0;
+    height: 64rem;
+}
+@media (max-width: 768px){
+    .navegacion__pagina{
+        display: grid;
+        gap: 2rem;
+    }
+}
+
+/* Footer */
+
+.footer{
+    background-color: var(---primario);
+    background-image: url(../imagenes/photo-1505238680356-667803448bb6.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Entrada del Blog*/
+
+.entrada__general{
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 7rem;
+}
+
+/* GENERAL */
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.50%;
+    }
+  *, *:before, *:after {
+    box-sizing: inherit;}
+
+body {
+    background-color: var(---Secundario);
+    font-size: 1.6rem;
+    line-height: 2;
+    margin: 0 auto;
+}
+
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+p, ol{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(---negro);
+
+}
+
+a {
+    text-decoration: none;}
+
+img {
+    max-width: 100%;
+}
+
+
+h1, h2, h3 {
+    color: var(---negro);
+    font-family: var(---fuentePrincipal);
+} 
+
+h1 {
+    font-size: 4rem;}
+
+    
+h2 {
+    font-size: 3.2rem;
+    margin-top: -1em;
+    padding-top: 2em;
+    
+}
+
+h3 {
+    font-size: 2.4rem;
+    
+}
+
+main{
+    margin: auto 0;
+    padding: 4rem 2rem;
+    max-width: 100%;
+    background-color: var(---Secundario);
+}
+
+
+.logo__nombre{
+    font-weight: 400;
+}
+
+.logo__bold{
+    font-weight: 900;
+}
+
+#logo {
+    background-color: transparent;
+    display: inline-block;
+    height: 200x;
+    vertical-align: top;
+    width: 200px;
+}
+
+
+.footer-texto{
+    color: var(---blanco);
+}
+
+.footer__contactame{
+    display: flex;
+    justify-content: center;
+    color: var(---blanco);
+}
+
+.footer__redes{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+}
+.form-group{
+    border: 1px solid lightgray;
+    margin: 2rem 0;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+
+label, input[type="text"], input[type="email"]  {
+    width: 100%;
+    display: block;
+}
+
+label{
+    font-weight: bold;
+}
+
+.label{
+    display: inline;
+    outline: none;
+    text-decoration: none;
+    margin-left: 1%;
+    text-align: center;
+    box-sizing: border-box;
+    width: 31%;
+    background-color: var(---PrimarioOscuro);
+    color: var(---blanco);
+    padding: 10px;
+    border-radius: 2px;
+}
+
+
+
+.navegacion__enlace{
+    color: var(---blanco);
+}
+
+.header__texto{
+    color: var(---blanco);
+}
+
+.logo__nombre{
+    color: var(---blanco);
+}
+
+.header__texto__color{
+    color: var(---blanco)
+}
+
+
+.blog{
+    text-align: center;
+}
+
+.boton{
+        display: inline;
+        font-family: var(--FuenteHeading);
+        color: var(---blanco);
+        padding: 1rem 3rem;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        background-color: var(---SecundarioOscuro);
+}
+
+.entrada{
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: var(---Secundario);
+    border: 1px solid var(---blanco);
+}
