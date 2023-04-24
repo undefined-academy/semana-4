@@ -1,0 +1,29 @@
+@import "./variables.scss";
+
+
+@media screen and (min-width: 992px) {
+    main{
+        flex-direction: row;
+    }
+    section { 
+        display: inline-flex;
+        align-items: stretch;
+        max-width: 100%;
+    }    
+    nav{
+        display:inline-block;
+    
+    }
+
+    .form-section{
+
+        max-width: 60%;
+        
+    }
+    .enviar{
+        text-align: center;
+    } 
+    p {
+        padding: 10px;
+    }
+}

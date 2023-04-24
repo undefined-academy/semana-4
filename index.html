@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lodash</title>
+    <script src="index.js" type="module"></script>
+</head>
+<body>
+    <div class="container">
+        <div class = "container-clase">
+            <h1>Trabajando con Lodash</h1>
+
+            <div class="group" id="MyDIV">
+                <!-- Aqui van los span dinámicos con JavScript-->   
+            </div>
+            
+        </div>
+
+        <div class = "container-clase">
+            <h1>Trabajando con Fechas Nativas</h1>
+
+            
+            <span>
+                La Fecha es :
+            </span>
+            <input type="datetime-local" class ="date" value="2023-04-15" >
+            <span class ="result"></span>
+        </div>
+
+        <div class = "container-clase">
+            <h1>Trabajando con Librería Day.js</h1>
+
+            
+            <span>
+                La Fecha es :
+            </span>
+            <input type="datetime-local" class ="date_dayjs" value="2023-04-15" >
+            <span class ="result-dayjs"></span>
+        </div>
+    </div>    
+    
+
+    
+    <style>
+        body{
+            background-color: aqua;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .container-clase {
+            
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+            width: 600px;
+            max-width: 100%;
+            background-color: antiquewhite;
+        }
+        span {
+            text-align: left; 
+            width: 400px;
+            max-width: 100%;
+            
+        }
+        .group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color:aquamarine;
+        }
+        .autor {
+            text-align: center; 
+            height: 30px;
+            padding: 5px;
+            background-color:aliceblue;
+
+        }
+        
+
+    </style>
+</body>
+</html>
