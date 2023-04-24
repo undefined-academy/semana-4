@@ -1,0 +1,19 @@
+$desktop-screen-width: 900px;
+
+@media screen and (min-width: $desktop-screen-width) {
+
+    header div {
+        max-width: 1000px;
+    }
+
+    main {
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: 6fr 4fr;
+        gap: 40px;
+    }
+
+    article {
+        padding: 0 40px;
+    }
+}

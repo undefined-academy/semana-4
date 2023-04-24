@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+  padding: 2em;
+  background: #e2e8f0;
+}
+header div {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.github-section {
+  display: flex;
+  align-items: center;
+}
+.github-section span {
+  padding-left: 0.5em;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+  padding: 2em 1em;
+  color: #374151;
+}
+
+hr {
+  margin: 0;
+}
+
+h1,
+h2 {
+  color: #111827;
+}
+
+p {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+table {
+  width: 100%;
+  margin: 0.5em;
+  border-collapse: collapse;
+}
+
+table,
+thead,
+th,
+td {
+  border: 1px solid black;
+  padding: 0.5em;
+}
+
+code {
+  padding: 0.5em;
+  background: #e2e8f0;
+  border-radius: 0.5em;
+}
+
+a {
+  color: #0d9488;
+}
+
+footer {
+  padding: 1em;
+  background: #c4d2e4;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  background-color: #fcfcfc;
+  border: 2px solid #c4c4c4;
+  padding: 1.5em;
+  border-radius: 6px;
+}
+
+.input-group {
+  margin-top: 20px;
+}
+
+input,
+label {
+  vertical-align: baseline;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel] {
+  display: block;
+  width: 100%;
+  padding: 10px 8px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+label,
+legend {
+  font-size: 14px;
+  font-weight: bold;
+  color: #4e4e4e;
+  text-transform: uppercase;
+}
+
+fieldset {
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #54a3a3;
+  color: white;
+}
+button:hover {
+  background-color: #008080;
+}
+
+@media screen and (min-width: 900px) {
+  header div {
+    max-width: 1000px;
+  }
+  main {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    gap: 40px;
+  }
+  article {
+    padding: 0 40px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

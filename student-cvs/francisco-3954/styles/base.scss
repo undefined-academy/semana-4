@@ -1,0 +1,139 @@
+@use "variables.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    padding: 2em;
+    background: variables.$catskillWhite;
+
+    div {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+
+.github-section {
+    display: flex;
+    align-items: center;
+
+    span {
+        padding-left: .5em;
+    }
+}
+
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+    padding: 2em 1em;
+    color: variables.$oxfordBlue;
+}
+
+hr {
+    margin: 0;
+}
+
+h1,
+h2 {
+    color: variables.$ebony;
+}
+
+p {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+table {
+    width: 100%;
+    margin: .5em;
+    border-collapse: collapse;
+}
+
+table,
+thead,
+th,
+td {
+    border: 1px solid black;
+    padding: 0.5em;
+}
+
+code {
+    padding: 0.5em;
+    background: variables.$catskillWhite;
+    border-radius: .5em;
+}
+
+a {
+    color: variables.$blueChill;
+}
+
+footer {
+    padding: 1em;
+    background: variables.$periwinkleGray;
+    display: flex;
+    justify-content: center;
+}
+
+
+form {
+    background-color: variables.$alabaster;
+    border: 2px solid variables.$silver;
+    padding: 1.5em;
+    border-radius: 6px;
+}
+
+
+
+.input-group {
+    margin-top: 20px;
+}
+
+input,
+label {
+    vertical-align: baseline;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    display: block;
+    width: 100%;
+    padding: 10px 8px;
+    border: 1px solid gray;
+    border-radius: 4px;
+
+}
+
+label,
+legend {
+    font-size: 14px;
+    font-weight: bold;
+    color: variables.$tundora;
+    text-transform: uppercase;
+}
+
+fieldset {
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: variables.$breakerBay;
+    color: white;
+
+    &:hover {
+        background-color: variables.$teal;
+    }
+}
