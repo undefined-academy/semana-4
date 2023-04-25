@@ -1,0 +1,66 @@
+$color-padua: #a8e4ce;
+$color-icecold: #bbf7d0;
+$color-patinaslow: #72c4a4d2;
+$color-cuttystark: #4D8076;
+$color-patina: #6ba590;
+$color-tunder: #323132;
+$color-woodsmoke: #151616;
+
+
+$breakpoint-middle: 590px;
+$breakpoint-middlexl: 720px;
+$breakpoint-large: 890px;
+
+/******************
+**   CSS Reset   **
+******************/
+html{
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/*******************
+** HTML/Body/Main **
+*******************/
+html{
+    font-size: 62.5%; /*Modifico la equivalencia del rem; rem=10px*/
+    font-family: 'Courier New', Courier, monospace;
+    color:#323132;
+}
+
+@mixin centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin columncenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin tablet{
+    @media screen and (min-width: $breakpoint-middle){
+        @content;
+    }
+}
+
+@mixin tabletxl{
+    @media screen and (min-width: $breakpoint-middlexl){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media screen and (min-width: $breakpoint-large){
+        @content;
+    }
+}
