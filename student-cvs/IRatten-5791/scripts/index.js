@@ -20,5 +20,12 @@ function humanizeDate(date) {
   }
 }
 
-const yesterday = dayjs("2023-04-20 13:05:00");
-console.log(humanizeDate(yesterday));
+let date = dayjs("2023-02-20 13:05:00");
+let today = dayjs();
+
+let humanTag = document.querySelector(".human ul");
+
+// Append a new item into humanTag
+humanTag.innerHTML += `<li class="humanize-date">${humanizeDate(today)}</li>`;
+humanTag.innerHTML += `<li class="humanize-date">${humanizeDate(date)}</li>`;
+humanTag.innerHTML += `<li class="humanize-date">${humanizeDate("2021-04-20 13:05:00")}</li>`;
