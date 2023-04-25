@@ -1,0 +1,103 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: var(--WhiteSmoke);
+  color: var(--NightRider);
+}
+
+h1,
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-200);
+  line-height: 1.5;
+  margin-top: 50px;
+}
+
+h2 {
+  color: var(--DarkOrange);
+}
+
+p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+code {
+  padding: 2px;
+  color: var(--accent-100);
+  background-color: var(--bg-300);
+  font-size: 14px;
+  font-family: Consolas, "courier new";
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+footer {
+  padding: 50px;
+}
+
+.alias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.code {
+  background-color: var(--Silver);
+  width: 200px;
+}
+.code__item {
+  list-style: none;
+}
+
+.header {
+  color: var(--BlueLagoon);
+}
+
+.hello {
+  font-size: 20px;
+}
+
+.github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: var(--Zambei);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.links > a {
+  color: var(--RawUmber);
+}
+
+.footer {
+  color: var(--BlueLagoon);
+  border: 1px;
+  text-align: center;
+}
