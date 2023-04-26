@@ -1,8 +1,9 @@
+@use "variables" as variables;
 @use "settings" as settings;
 
 body{
     font-size: 1.6rem; /*Asigno tamaño de letra de 16px*/
-    background-color: settings.$color-patina;
+    background-color: variables.$color-patina;
     line-height: 1.5;
 }
 
@@ -16,7 +17,7 @@ body{
 *******************/
 .header{
     @include settings.columncenter;
-    background-color: settings.$color-padua;
+    background-color: variables.$color-padua;
     border-radius: 0 0 8px 8px;
     margin-bottom: 5rem;
 }
@@ -38,7 +39,7 @@ body{
 
 .nav-header a{
     text-decoration: none; /*elimino el subrayado de las URL*/
-    color:settings.$color-tunder;
+    color:variables.$color-tunder;
     font-weight: bold;
 }
 
@@ -55,43 +56,35 @@ body{
     max-width: 150px;
     margin-bottom: 1rem;
     padding-bottom: 0.3rem;
-    border-bottom: 0.2px solid settings.$color-tunder;
+    border-bottom: 0.2px solid variables.$color-tunder;
 }
 
 .search-bar input{
     width: 80%;
     margin-right: 0.5rem;
     border: none;
-    background-color: settings.$color-padua;
+    background-color: variables.$color-padua;
     outline: none; /*Elimino el focus al estar seleccionado*/
 
     &::placeholder{
-        color:settings.$color-tunder;
+        color:variables.$color-tunder;
         font-family: 'Courier New', Courier, monospace;
     }
 }
-
-/*.search-bar input::placeholder{
-    color:settings.$color-tunder;
-    font-family: 'Courier New', Courier, monospace;
-}*/
 
 /*******************
 **      Blog      **
 *******************/
 .cards-container{
     @include settings.centered;
-    //display: flex;
     flex-wrap: wrap;
-    //align-items: center;
-    //justify-content: center;
 }
 
 .article-card{
-    border: 1px solid settings.$color-patinaslow;
+    border: 1px solid variables.$color-patinaslow;
     border-radius: 25% 10%;
     margin: 2rem;
-    background-color: settings.$color-icecold;
+    background-color: variables.$color-icecold;
     overflow: hidden;
     max-width: 250px;
 
@@ -100,13 +93,13 @@ body{
         -webkit-transform:scale(1.03);
         transform:scale(1.03);
         transition-duration: .8s;
-        box-shadow: 1px 1px 5px settings.$color-woodsmoke;
+        box-shadow: 1px 1px 5px variables.$color-woodsmoke;
     }
 }
 
 .article-card a{
     text-decoration: none;
-    color: settings.$color-tunder;
+    color: variables.$color-tunder;
 }
 
 .card-image{
@@ -119,7 +112,7 @@ body{
     padding: 2rem 2rem 0;
 }
 
-.article-card span{
+.article-card time{
     padding: 1rem;
     margin-right: 3rem;
     font-size: 1.3rem;
@@ -131,7 +124,7 @@ body{
 *******************/
 .footer{
     height: 100px;
-    background-color: settings.$color-padua;
+    background-color: variables.$color-padua;
     border-radius: 8px 8px 0 0;
     margin-top: 5rem;
     display: flex;
@@ -155,13 +148,13 @@ body{
 }
 
 .clicable-icon{
-    color: settings.$color-tunder;
+    color: variables.$color-tunder;
     margin: 1rem;
     font-size: 1.8rem;
     transition: transform 1s;
 
     &:hover{
-        color: settings.$color-cuttystark;
+        color: variables.$color-cuttystark;
         transform: scale(1.1);
         transition-property: color;
         transition-duration: .8s;

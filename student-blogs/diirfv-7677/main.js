@@ -47,7 +47,7 @@ function humanizeDate(dateContent){
 }
 
 const receivedDate = document.querySelectorAll(".dates");
-receivedDate.forEach(span => {
-    const datesTransform = humanizeDate(span.textContent);
-    span.textContent = datesTransform;
+receivedDate.forEach(time => {
+    const datesTransform = humanizeDate(time.textContent);
+    time.textContent = datesTransform;
 })
