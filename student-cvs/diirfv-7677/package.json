@@ -1,5 +1,5 @@
 {
-  "name": "student-cvs",
+  "name": "diirfv-7677",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -13,7 +13,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.62.0",
-    "vite": "^4.3.2"
+    "dayjs": "^1.11.7",
+    "sass": "^1.62.1",
+    "vite": "^4.3.3"
   }
 }
