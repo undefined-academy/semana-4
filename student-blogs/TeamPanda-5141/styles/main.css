@@ -38,7 +38,7 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("/img/image-background-body.webp");
+  background-image: url("../img/image-background-body.jpeg");
   background-size: cover;
   opacity: 0.1;
   pointer-events: none;
@@ -59,7 +59,7 @@ nav {
   width: 100%;
   border: 1px solid #f0ffff;
   border-radius: 10px;
-  background-image: url("/img/imagen-fondo-divpanda.jpg");
+  background-image: url("../img/imagen-fondo-divpanda.jpg");
   margin-bottom: 20px;
 }
 
