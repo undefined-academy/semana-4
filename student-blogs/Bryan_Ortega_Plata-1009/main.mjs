@@ -23,5 +23,8 @@ function humanizarFecha(fecha) {
   }
 }
 
-const humanizado = humanizarFecha(fecha)
-console.log(humanizado)
+const elements = document.querySelectorAll('time.date-post');
+for (let i = 0; i < elements.length ;i++) {
+  const fecha = elements[i].getAttribute('datetime');
+  elements[i].innerHTML = humanizarFecha(dayjs(fecha))
+}
