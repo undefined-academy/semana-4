@@ -1,12 +1,13 @@
+@use "variables" as variables;
 @use "settings" as settings;
 
 /*Asigno tamaño de letra de 16px*/
 body{
     font-size: 1.6rem;
-    background-color: settings.$color-alabaster;
+    background-color: variables.$color-alabaster;
     font-family: 'Ubuntu', sans-serif;
     line-height: 1.5;
-    color:settings.$color-peat;
+    color:variables.$color-peat;
 }
 
 .main-container{
@@ -18,7 +19,7 @@ body{
 .header-nav{
     @include settings.centered;
     flex-direction: column;
-    background-color:settings.$color-mischka;
+    background-color:variables.$color-mischka;
     border-radius: 0 0 8px 8px;
 }
 
@@ -50,7 +51,7 @@ body{
 /*Configuración de los enlaces del nav*/
 .a-nav{
     text-decoration: none;
-    color:settings.$color-peat;
+    color:variables.$color-peat;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
@@ -70,7 +71,7 @@ body{
 }
 
 .tittle{
-    color:settings.$color-greenpea;
+    color:variables.$color-greenpea;
     margin-bottom: 2rem;
     font-family: 'Courier New', Courier, monospace;
     font-size: 2.4rem;
@@ -93,13 +94,13 @@ body{
 }
 
 .clicable-icon{
-    color: settings.$color-peat;
+    color: variables.$color-peat;
     margin: 1rem;
     font-size: 2rem;
     transition: transform 1s;
 
     &:hover{
-        color: settings.$color-cuttysark;
+        color: variables.$color-cuttysark;
         transform: scale(1.1);
         transition-property: color;
         transition-duration: .8s;
@@ -124,13 +125,13 @@ body{
 }
 
 .project-card{
-   color:settings.$color-peat;
+   color:variables.$color-peat;
    border-radius: 2%;
    margin: 1rem 1rem;
-   background-color:settings.$color-mischka;
+   background-color:variables.$color-mischka;
    border-radius: 10px;
    overflow:hidden;
-   box-shadow: 1px 1px 3px settings.$color-peatshadow;
+   box-shadow: 1px 1px 3px variables.$color-peatshadow;
    max-width: 250px;
 
    &:hover{
@@ -139,7 +140,7 @@ body{
     -webkit-transform:scale(1.03);
     transform:scale(1.03);
     transition-duration: .8s;
-    box-shadow: 1px 1px 5px settings.$color-woodsmoke;
+    box-shadow: 1px 1px 5px variables.$color-woodsmoke;
    }
 }
 
@@ -151,7 +152,7 @@ body{
 .card-tittle{
     font-size: 1.6rem;
     margin: 1rem 1rem;
-    color:settings.$color-greenpea;
+    color:variables.$color-greenpea;
     font-family: 'Courier New', Courier, monospace;
     
 }
@@ -162,7 +163,7 @@ body{
 
 .link-card{
     text-decoration: none;
-    color:settings.$color-peat;
+    color:variables.$color-peat;
 }
 
 /************************************/
@@ -195,24 +196,24 @@ label{
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1.4rem;
-    color:settings.$color-greenpea
+    color:variables.$color-greenpea
 }
 
 fieldset{
-    border: 1px solid settings.$color-grayfield;
+    border: 1px solid variables.$color-grayfield;
     padding: 2rem;
 }
 
 input, textarea, select{
-    background: settings.$color-peatvariety;
-    border: 1px solid settings.$color-whitextreme;
+    background: variables.$color-peatvariety;
+    border: 1px solid variables.$color-whitextreme;
     border-radius: 10px;
     padding: 1rem;
-    color: settings.$color-peat;
+    color: variables.$color-peat;
 
     &:focus-visible{
-        border: 1px solid settings.$color-graygood;
-        outline: 2px solid settings.$color-grayslow;
+        border: 1px solid variables.$color-graygood;
+        outline: 2px solid variables.$color-grayslow;
     }
 }
 
@@ -221,26 +222,26 @@ button{
     margin: 20px auto 0;
     text-transform: uppercase;
     font-weight: bold;
-    border: 0.5px solid settings.$color-alabastershadow;
-    background: settings.$color-greenpea;
-    color: settings.$color-snow;
+    border: 0.5px solid variables.$color-alabastershadow;
+    background: variables.$color-greenpea;
+    color: variables.$color-snow;
     border-radius: 5px;
-    box-shadow: 1px 1px 3px settings.$color-blackshadow;
+    box-shadow: 1px 1px 3px variables.$color-blackshadow;
     cursor: pointer;
     display: block;
       
     &:hover{
-        background:settings.$color-greenpeadark;
+        background:variables.$color-greenpeadark;
     }
 
     &:active{
-        background:settings.$color-greensmoke;
-        box-shadow: -1px -1px 0px settings.$color-blackshadow;
+        background:variables.$color-greensmoke;
+        box-shadow: -1px -1px 0px variables.$color-blackshadow;
     }
 }
 
 form{
-    accent-color:settings.$color-greenpea;
+    accent-color:variables.$color-greenpea;
 }
 
 /************************************/
@@ -248,7 +249,7 @@ form{
 /***********************************/
 .footer{
     height: 100px;
-    background-color:settings.$color-mischka;
+    background-color:variables.$color-mischka;
     border-radius: 8px 8px 0 0;
     margin-top: 5rem;
     display: flex;
@@ -292,11 +293,11 @@ ul{
 
 .cv-ref{
     text-decoration: none;
-    color: settings.$color-greenslow;
+    color: variables.$color-greenslow;
 }
 
 .section-cv strong{
-    color: settings.$color-greenslow;
+    color: variables.$color-greenslow;
     font-weight:normal;
 }
 
@@ -308,7 +309,7 @@ ul{
 }
 
 .main-projects strong{
-    color: settings.$color-greenslow;
+    color: variables.$color-greenslow;
 }
 
 .main-projects h1{

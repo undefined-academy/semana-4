@@ -348,6 +348,15 @@ ul {
   padding: 2rem 2rem 1rem;
 }
 
+@media screen and (min-width: 590px) {
+  .header-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .img-logo {
+    margin: 1rem 3rem;
+  }
+}
 @media screen and (min-width: 992px) {
   .article-aboutme {
     margin: 5rem 0;
@@ -371,15 +380,6 @@ ul {
   .project-img-container figure {
     width: 40%;
     max-width: 40%;
-  }
-}
-@media screen and (min-width: 590px) {
-  .header-nav {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .img-logo {
-    margin: 1rem 3rem;
   }
 }
 
