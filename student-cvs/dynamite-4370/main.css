@@ -396,14 +396,14 @@ header .header-items .navbar-section .container-info p {
 }
 footer {
   padding: 3rem 2rem;
-  background-color: #333;
+  background-color: #042940;
 }
 footer .container-footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  column-gap: 3rem;
   padding-top: 8rem;
+  column-gap: 3rem;
   text-align: center;
 }
 
@@ -559,6 +559,10 @@ footer .container-footer {
   .container-footer {
     max-width: 100rem;
     margin: 0 auto;
+  }
+  footer .container-footer {
+    justify-content: space-between;
+    padding: 8rem 2rem 0 2rem;
   }
 }
 
