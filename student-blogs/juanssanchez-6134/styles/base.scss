@@ -37,7 +37,8 @@ a {
   border-radius: 8px;
   transition: all 500ms;
   overflow: hidden;
-  @if $pearlBush == #E4DCCF {
+
+  @if $pearlBush ==#E4DCCF {
     &:hover {
       transform: translateY(-2px) scale(1.05);
     }
@@ -45,13 +46,21 @@ a {
 }
 
 .card p {
-  margin: 10px;
+  margin: 8px;
 }
 
 .card-description {
-  padding: 5px;
+  padding: 0 2px 2px 2px;
   border: 2px dotted $mandy;
   border-radius: 4px;
+}
+
+.card .date {
+  align-self: start;
+  border-radius: 8px;
+  background: $mandy;
+  color: $whiteLinen;
+  padding: 5px;
 }
 
 .basic-grid {
@@ -104,7 +113,8 @@ a {
   justify-content: flex-start;
   align-items: center;
   font-size: 20px;
-  @if $mandy == #EA5455{
+
+  @if $mandy ==#EA5455 {
     &:hover {
       margin-left: 0rem;
       width: 12rem;

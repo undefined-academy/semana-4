@@ -41,13 +41,21 @@ a {
 }
 
 .card p {
-  margin: 10px;
+  margin: 8px;
 }
 
 .card-description {
-  padding: 5px;
+  padding: 0 2px 2px 2px;
   border: 2px dotted #EA5455;
   border-radius: 4px;
+}
+
+.card .date {
+  align-self: start;
+  border-radius: 8px;
+  background: #EA5455;
+  color: #F9F5EB;
+  padding: 5px;
 }
 
 .basic-grid {
@@ -141,6 +149,9 @@ a {
   .footer {
     color: #002B5B;
     background: #EA5455;
+  }
+  .footer a {
+    color: #002B5B;
   }
 }
 html, body {
