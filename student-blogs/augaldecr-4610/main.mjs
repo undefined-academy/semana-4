@@ -5,12 +5,12 @@ import 'dayjs/locale/es'
 dayjs.locale('es')
 dayjs.extend(relativeTime)
 
-const humanizeDate = ( date ) => {
+const humanizeDate = date => {
     const some_date = dayjs(date)
     const today = dayjs()
-
+    
     const daysBetween = some_date.diff(today, 'days')
-
+    
     if( some_date.year() !== today.year() ){
         return some_date.format('MMMM DD, YYYY')
     } else if ( daysBetween < -31 ){
@@ -20,6 +20,8 @@ const humanizeDate = ( date ) => {
     }
 }
 
-const date = document.querySelector('#date')
+const $dates = document.querySelectorAll("time");
 
-date.innerHTML = humanizeDate(Date.now())
+$dates.forEach(date => {
+  date.innerHTML = humanizeDate(date.dateTime);
+});
