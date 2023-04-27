@@ -35,13 +35,15 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  margin:0.5rem;
 }
 
 footer {
   display: flex;
+  flex-direction: column-reverse;
   grid-column: 1 / 4;
   background-color: variables.$cornflower-blue;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   border-top: 1.5px solid variables.$periwinkle;
 }

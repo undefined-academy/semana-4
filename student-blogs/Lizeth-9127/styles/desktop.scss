@@ -36,4 +36,9 @@
   p {
     font-size: 1em;
   }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
