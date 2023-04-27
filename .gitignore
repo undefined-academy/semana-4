@@ -377,6 +377,3 @@ $RECYCLE.BIN/
 *:Zone.Identifier
 *.dropbox.attributes
 
-node_modules
-package-lock.json
-
