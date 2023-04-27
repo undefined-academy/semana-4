@@ -72,3 +72,45 @@ div:last-child {
   p{
     padding-left: 10%;
   }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container-clase {
+    
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    width: 600px;
+    max-width: 100%;
+    background-color: antiquewhite;
+}
+span {
+    text-align: left; 
+    width: 400px;
+    max-width: 100%;
+    
+}
+.group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:aquamarine;
+}
+.autor {
+    text-align: center; 
+    height: 30px;
+    padding: 5px;
+    background-color:aliceblue;
+
+}
