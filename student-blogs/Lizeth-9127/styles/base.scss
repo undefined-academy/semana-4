@@ -20,6 +20,14 @@ a:hover {
   color: variables.$cornflower-blue;
 }
 
+h1 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -52,8 +60,9 @@ header {
 }
 
 img {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 80%;
+  margin: auto;
   border-radius: 7px;
   cursor: pointer;
 }
@@ -73,6 +82,7 @@ img {
 .article {
   display: flex;
   flex-direction: column;
+  width: 90%;
   border: 1px solid variables.$fog;
   border-radius: 7px;
   padding: 1rem;
