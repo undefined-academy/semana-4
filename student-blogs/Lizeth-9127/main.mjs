@@ -22,4 +22,4 @@ const humanizeDate = date => {
 };
 const date = "2023/03/27";
 const spanList = document.querySelectorAll(".date");
-spanList.forEach( element => (element.innerHTML += `${humanizeDate(date)}`));
+spanList.forEach( element => element.innerHTML += `${humanizeDate(date)}`);
