@@ -46,6 +46,15 @@
     .container{
         max-height:280px;
     }
+    
+    .fechita{
+        grid-column: 9/13;
+        grid-row: 3/3;
+        position:relative;
+        top: -40px;
+        font-weight: bold;
+    }
+     
     .container2{
         max-width:  415px;
     }
