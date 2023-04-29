@@ -1,0 +1,72 @@
+@import "./variables.scss";
+
+@media screen and (min-width: $min-tablet-breakpoint) {
+  .layout,
+  .banner-content {
+    max-width: 425px;
+    margin: 2rem auto;
+  }
+}
+
+@media screen and (min-width: $min-desktop-breakpoint) {
+  p {
+    font-size: 1.125rem;
+  }
+
+  .copyright p {
+    font-size: 0.75rem;
+  }
+
+  .logo-container:hover > .tag-content {
+    transform: translateX(20px);
+    transition: width 0.5s, transform 1s;
+    width: 415px;
+  }
+
+  .layout,
+  .banner-content {
+    max-width: 900px;
+    padding: 0 2rem;
+  }
+
+  .badge {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 90px;
+    height: 90px;
+    z-index: 1;
+  }
+
+  .navbar {
+    padding: 0 3rem;
+  }
+
+  .banner {
+    height: 350px;
+  }
+
+  .title-1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .title-2 {
+    font-size: 2rem;
+  }
+
+  .title-3 {
+    font-size: 1.5rem;
+  }
+
+  .technologies {
+    grid-template-columns: repeat(9, auto);
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+  }
+}
