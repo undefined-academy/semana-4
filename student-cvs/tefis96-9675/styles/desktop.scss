@@ -1,60 +1,72 @@
 @import './variables.scss';
 
 @media (min-width: 1024px) {
-
-    html{
+    html {
         margin: 0 auto;
     }
+
+    section{
+        margin: 0 auto;
+        max-width: 1440px;
+    }
     /* NavBar */
-    .logoTxt {
-        display: block;
-        width: 12rem;
-        left: 3%;
-    }
-
-    .logo {
-        display: none;
-    }
-
     .navBar {
+        margin: 0 auto;
         background-color: $Smoky-Black;
         width: 100%;
         display: flex;
+        justify-content: center;
         border-bottom: 2px solid $Bright-Turquoise;
     }
+    .conatainerNar {
 
-    a {
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-    }
+        &>.logoField {
+            display: flex;
 
-    .containerMenu,
-    .linksField {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: flex-end;
-    }
+            .logoTxt {
+                display: block;
+                width: 100%;
+                left: 3%;
+            }
 
-    ul {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-    }
+            .logo {
+                display: none;
+            }
+        }
 
-    .menuItem {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: large;
-        font-weight: 200;
-        padding: 0 12px;
-    }
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
 
-    .btnMenu {
-        display: none;
+        .containerMenu,
+        .linksField {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: flex-end;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .menuItem {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+            font-weight: 200;
+            padding: 0 12px;
+        }
+
+        .btnMenu {
+            display: none;
+        }
     }
 
     .containerHome,
@@ -64,6 +76,7 @@
         width: 100%;
         margin: 0 auto;
         padding: 2rem 4rem;
+        max-width: 1440px;
     }
 
     /* Home */
