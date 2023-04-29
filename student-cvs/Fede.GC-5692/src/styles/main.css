@@ -116,6 +116,11 @@
   padding: 36px 0 8px 0;
 }
 
+.help-text {
+  font-size: small;
+  color: rgb(113, 113, 117);
+}
+
 .skills i {
   font-size: 30px;
 }
