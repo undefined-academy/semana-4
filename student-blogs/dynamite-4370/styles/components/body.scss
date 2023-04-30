@@ -43,7 +43,7 @@
             .post1 {
                 display: flex;
                 flex-direction: column;
-                background-color: #fff;
+                background-color: variables.$justWhite;
                 border: 0 solid transparent;
                 border-radius: 5px;
                 box-shadow: 11px 22px 21px -5px rgba(0, 0, 0, 0.1);
@@ -64,7 +64,7 @@
                         display: flex;
                         justify-content: end;
                         padding: 1rem;
-                        background-color: #0db769;
+                        background-color: variables.$malachite;
                         border-radius: 3px;
                         font-size: 1.4rem;
                     }
@@ -95,7 +95,7 @@
 
                         p {
                             padding: 0.5rem 1rem;
-                            background-color: #dbf7ea;
+                            background-color: variables.$grannyApple;
                             border: 1px solid transparent;
                             border-radius: 1rem;
                         }
@@ -110,7 +110,7 @@
                             font-weight: 700;
                             border-radius: 3px;
                             border: 1px solid;
-                            background-color: #0db769;
+                            background-color: variables.$malachite;
                             width: 90%;
                         }
                     }
@@ -129,7 +129,7 @@
 .suscribete {
     display: flex;
     justify-content: center;
-    background-color: #dbf7ea;
+    background-color: variables.$grannyApple;
 
     .container-subscribe {
         width: 80%;

@@ -134,7 +134,7 @@ img {
   display: flex;
   justify-content: end;
   padding: 1rem;
-  background-color: #0db769;
+  background-color: #0DB769;
   border-radius: 3px;
   font-size: 1.4rem;
 }
@@ -173,7 +173,7 @@ img {
   font-weight: 700;
   border-radius: 3px;
   border: 1px solid;
-  background-color: #0db769;
+  background-color: #0DB769;
   width: 90%;
 }
 .content .container-main .container-post .post {
@@ -253,7 +253,7 @@ footer .container-footer .contact-me h2,
 footer .container-footer .links h2,
 footer .container-footer .social-media h2 {
   font-size: 2rem;
-  color: white;
+  color: #fff;
   font-weight: 600;
 }
 footer .container-footer .contact-me li,
@@ -290,7 +290,7 @@ footer .container-footer .social-media li a {
 .icons .icono span {
   margin: auto;
   font-size: 2.2rem;
-  color: white;
+  color: #fff;
 }
 .icons .icono.insta:hover {
   background-color: #f77737;

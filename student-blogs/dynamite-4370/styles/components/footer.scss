@@ -19,7 +19,7 @@
 }
 
 footer {
-    background-color: #042940;
+    background-color: variables.$blueWhale;
     padding: 1rem 2rem;
 
     .container-footer {
@@ -39,7 +39,7 @@ footer {
 
             h2 {
                 font-size: 2rem;
-                color: white;
+                color: variables.$justWhite;
                 font-weight: 600;
             }
 
@@ -65,7 +65,7 @@ footer {
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        outline: 2px solid #fff;
+        outline: 2px solid variables.$justWhite;
         transition-property: outline-offset, outline-color, background-color;
         transition-duration: 0.25s;
 
@@ -80,27 +80,27 @@ footer {
         span {
             margin: auto;
             font-size: 2.2rem;
-            color: white;
+            color: variables.$justWhite;
         }
 
         &.insta:hover {
-            background-color: #f77737;
-            outline-color: #f77737;
+            background-color: variables.$instagramColor;
+            outline-color: variables.$instagramColor;
         }
 
         &.twitter:hover {
-            background-color: #1da1f2;
-            outline-color: #1da1f2;
+            background-color: variables.$twitterColor;
+            outline-color: variables.$twitterColor;
         }
 
         &.In:hover {
-            background-color: #004182;
-            outline-color: #004182;
+            background-color: variables.$linkedInColor;
+            outline-color: variables.$linkedInColor;
         }
 
         &.github:hover {
-            background-color: #6cc644;
-            outline-color: #6cc644;
+            background-color: variables.$githubColor;
+            outline-color: variables.$githubColor;
         }
     }
 }
@@ -111,7 +111,7 @@ footer {
     justify-content: center;
 
     p {
-        color: #fff;
+        color: variables.$justWhite;
         font-size: 1.2rem;
     }
 }
