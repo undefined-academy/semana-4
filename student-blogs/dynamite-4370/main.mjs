@@ -1,18 +1,14 @@
 import { entries } from "./data/post.mjs";
-import { humanizeDate } from "./helpers/index.js";
+import { humanizeDate, tagsIterations } from "./helpers/index.js";
 
 //Llenar Posts
 const postsContainer = document.querySelector('#posts');
 document.querySelector
 
-function tagsIterations(tagsArray) {
-    return tagsArray.map(tag => `<p>${tag}</p>`).join('');
-}
-
 entries.forEach((entry) => {
 
-    const tags = tagsIterations(entry.tags);
-    const {titulo, descripcion, fecha} =entry;
+    const {titulo, descripcion, fecha, tags} =entry;
+    const etiquetas = tagsIterations(tags);
 
     const post = document.createElement('article');
     post.classList.add('post1');
@@ -29,7 +25,7 @@ entries.forEach((entry) => {
                 <p>${descripcion}</p>
             </div>
             <div class="post-tags">
-                ${tags}
+                ${etiquetas}
             </div>
             <div class="post-button">
                 <button>Ver mas</button>
