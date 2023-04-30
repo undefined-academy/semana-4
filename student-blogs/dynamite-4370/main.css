@@ -137,9 +137,12 @@ img {
   background-color: #0db769;
   border-radius: 3px;
 }
+.content .container-main .container-post .post1 .post-principal .post-info {
+  padding: 0 10px;
+}
 .content .container-main .container-post .post1 .post-principal .post-info h3 {
   padding: 1.5rem 0;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   text-align: left;
 }
