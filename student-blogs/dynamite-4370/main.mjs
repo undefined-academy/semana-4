@@ -3,9 +3,15 @@ import { humanizeDate } from "./helpers/index.js";
 
 //Llenar Posts
 const postsContainer = document.querySelector('#posts');
+document.querySelector
+
+function tagsIterations(tagsArray) {
+    return tagsArray.map(tag => `<p>${tag}</p>`).join('');
+}
 
 entries.forEach((entry) => {
 
+    const tags = tagsIterations(entry.tags);
     const {titulo, descripcion, fecha} =entry;
 
     const post = document.createElement('article');
@@ -16,12 +22,14 @@ entries.forEach((entry) => {
         </div>
         <div class="post-principal">
             <div class="post-readtime">
-                <p>HTLM</p>
                 <span>${humanizeDate(fecha)}</span>
             </div>
             <div class="post-info">
                 <h3>${titulo}</h3>
                 <p>${descripcion}</p>
+            </div>
+            <div class="post-tags">
+                ${tags}
             </div>
             <div class="post-button">
                 <button>Ver mas</button>

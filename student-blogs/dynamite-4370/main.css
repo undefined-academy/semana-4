@@ -132,10 +132,11 @@ img {
 }
 .content .container-main .container-post .post1 .post-principal .post-readtime {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   padding: 1rem;
   background-color: #0db769;
   border-radius: 3px;
+  font-size: 1.4rem;
 }
 .content .container-main .container-post .post1 .post-principal .post-info {
   padding: 0 10px;
@@ -150,6 +151,18 @@ img {
   line-height: 1.5;
   font-size: 1.6rem;
   color: #626262;
+}
+.content .container-main .container-post .post1 .post-principal .post-tags {
+  padding: 2rem 1rem;
+  display: flex;
+  font-size: 1.2rem;
+  gap: 1rem;
+}
+.content .container-main .container-post .post1 .post-principal .post-tags p {
+  padding: 0.5rem 1rem;
+  background-color: #dbf7ea;
+  border: 1px solid transparent;
+  border-radius: 1rem;
 }
 .content .container-main .container-post .post1 .post-principal .post-button {
   margin: 1.5rem 0;
