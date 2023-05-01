@@ -1,3 +1,7 @@
+html {
+  font-size: 62.5%;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -12,17 +16,16 @@ html, body {
 body {
   background-color: #282828;
   color: #d1d1d1;
-  font-size: 62.5%;
   font-family: Arial, Helvetica, sans-serif;
 }
 body h1, body h2, body h3 {
-  font-size: 3em;
+  font-size: 3rem;
 }
 body h4, body h5, body h6 {
-  font-size: 2.6em;
+  font-size: 2.6rem;
 }
 body p {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .father-container {
@@ -64,7 +67,7 @@ body p {
   margin-top: 0;
 }
 .father-container .main-container main > .whoaim .container-info article footer a.read-more {
-  font-size: 2.2em;
+  font-size: 2.2rem;
   display: block;
   width: 100%;
   background-color: #5b21b6;
@@ -82,7 +85,7 @@ body p {
   color: #c4b5fd;
 }
 .father-container .main-container main > .container-form h2 {
-  font-size: 3em;
+  font-size: 3rem;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -111,7 +114,7 @@ body p {
   text-align: center;
 }
 .father-container .main-container main > .container-form .container-form-adentro form .form-content label {
-  font-size: 1.6em;
+  font-size: 1.6rem;
   font-weight: bold;
   color: #a7a7a7;
 }
@@ -129,7 +132,7 @@ body p {
   font-weight: bold;
   color: #a78bfa;
   text-shadow: 0 0 5px black;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 .father-container .main-container main > .container-form .container-form-adentro form .botones {
   display: flex;
@@ -183,10 +186,10 @@ body p {
   width: 100%;
 }
 .father-container .main-container .achievements section.bootcamps article.anAchievement footer span {
-  font-size: 1.4em;
+  font-size: 1.4rem;
 }
 .father-container .main-container .achievements section.bootcamps article.anAchievement footer span a {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: bold;
   text-decoration: none;
 }
@@ -200,10 +203,10 @@ body p {
 }
 .father-container .main-container .achievements section.bootcamps article.undefined-shell header h2 {
   text-align: center;
-  font-size: 2.6em;
+  font-size: 2.6rem;
 }
 .father-container .main-container .achievements section.bootcamps article.undefined-shell section p {
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 .father-container .main-container .achievements section.bootcamps article.undefined-shell footer span a {
   color: #CDB26B;
@@ -221,16 +224,16 @@ body p {
 }
 .father-container .main-container .achievements section.bootcamps article.otro-bootcamp header h2 {
   text-align: center;
-  font-size: 2.6em;
+  font-size: 2.6rem;
 }
 .father-container .main-container .achievements section.bootcamps article.otro-bootcamp section p {
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 .father-container .main-container .achievements section.bootcamps article.otro-bootcamp footer span {
-  font-size: 1.4em;
+  font-size: 1.4rem;
 }
 .father-container .main-container .achievements section.progress .container-progress h4 {
-  font-size: 2.6em;
+  font-size: 2.6rem;
   margin-bottom: 10px;
 }
 .father-container .main-container .achievements section.progress .container-progress .container-schools {
@@ -249,13 +252,13 @@ body p {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.7654321);
 }
 .father-container .main-container .achievements section.progress .container-progress .container-schools .school h2 {
-  font-size: 2.2em;
+  font-size: 2.2rem;
 }
 .father-container .main-container .achievements section.progress .container-progress .container-schools .school img {
   border-radius: 25px;
 }
 .father-container .main-container .achievements section.progress .container-progress .container-schools .school p {
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 .father-container .main-container .achievements section.progress .container-progress .container-schools .school:hover {
   background-image: linear-gradient(to top, #424242, #423e4d, #423a58, #443561, #472f6a, #472f6a, #472f6a, #472f6a, #443561, #423a58, #423e4d, #424242);
