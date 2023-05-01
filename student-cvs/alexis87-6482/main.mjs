@@ -1,11 +1,4 @@
- //Función humanizada para fecha
-function handleSubmit(event) {
-    event.preventDefault();
-    console.log("hola mundo");
-  }
-    const $form =
-  document.querySelector("form");
-  $form.addEventListener("submit", handleSubmit);
+//Funcion humanizada para fecha
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime.js";
 
@@ -20,11 +13,13 @@ function humanize(date) {
 
   const isCurrentYear = wrappedDate.year() === new Date().getFullYear();
 
-  if(!isCurrentYear) {
-    return wrappedDate.format("MMMM DD, YYYY");
-  } else if(daysDiff <=30) {
-    return wrappedDate.fromNow();
-  } else {
-    return wrappedDate.format("MMMM DD");
+     if(!isCurrentYear) {
+     return wrappedDate.format("MMMM DD, YYYY");
+   } else if(daysDiff <=30) {
+     return wrappedDate.fromNow();
+   } else {
+     return wrappedDate.format("MMMM DD");
+   }
   }
-}
+  
+  document.getElementById("date-1").innerHTML = humanize("2023-02-26");
