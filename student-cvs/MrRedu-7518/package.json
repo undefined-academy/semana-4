@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "module": "module",
   "scripts": {
     "dev": "vite",
     "sass": "sass styles/main.scss styles/main.css --watch",
