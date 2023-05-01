@@ -133,6 +133,11 @@ main article .container .texto {
     grid-row-start: 1;
     grid-row-end: 2;
 }
+.item-1 .contenido {
+    color: gray;
+    display: flex;
+    flex-direction: column;
+}
 .item-5 {
     /* grid-column-start: 1;
     grid-column-end: 3; */
