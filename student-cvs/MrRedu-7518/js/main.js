@@ -1,4 +1,3 @@
-// Este documento no está haciendo nada en esta carpeta, además de haber sido agregado porque se necesita para el ejercicio, pero puede observalo en el blog, donde sí hay fechas por "humanizar"
 import dayjs from "dayjs"
 
 import utc from "dayjs/plugin/utc.js"
