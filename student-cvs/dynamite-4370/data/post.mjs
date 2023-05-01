@@ -26,5 +26,5 @@ const entries = [
 ];
 
 export {
-    entries
+    entries,
 }

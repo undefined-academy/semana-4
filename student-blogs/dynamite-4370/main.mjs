@@ -3,7 +3,6 @@ import { humanizeDate, tagsIterations } from "./helpers/index.js";
 
 //Llenar Posts
 const postsContainer = document.querySelector('#posts');
-document.querySelector
 
 entries.forEach((entry) => {
 

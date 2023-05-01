@@ -18,7 +18,11 @@ function humanizeDate(date) {
         return wrappedDate.format("MMMM DD");
     }
 }
+function tagsIterations(tagsArray) {
+    return tagsArray.map(tag => `<p>${tag}</p>`).join('');
+}
 
 export {
     humanizeDate,
+    tagsIterations
 }
