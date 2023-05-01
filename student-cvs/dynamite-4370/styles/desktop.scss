@@ -62,6 +62,8 @@
         gap: 2rem;
     }
 
+
+
     .content {
         padding: 5rem 4rem;
     }
@@ -76,6 +78,12 @@
     }
 }
 
+@media screen and (min-width: 820px) {
+    .blog-card {
+        max-width: 355px;
+    }
+}
+
 @media screen and (min-width: 992px) {
     .header-items {
         max-width: 100rem;
@@ -84,12 +92,14 @@
 
     .desktop,
     .content-services,
+    .content-blog,
     .content-education,
     .content-form,
     .container-footer {
-        max-width: 100rem;
+        max-width: 110rem;
         margin: 0 auto;
     }
+
 
     footer {
         .container-footer {

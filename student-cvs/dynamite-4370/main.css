@@ -142,7 +142,7 @@ header .header-items .navbar-section .container-info p {
   cursor: pointer;
 }
 
-.titulo, .section-form-header .title, .section-education-header .title, .section-services-header .title, .content .content-about h2 {
+.titulo, .section-form-header .title, .section-blog-header .title, .section-education-header .title, .section-services-header .title, .content .content-about h2 {
   font-size: 2rem;
   font-weight: 700;
   position: relative;
@@ -156,7 +156,7 @@ header .header-items .navbar-section .container-info p {
   color: #111;
 }
 
-.after__titulo, .section-form-header .title::after, .section-education-header .title::after, .section-services-header .title::after, .content .content-about h2::after {
+.after__titulo, .section-form-header .title::after, .section-blog-header .title::after, .section-education-header .title::after, .section-services-header .title::after, .content .content-about h2::after {
   background: #00BCD4;
   height: 8px;
   width: 50px;
@@ -305,6 +305,102 @@ header .header-items .navbar-section .container-info p {
 }
 .education-card:hover:after {
   width: 100%;
+}
+
+/* --- SECTION - BLOG --- */
+.section-blog {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-blog-header .title {
+  width: 100%;
+}
+.section-blog-header p {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: grey;
+}
+
+.section-blog-body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.section-blog-body .blog-card {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 0 solid transparent;
+  border-radius: 5px;
+  box-shadow: 11px 22px 21px -5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+.blog-card .post-image {
+  margin-bottom: 1rem;
+}
+.blog-card .post-image img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+.blog-card .post-principal {
+  padding: 1rem 1.2rem;
+}
+.blog-card .post-principal .post-readtime {
+  display: flex;
+  justify-content: end;
+  padding: 1rem;
+  background-color: #00BCD4;
+  border-radius: 3px;
+  font-size: 1.4rem;
+}
+.blog-card .post-principal .post-info {
+  padding: 0 10px;
+}
+.blog-card .post-principal .post-info h3 {
+  padding: 1.5rem 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: left;
+}
+.blog-card .post-principal .post-info p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  color: #626262;
+}
+.blog-card .post-principal .post-tags {
+  padding: 2rem 1rem;
+  display: flex;
+  font-size: 1.2rem;
+  gap: 1rem;
+}
+.blog-card .post-principal .post-tags p {
+  padding: 0.5rem 1rem;
+  background-color: #00BCD4;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+}
+.blog-card .post-principal .post-button {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+.blog-card .post-principal .post-button button {
+  padding: 0.5rem 0;
+  font-weight: 700;
+  border-radius: 3px;
+  border: 1px solid;
+  background-color: #00BCD4;
+  width: 90%;
 }
 
 /* --- SECTION - FORM --- */
@@ -547,6 +643,11 @@ footer .container-footer {
     text-align: left;
   }
 }
+@media screen and (min-width: 820px) {
+  .blog-card {
+    max-width: 355px;
+  }
+}
 @media screen and (min-width: 992px) {
   .header-items {
     max-width: 100rem;
@@ -554,10 +655,11 @@ footer .container-footer {
   }
   .desktop,
   .content-services,
+  .content-blog,
   .content-education,
   .content-form,
   .container-footer {
-    max-width: 100rem;
+    max-width: 110rem;
     margin: 0 auto;
   }
   footer .container-footer {
