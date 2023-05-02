@@ -1,0 +1,37 @@
+@media screen and (min-width: 992px) {
+  .container {
+    margin: 32px auto;
+    max-width: 1024px;
+  }
+  
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .card-main {
+    flex-direction: row;
+  }
+
+  .img-main {
+    height: 250px;
+    width: 400px;
+  }
+
+  .cards {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .card {
+    height: 400px;
+    width: 300px;
+    padding: 5px;
+  }
+
+  .card > img {
+    height: 150px;
+    width: 250px;
+    text-align: center;
+  }
+}

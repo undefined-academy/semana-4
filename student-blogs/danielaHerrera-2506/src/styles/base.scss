@@ -1,0 +1,60 @@
+@use "./variables.scss" as *;
+
+.container {
+  margin: 32px 32px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 50px 0;
+}
+
+.card-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.text-card-main {
+  padding:  16px;
+}
+
+p {
+  color: $colorDoveGray;
+  padding-bottom: 16px;
+}
+
+img {
+  height: 200px;
+  width: 250px;
+  border-radius: 5px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  padding:  16px;
+}
+
+.card > h2 {
+  color: $colorMineShaft;
+  padding: 16px 0;
+}

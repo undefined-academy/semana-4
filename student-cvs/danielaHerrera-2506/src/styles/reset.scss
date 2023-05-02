@@ -1,0 +1,13 @@
+@use "./variables.scss" as *;
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  color: $colorShipGray;
+  padding: 8px 16px;
+}

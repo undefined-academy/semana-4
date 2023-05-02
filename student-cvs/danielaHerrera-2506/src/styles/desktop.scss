@@ -1,0 +1,23 @@
+@media screen and (min-width: 992px) {
+
+  body {
+    margin: 0 auto;
+    max-width: 50em;
+  }
+  
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    width: 64px;
+    margin-left: 20px;
+  }
+
+  button {
+    width: 25%;
+    padding: 8px 16px;
+  }
+}
