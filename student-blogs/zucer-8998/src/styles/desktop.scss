@@ -1,0 +1,114 @@
+@import "./variables.scss";
+
+@media screen and (min-width: $min-tablet-breakpoint) {
+  .layout {
+    max-width: 525px;
+    margin: 2rem auto;
+  }
+}
+
+@media screen and (min-width: $min-desktop-breakpoint) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  header {
+    position: sticky;
+    z-index: 1;
+  }
+
+  .section {
+    &-content {
+      flex-direction: row;
+    }
+
+    &-img {
+      min-width: 300px;
+      height: 340px;
+    }
+  }
+
+  .layout {
+    margin: 0 auto;
+    max-width: 1024px;
+    margin-bottom: 2rem;
+
+    &-body {
+      position: relative;
+      top: -90px;
+      padding: 4rem;
+      box-shadow: $regent-gray 0px 8px 24px;
+    }
+  }
+
+  .banner {
+    width: 100%;
+    height: 350px;
+    background: $cruise;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-title {
+      padding: 2rem;
+    }
+  }
+
+  .navbar {
+    padding: 2rem 3rem;
+    background: transparent;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+
+    &-container {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .grid-section {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: "types history" "types properties" "types popular";
+    gap: 2rem 3rem;
+    margin-top: 3rem;
+  }
+
+  .card {
+    grid-template-columns: auto auto;
+    grid-template-areas: "card-image card-title" "card-image card-content";
+    margin-bottom: 2rem;
+    padding: 1rem;
+
+    &-image {
+      min-width: 100px;
+      height: 100px;
+      grid-area: card-image;
+    }
+
+    &-title {
+      align-self: center;
+      grid-area: card-title;
+    }
+
+    &-content {
+      grid-area: card-content;
+    }
+  }
+}
