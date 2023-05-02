@@ -17,8 +17,9 @@ export default function humanizeDate(simpleDate) {
     const years = currentDate.diff(date, "years");
     const months = currentDate.diff(date, "months");
 
-    let result = ""
-    if (years > 0) {
+    let result = "";
+    // wrong condition? : years > 0
+    if (date.year() !== currentDate.year()) {
         result = date.format("MMMM DD, YYYY");
     } else {
         if (months < 1) {
