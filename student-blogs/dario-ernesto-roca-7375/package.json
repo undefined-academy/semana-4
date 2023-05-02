@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "dayjs": "^1.11.7"
+  },
+  "name": "dario-ernesto-roca-7375",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "vite": "^4.3.3"
+  }
+}
