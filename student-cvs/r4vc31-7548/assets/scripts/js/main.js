@@ -15,3 +15,8 @@ const $age = document.querySelector("#age");
 const birthday = dayjs("2001-03-04");
 const currentAge = birthday.fromNow(true);
 $age.innerHTML = currentAge;
+
+const $projectDates = [...document.querySelectorAll("time")];
+$projectDates.forEach((projectDate) => {
+    projectDate.textContent = humanizeDate(projectDate.getAttribute("datetime"));
+})
