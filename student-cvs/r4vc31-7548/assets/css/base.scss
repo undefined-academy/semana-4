@@ -1,0 +1,20 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+$cuttySark: #566b78;
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 2em 1em;
+    color: $cuttySark;
+}

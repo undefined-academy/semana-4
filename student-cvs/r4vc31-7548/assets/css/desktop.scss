@@ -1,0 +1,41 @@
+$desktopSize: 992px;
+$alto: #d3d3d3;
+
+@media (min-width: $desktopSize) {
+    .principal-container {
+        flex-direction: row;
+    }
+
+    .icon {
+        display: block;
+        height: 10vh;
+        object-fit: cover;
+    }
+
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+    }
+
+    .project-image {
+        height: auto;
+        width: 100%;
+    }
+
+    .about-project {
+        flex-direction: row;
+        justify-content: space-evenly;
+        background: $alto;
+        align-items: center;
+        width: 20%;
+        border-radius: 4px;
+    }
+
+}
