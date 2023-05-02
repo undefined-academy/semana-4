@@ -9,8 +9,6 @@ function handleSubmit(event) {
 const $form = document.querySelector("form");
 $form.addEventListener("submit", handleSubmit);
 
-console.log(`Hello World 😱 ${humanizeDate("2021-01-01")}`);
-
 const $age = document.querySelector("#age");
 const birthday = dayjs("2001-03-04");
 const currentAge = birthday.fromNow(true);

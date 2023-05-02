@@ -18,7 +18,6 @@ export default function humanizeDate(simpleDate) {
     const months = currentDate.diff(date, "months");
 
     let result = "";
-    // wrong condition? : years > 0
     if (date.year() !== currentDate.year()) {
         result = date.format("MMMM DD, YYYY");
     } else {
@@ -31,8 +30,3 @@ export default function humanizeDate(simpleDate) {
 
     return result;
 }
-
-humanizeDate('2022-04-14T16:30:15.000Z');
-humanizeDate('2023-04-14T16:30:15.000Z');
-humanizeDate('2024-04-14T16:30:15.000Z');
-humanizeDate(dayjs());
