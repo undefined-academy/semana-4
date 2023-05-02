@@ -1,0 +1,45 @@
+$alto: #d3d3d3;
+
+@media screen and (min-width:720px) {
+
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 0 1rem;
+            padding: 0.5rem 1rem;
+            border-style: outset;
+            border-radius: 4px;
+        }
+    }
+
+    .card-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .card-item {
+        height: 5%;
+        max-width: 350px;
+        width: 40%;
+    }
+
+    .project-image {
+        height: auto;
+        width: 100%;
+    }
+
+    .about-project {
+        flex-direction: row;
+        justify-content: space-evenly;
+        background: $alto;
+        align-items: center;
+        width: 20%;
+        border-radius: 4px;
+    }
+
+}
