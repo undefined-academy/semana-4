@@ -11,6 +11,7 @@ body {
 
 nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   grid-column: 1/4;
@@ -20,6 +21,7 @@ nav {
 ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 20px;
   font-weight: bold;
@@ -66,12 +68,9 @@ input {
   border: 1px solid #73A2F2;
 }
 
-div {
-  border: 1px solid #73A2F2;
-}
-
 .card {
   background-color: #F5F5F5;
+  border: 1px solid #73A2F2;
 }
 
 button {
