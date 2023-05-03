@@ -9,7 +9,7 @@
     max-width: 1440px;
     border-bottom: 2px solid $Bright-Turquoise;
 
-    .conatainerNar{
+    .conatainerNar {
         display: flex;
         width: 100%;
     }
@@ -19,7 +19,7 @@
     width: 25%;
     padding: 0.5rem;
 
-    &>.logoTxt{
+    &>.logoTxt {
         display: none;
     }
 
@@ -48,23 +48,23 @@
         color: white;
         font-weight: bold;
     }
-    
+
     .menuItem {
         display: none;
         text-align: right;
         padding-bottom: 10px;
     }
-    
+
     .menuIcon {
         text-align: right;
     }
-    
+
     .btnMenu {
         background-color: $transparent;
         border: none;
         width: 3rem;
     }
-    
+
     .imgMode {
         margin-right: 15px;
     }
@@ -76,7 +76,8 @@
 /* containers */
 .containerHome,
 .containerAboutMe,
-.projCont, .containerContact {
+.projCont,
+.containerContact {
     width: 100%;
     margin: 0 auto;
     padding: 1.5rem 1rem;
@@ -93,27 +94,27 @@
             display: inline-block;
             text-align: center;
             padding: 7px 5px;
-    
+
         }
-    
+
         &>p {
             padding: 7px 5px;
             text-align: center;
         }
-    
+
         &>#lastName {
             color: $Bright-Turquoise;
         }
     }
-    
+
     .textAboutMe {
-    
+
         &>h3 {
             color: $Bright-Turquoise;
             font-weight: bolder;
             padding-bottom: 1rem;
         }
-    
+
         &>p {
             padding: 1rem 0;
         }
@@ -122,7 +123,7 @@
 }
 
 .containerAboutMe>h3 {
-    padding-bottom: 2rem;    
+    padding-bottom: 2rem;
 }
 
 .textTech>h3 {
@@ -186,6 +187,7 @@
         background-color: $Robin-Egg-Blue;
         box-shadow: 5px 5px 5px $Granite-Gray;
         height: 550px;
+        transform: scale(1.1);
     }
 }
 
