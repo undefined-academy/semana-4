@@ -22,8 +22,8 @@ body {
 }
 
 .header {
-  background-color: #24292e;
-  color: #fff;
+  background-color: $primary-color;
+  color: $tertiary-color;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,7 +50,7 @@ body {
 }
 
 .header a {
-  color: #fff;
+  color: $tertiary-color;
   text-decoration: none;
 }
 
@@ -69,7 +69,7 @@ body {
 }
 
 .connect-list {
-  background-color: hsl(0, 0%, 93%);
+  background-color: $secondary-color;
   display: flex;
   gap: 2em;
   flex-direction: row;
@@ -87,7 +87,7 @@ body {
 }
 
 .languages-list {
-  background-color: hsl(0, 0%, 93%);
+  background-color: $secondary-color;
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
@@ -110,7 +110,7 @@ body {
 }
 
 .languages-list a {
-  color: #212121;
+  color: $text-color;
   text-decoration: none;
 }
 
@@ -131,11 +131,11 @@ body {
 .profile__link {
   font-weight: bold;
   text-decoration: none;
-  color: #e5766d;
+  color: $accent-color-text;
 }
 
 .profile__link:visited {
-  color: #e5766d;
+  color: $accent-color-text;
 }
 
 .header-paragraph {
@@ -147,8 +147,8 @@ body {
 /* Styles for footer */
 
 .footer {
-  background-color: #24292e;
-  color: #fff;
+  background-color: $primary-color;
+  color: $tertiary-color;
   text-align: center;
   padding: 25px 0;
 }
@@ -156,34 +156,34 @@ body {
 /* Styles for contact link */
 .header-link__container {
   align-self: flex-end;
-  border: #f0f0f0 solid 2px;
+  border: $border-color-button solid 2px;
   border-radius: 60px;
-  color: #f0f0f0;
+  color: $border-color-button;
   padding: 0 10px;
-  background-color: hsl(5, 70%, 66%);
+  background-color: $accent-color;
   margin-right: 1.5em;
   text-decoration: none;
   font-weight: 700;
 }
 
 .header-link__container:hover {
-  background-color: hsl(5, 70%, 76%);
-  border-color: hsl(5, 70%, 76%);
+  background-color: $accent-color-hover;
+  border-color: $accent-color-hover;
 }
 
 .header-link__container:active {
-  background-color: hsla(5, 70%, 76%, 0.5);
-  border-color: hsl(5, 70%, 76%, 0.5);
-  color: #8b8b8bd5
+  background-color: $accent-color-active;
+  border-color: $accent-color-active;
+  color: $gray-color1;
 }
 
 .header-link__container .header-link {
-  text-shadow: -1px -1px #3333336e;
+  text-shadow: -1px -1px $shadow-color;
   text-decoration: none;
 }
 
 .header-link__container .header-link:visited {
-  color: #f0f0f0;
+  color: $border-color-button;
   text-decoration: none;
 }
 
@@ -192,7 +192,7 @@ body {
 }
 
 .header-link__container .header-link:active {
-  color: #8b8b8bd5
+  color: $gray-color1;
 }
 
 /* Styles for Contact */
@@ -220,45 +220,45 @@ textarea {
 label, legend {
   font-weight: 700;
   font-size: 14px;
-  color: #444
+  color: $gray-color2;
 }
 
 input[type="text"], input[type="email"],textarea {
-  background-color: #fff;
+  background-color: $tertiary-color;
   border: 1px solid lightgray;
   border-radius: 4px;
   padding: 8px 10px;
-  color: #333;
+  color: $gray-color3;
 }
 
 .help {
   font-size: 12px;
   margin-top: 10px;
-  color: gray;
+  color: $gray-color1;
 }
 
 .send-button {
   font-size: 1em;
   font-weight: 700;
-  border: #f0f0f0 solid 2px;
+  border: $border-color-button solid 2px;
   border-radius: 60px;
-  color: #f0f0f0;
+  color: $border-color-button;
   text-shadow: -1px -1px #3333336e;
   padding: 10px 40px;
-  background-color: hsl(5, 70%, 66%);
-  box-shadow: 1px 1px 3px #0000008c;
+  background-color: $accent-color;
+  box-shadow: 1px 1px 3px $shadow-color-button;
 }
 
 .send-button:hover {
-  background-color: hsl(5, 70%, 76%);
-  border-color: hsl(5, 70%, 76%);
+  background-color: $accent-color-hover;
+  border-color: $accent-color-hover;
   cursor: pointer;
 }
 
 .send-button:active {
-  background-color: hsla(5, 70%, 76%, 0.5);
-  border-color: hsl(5, 70%, 76%, 0.5);
-  color: #8b8b8bd5;
+  background-color: $accent-color-active;
+  border-color: $accent-color-active;
+  color: $gray-color1;
 }
 
 .button-container {
@@ -268,9 +268,9 @@ input[type="text"], input[type="email"],textarea {
 }
 
 .contact-form {
-  accent-color: hsl(5, 70%, 90%);
+  accent-color: $contact-accent-color;
 }
 
 input:focus-visible, textarea:focus-visible {
-  outline: 2px solid hsl(5, 70%, 86%);
+  outline: 2px solid $input-visible;
 }
