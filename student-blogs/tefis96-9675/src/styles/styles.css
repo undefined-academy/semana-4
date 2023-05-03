@@ -1,56 +1,57 @@
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .containerPost {
     display: flex;
     width: 100%;
   }
-  .containerPost .cardPost:nth-child(5n) {
+  .containerPost .cardPost:nth-child(4n) {
     display: grid;
     width: 100%;
     height: 300px;
     grid-column: 1/span 4;
     background-color: #15659a !important;
   }
-  .containerPost .cardPost:nth-child(5n) > .infoCard {
+  .containerPost .cardPost:nth-child(4n) > .infoCard {
     display: flex;
     flex-direction: row-reverse;
     height: 430px;
   }
-  .containerPost .cardPost:nth-child(5n) > .infoCard > .first {
+  .containerPost .cardPost:nth-child(4n) > .infoCard > .first {
     display: flex;
     flex-direction: column;
     width: 50%;
     height: 100%;
   }
-  .containerPost .cardPost:nth-child(5n) > .infoCard > .first > .tittlePost {
+  .containerPost .cardPost:nth-child(4n) > .infoCard > .first > .tittlePost {
     display: flex;
     color: black;
     font-size: xx-large;
     justify-content: center;
   }
-  .containerPost .cardPost:nth-child(5n) > .infoCard > .first > .imgPostCont {
+  .containerPost .cardPost:nth-child(4n) > .infoCard > .first > .imgPostCont {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    height: 50%;
+    justify-content: center;
   }
-  .containerPost .cardPost:nth-child(5n) > .infoCard > .first > .imgPostCont > .imgPost {
+  .containerPost .cardPost:nth-child(4n) > .infoCard > .first > .imgPostCont > .imgPost {
     width: 60%;
     object-fit: fill;
   }
-  .containerPost .cardPost:nth-child(5n) > .infoCard > .secondInfo {
+  .containerPost .cardPost:nth-child(4n) > .infoCard > .secondInfo {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .containerPost .cardPost:nth-child(5n) > .infoCard > .secondInfo .descPost {
+  .containerPost .cardPost:nth-child(4n) > .infoCard > .secondInfo .descPost {
     display: flex;
     align-content: center;
     justify-content: center;
     padding: 2rem;
   }
-  .containerPost .cardPost:nth-child(5n) > .infoCard > .secondInfo .descPost .description {
+  .containerPost .cardPost:nth-child(4n) > .infoCard > .secondInfo .descPost .description {
     color: white;
   }
-  .containerPost .cardPost:nth-child(5n) > .infoCard > .secondInfo .datePostContent {
+  .containerPost .cardPost:nth-child(4n) > .infoCard > .secondInfo .datePostContent {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -59,64 +60,64 @@
     color: white;
   }
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .containerPost {
     display: flex;
     width: 100%;
   }
-  .containerPost .cardPost:nth-child(5n) {
+  .containerPost .cardPost:nth-child(3n) {
     display: grid;
     width: 100%;
     height: 300px;
-    grid-column: 1/span 4;
+    grid-column: 1/span 3;
     background-color: #fff;
   }
-  .containerPost .cardPost:nth-child(5n) > .infoCard {
+  .containerPost .cardPost:nth-child(3n) > .infoCard {
     display: flex;
     flex-direction: row-reverse;
     height: 290px;
   }
-  .containerPost .cardPost:nth-child(5n) > .infoCard > .first {
+  .containerPost .cardPost:nth-child(3n) > .infoCard > .first {
     display: flex;
     flex-direction: column;
     width: 60%;
     height: 100%;
   }
-  .containerPost .cardPost:nth-child(5n) > .infoCard > .first > .tittlePost {
+  .containerPost .cardPost:nth-child(3n) > .infoCard > .first > .tittlePost {
     display: flex;
     color: white;
     font-size: xx-large;
     justify-content: center;
   }
-  .containerPost .cardPost:nth-child(5n) > .infoCard > .first > .imgPostCont {
+  .containerPost .cardPost:nth-child(3n) > .infoCard > .first > .imgPostCont {
     display: flex;
     width: 100%;
     height: 80%;
     align-content: center;
     justify-content: center;
   }
-  .containerPost .cardPost:nth-child(5n) > .infoCard > .first > .imgPost {
+  .containerPost .cardPost:nth-child(3n) > .infoCard > .first > .imgPost {
     width: 100%;
     object-fit: contain;
   }
-  .containerPost .cardPost:nth-child(5n) > .infoCard > .secondInfo {
+  .containerPost .cardPost:nth-child(3n) > .infoCard > .secondInfo {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 0.5rem;
   }
-  .containerPost .cardPost:nth-child(5n) > .infoCard > .secondInfo .description {
+  .containerPost .cardPost:nth-child(3n) > .infoCard > .secondInfo .description {
     font-size: 20px;
     font-weight: bold;
   }
-  .containerPost .cardPost:nth-child(5n) > .infoCard > .secondInfo .descPost {
+  .containerPost .cardPost:nth-child(3n) > .infoCard > .secondInfo .descPost {
     height: 80%;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
   }
-  .containerPost .cardPost:nth-child(5n) > .infoCard > .secondInfo > .datePostContent {
+  .containerPost .cardPost:nth-child(3n) > .infoCard > .secondInfo > .datePostContent {
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -152,6 +153,7 @@ nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  width: 100%;
 }
 
 .links {
@@ -176,7 +178,7 @@ nav {
 
 .containerPost {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   width: 100%;
   height: 100%;
   padding: 2rem 10px;
