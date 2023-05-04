@@ -60,5 +60,11 @@ button{
     font-weight: bold;  
 }
 
+time{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    font-style: italic;
+  }
 
 

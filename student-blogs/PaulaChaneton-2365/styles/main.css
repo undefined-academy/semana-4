@@ -58,6 +58,13 @@ button {
   font-weight: bold;
 }
 
+time {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  font-style: italic;
+}
+
 html,
 body {
   background-color: #D3D3D3;

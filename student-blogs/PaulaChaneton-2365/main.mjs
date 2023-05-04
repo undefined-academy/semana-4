@@ -1,9 +1,6 @@
 import dayjs from 'dayjs';
 import relativeTime from "dayjs/plugin/relativeTime.js";
 
-await import("dayjs/locale/es-us.js")
-
-dayjs.locale("es-us")
 dayjs.extend(relativeTime)
 
 function humanize(date) {
@@ -24,3 +21,14 @@ function humanize(date) {
         return wrappedDate.format("MMMM DD")
     }
 }
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  
+    const A = document.querySelectorAll(".event");
+  
+    A.forEach(element => {
+      const B = humanize(element.getAttribute("datetime"));
+      element.innerHTML = B;
+    });
+  
+  })
