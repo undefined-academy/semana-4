@@ -9,7 +9,7 @@ nav {
 
 ul {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-evenly;
   padding: 0;
   gap: 20px;
