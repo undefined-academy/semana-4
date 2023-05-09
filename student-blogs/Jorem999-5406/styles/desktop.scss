@@ -9,7 +9,7 @@ body {
     column-count: 3;
     grid-template-columns: $grid-template-columns;
     grid-template-rows: auto, auto ;
-    margin: 10px 4px ;
+    margin: 5px;
     gap: 1% 1%;
   }
   
@@ -48,7 +48,7 @@ body {
   .wrap {
     margin: 2% 20%;
     text-align: center;
-    box-shadow: 0 0 15px white;
+    box-shadow: 0 0 15px lightpink;
     backdrop-filter:  blur(25px);
   
   }
@@ -72,8 +72,8 @@ body {
     background-color: $bg_color-card;
     background-image: url(IMG_header.jpg);
     background-blend-mode: soft-light;
-    padding: 7%;
-    margin: 4px;
+    padding: 8%;
+    margin: 0px 3px 0 3px ;
   }
   
   .circular {
@@ -81,8 +81,8 @@ body {
     border-radius: 50%;
     position: top;
     margin: 0% 0%;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
   
   article:last-child {
@@ -92,15 +92,14 @@ body {
   h1 {
     color: $h1-color;
     font-size: 150%;
-    line-height: 120%;
     align-self: center;
+    text-transform: uppercase;
   }
   
   h2 {
-    color: $h1-color;
-    line-height: 120%;
+    color: $h2-color;
     font-size: 110%;
     align-self: center;
-  
+    font-style: italic;
   }
   

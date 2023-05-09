@@ -1,17 +1,6 @@
-// ESTILOS MOBILE FIRST
+@import "./variables.scss";
 
-// VARIABLES 
-//----------------------------------------------------
-$texto-body: lightcyan ;
-$h2-color: rgb(42, 42, 92) ;
-$a-visit-hover: darkblue ;
-$a-visit: rgb(234, 234, 255) ;
-$background-nav: rgba(255, 255, 255, 0.5) ;
-$box-shadow: rgba(255, 255, 255, 0.3) ;
-$feature-background: rgba(255, 161, 123, 0.8);
-$texto-tope-color: rgb(0, 0, 0);
-//----------------------------------------------------
-// VARIABLES
+// ESTILOS MOBILE FIRST
 
 body {
     font-size: 14px;

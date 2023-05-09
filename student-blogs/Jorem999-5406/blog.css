@@ -10,7 +10,7 @@ body {
 }
 
 body {
-  color: rgb(77, 61, 38);
+  color: #112341;
 }
 
 .container {
@@ -18,7 +18,7 @@ body {
   column-count: 3;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto, auto;
-  margin: 10px 4px;
+  margin: 5px;
   gap: 1% 1%;
 }
 
@@ -56,7 +56,7 @@ header {
 .wrap {
   margin: 2% 20%;
   text-align: center;
-  box-shadow: 0 0 15px white;
+  box-shadow: 0 0 15px lightpink;
   backdrop-filter: blur(25px);
 }
 
@@ -78,8 +78,8 @@ article {
   background-color: rgb(230, 214, 173);
   background-image: url(IMG_header.jpg);
   background-blend-mode: soft-light;
-  padding: 7%;
-  margin: 4px;
+  padding: 8%;
+  margin: 0px 3px 0 3px;
 }
 
 .circular {
@@ -87,8 +87,8 @@ article {
   border-radius: 50%;
   position: top;
   margin: 0% 0%;
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
 }
 
 article:last-child {
@@ -96,23 +96,23 @@ article:last-child {
 }
 
 h1 {
-  color: rgb(77, 61, 38);
+  color: #5270a5;
   font-size: 150%;
-  line-height: 120%;
   align-self: center;
+  text-transform: uppercase;
 }
 
 h2 {
-  color: rgb(77, 61, 38);
-  line-height: 120%;
+  color: #1e3e75;
   font-size: 110%;
   align-self: center;
+  font-style: italic;
 }
 
 @media (max-width: 992px) {
   .circular {
-    width: 70px;
-    height: 70px;
+    width: 120px;
+    height: 120px;
   }
   h1 {
     font-size: 120%;
@@ -120,8 +120,10 @@ h2 {
   h2 {
     font-size: 100%;
   }
+  .wrap h1 {
+    font-size: 32px;
+  }
   .container {
-    display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
   }
