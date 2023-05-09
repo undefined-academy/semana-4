@@ -160,6 +160,21 @@
     padding: 20px 12px;
     font-size: 1.2rem;
 }
+.humanized-div {
+    display: flex;
+    justify-content: end;
+    align-content: center;
+    margin: 32px auto;
+}
+.humanized-div i {
+    color: $vistaWhite;
+    margin-right: 8px;
+    font-size: 1rem;
+}
+.humanized-div time {
+    color: $vistaWhite;
+    font-size: 0.8rem;
+}
 
 // Horizontal lines
 
