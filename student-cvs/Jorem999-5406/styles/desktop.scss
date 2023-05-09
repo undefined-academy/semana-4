@@ -1,0 +1,49 @@
+// Estilos escritorio
+
+@media screen and (min-width: 992px) {
+
+    .features {
+        flex-direction: row;
+        margin: 0 0;
+    }
+
+    .feature {
+        width: 32%;
+    }
+
+    .extras {
+        flex-direction: row;
+        margin: 0 0;
+    }
+
+
+    .extra {
+        width: 32%;
+    }
+
+    .tope {
+        display: flex;
+        flex-direction: row;
+        gap: 15% ;
+        margin: 2% 10%;
+        background: linear-gradient(whitesmoke, rgba(46, 63, 95, 0.3));
+ 
+    }
+
+    .photo {
+        margin-left: 5%;
+    }
+
+    .correo {
+        grid-column-start: 1 / 2;
+        grid-row-start: 1 / 2;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        height: 40px;
+    }
+}

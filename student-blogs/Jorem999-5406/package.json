@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "sass": "^1.62.1"
+  },
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "sass": "sass styles/main.scss blog.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "vite": "^4.3.5"
+  }
+}

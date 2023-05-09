@@ -1,0 +1,31 @@
+@import "./variables.scss" ;
+
+@media (max-width: 992px) {
+
+    .circular {
+      width: 70px;
+      height: 70px;
+    }
+  
+    h1 {
+      font-size: 120%;
+
+    }
+    h2 {
+      font-size: 100%;
+    }
+  
+    .container {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+    }
+  
+    article:last-child {
+      grid-column: 2 / 3;
+    }
+
+    input[type="search"] {
+      width: 200px;
+    }
+  }

@@ -1,0 +1,136 @@
+/* RESET*/
+html,
+body {
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  color: rgb(77, 61, 38);
+}
+
+.container {
+  display: grid;
+  column-count: 3;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto, auto;
+  margin: 10px 4px;
+  gap: 1% 1%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(230, 214, 173);
+  border-radius: 14px;
+  margin: 1%;
+  padding-right: 20px;
+}
+
+ol,
+ul {
+  list-style-type: none;
+  font-size: 14px;
+}
+
+input[type=search] {
+  border-radius: 4px;
+  width: 300px;
+  background: rgb(255, 249, 249);
+  padding: 0.2em 10px;
+}
+
+header {
+  display: grid;
+  background-image: url("IMG_header.jpg");
+  column-count: 1;
+  grid-template-columns: auto;
+  margin: 0 1%;
+}
+
+.wrap {
+  margin: 2% 20%;
+  text-align: center;
+  box-shadow: 0 0 15px white;
+  backdrop-filter: blur(25px);
+}
+
+.wrap h1 {
+  color: rgb(255, 200, 50);
+  font-size: 42px;
+}
+
+a {
+  color: lavender;
+}
+a:visited {
+  color: lightsteelblue;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(230, 214, 173);
+  background-image: url(IMG_header.jpg);
+  background-blend-mode: soft-light;
+  padding: 7%;
+  margin: 4px;
+}
+
+.circular {
+  align-self: center;
+  border-radius: 50%;
+  position: top;
+  margin: 0% 0%;
+  width: 200px;
+  height: 200px;
+}
+
+article:last-child {
+  grid-column: 2/4;
+}
+
+h1 {
+  color: rgb(77, 61, 38);
+  font-size: 150%;
+  line-height: 120%;
+  align-self: center;
+}
+
+h2 {
+  color: rgb(77, 61, 38);
+  line-height: 120%;
+  font-size: 110%;
+  align-self: center;
+}
+
+@media (max-width: 992px) {
+  .circular {
+    width: 70px;
+    height: 70px;
+  }
+  h1 {
+    font-size: 120%;
+  }
+  h2 {
+    font-size: 100%;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+  article:last-child {
+    grid-column: 2/3;
+  }
+  input[type=search] {
+    width: 200px;
+  }
+}
+
+/*# sourceMappingURL=blog.css.map */

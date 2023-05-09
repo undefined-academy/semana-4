@@ -1,0 +1,16 @@
+{
+  "name": "sass",
+  "description": "description",
+  "authors": "Jorge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "sass": "sass styles/main.scss css/main.css --watch" ,
+    "test": "echo \"Error: no teste specified\" && exit 1"
+  },
+  "dependencies": {
+    "sass": "^1.62.1",
+    "vite": "^4.3.5"
+  }
+}
