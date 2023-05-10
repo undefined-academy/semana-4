@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&family=Poppins&family=Roboto+Mono&family=Sono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="header">
+        <img src="./img/logo.png" alt="logo" class="logo">
+        <div class="btnback">
+            <a href="index.html" ><i class="fa-solid fa-arrow-left"></i> Regresar</a>
+        </div>
+    </header>
+    <article id="contact" class="contact">
+        <h2>Dejame un Mensaje 👍📧</h2>
+        <form action="#" method="get" class="form-contact">
+            <div class="form-group" id="fg1">
+                <label for="name_c"><i class="fa-solid fa-person"></i> Nombre</label><br>
+                <input type="text" id="name_c" placeholder="Escriba su nombre" required>
+            </div>
+            <div class="form-group" id="fg2">
+                <label for="email_c"><i class="fa-regular fa-envelope"></i> Correo</label><br>
+                <input type="email" id="email_c"  placeholder="ejemplo@gmail.com" required>
+            </div>
+            <div class="form-group" id="fg3">
+                <label for="comment_c"><i class="fa-regular fa-comment"></i> Comentario</label><br>
+                <textarea id="comment_c" placeholder="Coloque su comentario" required></textarea>
+            </div>
+            <button type="submit" id="btn-enviar">Enviar comentario</button>
+        </form>
+   
+    </article>
+    <script src="https://kit.fontawesome.com/76256ea07c.js" crossorigin="anonymous"></script> 
+    <script type="module" src="/main.mjs"></script>
+</body>
+</html>

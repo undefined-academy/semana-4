@@ -1,0 +1,490 @@
+@use "variable.scss" as vr;
+
+@mixin linksocial($colorsocial){
+    border: $colorsocial 2px solid;
+    color: $colorsocial ;
+}
+
+@mixin skills($color-default, $color-shadow){
+    border: $color-default 3px solid;
+    color: $color-default;
+    &:hover{
+        box-shadow: 0 0.5em 0.5em -0.4em $color-default;
+        transform: translateY(-0.25em);
+        border: $color-shadow 3px solid;
+        color: $color-shadow;
+        transition: .3s;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+body{
+    font-family: vr.$font-normal ,Arial, Helvetica, sans-serif;
+    background-color: vr.$blueZodiac; 
+    color: vr.$white;   
+}
+
+strong, b{
+    font-weight: bold;
+}
+
+
+.element-hidden{
+    display: none;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    display: block;
+    scroll-snap-align: start;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 45px;
+    margin-top: 35px;
+}
+
+.header-title-email{
+    display: flex;
+}
+
+.header-title-email address{
+    margin: 0 2px 0 auto;
+    color: vr.$lynch;
+    font-size: small;
+    font-family: vr.$font-nerd,Arial, Helvetica, sans-serif;
+}
+
+.header section{
+    padding: 65px 150px 10px 150px;
+}
+
+.header section h3{
+    font-family: vr.$font-nerd,Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: vr.$saharaSand;
+}
+
+.header section h1{
+    margin-bottom: 20px;
+    font-size: large;
+    font-weight: bold;
+    text-rendering: optimizeSpeed;
+}
+
+.header section h2{
+    color: vr.$lavenderGray;
+    font-size: xx-large;
+    text-rendering: optimizeSpeed;
+    font-weight: bold;
+}
+
+.header section p{
+    text-align: justify;
+    line-height: 1.6em;
+    color: vr.$lavenderGray;
+    font-size: medium;
+    text-rendering: optimizeLegibility;
+    min-width: 200px;
+    margin: 35px 0;
+}
+
+.social-links{
+    margin-top: 45px;
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    font-size: large;
+    text-rendering: optimizeLegibility;
+}
+
+.social-links div{
+   border-radius: 50px;
+   padding: 6px 11px;
+   transition: .2s;
+   &:hover{
+    transform: translate(6px, -6px);
+   }
+}
+
+.fb-link{
+    @include linksocial(vr.$cornflowerBlue);
+}
+
+.ins-link{
+    @include linksocial(vr.$geraldine);
+}
+
+.yt-link{
+    @include linksocial(vr.$persimmon);
+}
+
+.git-link{
+    @include linksocial(vr.$white);
+}
+
+.twt-link{
+    @include linksocial(vr.$skyBlue);
+}
+
+.navbar{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: vr.$blackPearlT;
+    backdrop-filter: blur(10px);
+    box-shadow: vr.$blueZodiac 0 8px 29px 0px;
+    z-index: 4;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li{
+    padding: 20px 40px;
+    transition: .2s;
+    &:hover{
+        transform: translate(9px, 0px);
+        background-color: vr.$saharaSandT;
+        color: vr.$mineShaf;
+    }
+}
+
+article {
+    padding-top: 20vh;
+    height: 100vh;
+    margin: auto 0;
+    font-family:  vr.$font-art,Arial, Helvetica, sans-serif;
+}
+
+main{
+    margin: 0 auto;
+    width: 73%;
+    scroll-snap-align: start;
+}
+
+footer{
+    scroll-snap-align: start;
+}
+
+.title{
+    font-size: xx-large;
+    font-family: vr.$font-nerd,Arial, Helvetica, sans-serif;
+    color: vr.$saharaSand;
+}
+
+.sub-t{
+    border: vr.$saharaSand 2px solid;
+}
+
+.profile section{
+    margin-top: 20px;
+    color: vr.$whiteT;
+}
+
+.profile section h2{
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+.profile section p{
+    min-width: 190px;
+    width: 90%;
+    text-align: justify;
+}
+
+.profile .info{
+    display: flex;
+}
+
+.profile-img{
+    width: 230px;
+    height: 270px;
+    padding: 10px 10px 10px 10px;
+    border-bottom: vr.$saharaSand 5px solid;
+    border-right: vr.$saharaSand 5px solid;
+    display: block;
+}
+
+.hobbies{
+    color: vr.$whiteT;
+}
+
+.hobbies i{
+    display: inline;
+}
+
+.hobbies h2{
+    font-size: x-large;
+}
+
+.ho1{
+    grid-area: ho1;
+}
+
+.ho2{
+    grid-area: ho2;
+}
+
+.ho3{
+    grid-area: ho3;
+}
+
+.ho4{
+    grid-area: ho4;
+}
+
+.hobbies ul{
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "ho1 ho2 ho3 ho4";
+}
+
+.hobbies li{
+    border: vr.$whiteT2 2px solid;
+    color: vr.$white;
+    padding: 10px 30px;
+    transition: .3s;
+    cursor: default;
+    &:hover{
+        box-shadow: inset 20em 0 0 0 vr.$saharaSand;
+        color: vr.$black;
+    }
+}
+
+.title-skill{
+    margin: 21px 0 21px 0;
+    font-size: larger;
+}
+
+.skills .pro ul{
+    display: flex;
+    gap: 50px;
+    font-size: larger;
+}
+
+.skills section ul li{
+    padding: 5px 19px;
+    border-radius: 35px;
+    transition: .3s;
+    cursor: default;
+}
+
+.skills section ul{
+    display: flex;
+    gap: 50px;
+    font-size: larger;
+}
+
+.skills section ul li{
+    padding: 5px 19px;
+    border-radius: 35px;
+    transition: .3s;
+    cursor: default;
+}
+
+.js-l{
+    @include skills(vr.$ripeLemon, vr.$texas);
+}
+
+.ht-l{
+    @include skills(vr.$Carnation, vr.$RoseBud);
+}
+
+.ph-l{
+    @include skills(vr.$WildBlueYonder, vr.$perfume);
+}
+
+.py-l{
+    @include skills(vr.$astral, vr.$jordyBlue);
+}
+
+.ja-l{
+    @include skills(vr.$AlizarinCrimson, vr.$Bittersweet);
+}
+
+.bd1{
+    @include skills(vr.$CopperRose, vr.$Sundown);
+}
+
+.bd2{
+    @include skills(vr.$BahamaBlue, vr.$DodgerBlue);
+}
+
+.bd3{
+    @include skills(vr.$ForestGreen, vr.$PastelGreen);
+}
+
+.adi1{
+    @include skills(vr.$Carnation, vr.$RoseBud);
+}
+
+.adi2{
+    @include skills(vr.$Heliotrope, vr.$Mauve);
+}
+
+.adi3{
+    @include skills(vr.$astral, vr.$jordyBlue );
+}
+
+.adi4{
+    @include skills(vr.$ElectricViolet, vr.$Mauve);
+}
+
+.training{
+    display: block;
+}
+
+.training section{
+    width: 80%;
+    padding: 70px 19% 0 10px;
+    border-bottom: vr.$saharaSand 3px solid;
+    margin: 0 0 0 auto;
+    border-right: vr.$saharaSand 3px solid;
+}
+
+.training section p{
+    font-family: vr.$font-nerd ,Arial, Helvetica, sans-serif;
+}
+
+.training h3{
+    font-size: x-large;
+}
+
+.training .scd, h3{
+    text-align: end;
+}
+
+.training .scd{
+    margin-bottom: 40px;
+}
+
+.contact section{
+    margin: 0 0 10px 0;
+    padding: 45px 45px 10px 20px;
+    border-right: vr.$saharaSand 3.5px solid;
+    border-bottom: vr.$saharaSand 3.5px solid;
+    border-bottom-right-radius: 20px;
+    color: vr.$white;
+}
+
+.contact section div{
+    display: flex;
+    margin-top: 30px;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.contact section h2{
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+.conbtn{
+    padding: 10px 30px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: vr.$ForestGreen;
+    display: block;
+    text-align: center;
+}
+
+.map-contact{
+    width: 50%;
+    min-width: 200px;
+    max-width: 900px;
+    height: 300px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: vr.$DodgerBlue 2px solid;
+}
+
+footer{
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+@media screen and (min-width: 1600px){
+    header{
+        zoom: 150%;
+    }
+
+    #profile, #skills, #training, #contact{
+        zoom: 130%;
+    }
+
+    .navbar{
+        zoom: 120%;
+    }
+    
+}
+
+@media screen and (min-width: 1900px){
+    header{
+        zoom:150%;
+    }
+
+    #profile, #skills, #training, #contact{
+        zoom: 150%;
+    }
+
+    .navbar{
+        zoom: 150%;
+    }
+}
+
+@media screen and (min-width: 3000px){
+    header{
+        zoom:250%;
+    }
+
+    #profile, #skills, #training, #contact{
+        zoom: 200%;
+    }
+
+    .navbar{
+        zoom: 170%;
+    }
+}
+
+@media screen and (min-width: 4000px){
+    header{
+        zoom:350%;
+    }
+
+    #profile, #skills, #training, #contact{
+        zoom: 300%;
+    }
+
+    .navbar{
+        zoom: 270%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

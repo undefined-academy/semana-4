@@ -1,0 +1,145 @@
+@use "variable.scss" as vr;
+
+html{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+body{
+    font-family:vr.$font-normal ,Arial, Helvetica, sans-serif;
+    background-color: vr.$blueZodiac; 
+    color: vr.$white;   
+}
+
+strong, b{
+    font-weight: bold;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    scroll-snap-align: start;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 45px;
+    margin-top: 35px;
+}
+
+.btnback{
+    padding: 20px 30px 0 0;
+}
+.btnback a{
+    text-decoration: none;
+    color: vr.$white;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+body{
+    font-family:vr.$font-normal ,Arial, Helvetica, sans-serif;
+    background-color: vr.$blueZodiac;
+    color: vr.$white;   
+}
+.form-group *{
+    margin-bottom: 15px;
+}
+
+#fg1{
+    grid-area: fg1;
+}
+
+#fg2{
+    grid-area: fg2;
+}
+
+#fg3{
+    grid-area: fg3;
+}
+
+#btn-enviar{
+    grid-area: fg4;
+} 
+
+.contact{
+    padding: 30px 10%;
+}
+
+.contact form{
+   display: grid;
+   grid-template-areas: 
+   "fg1 fg2" 
+   "fg3 fg3"
+   "fg4 fg4";
+}
+
+.contact input{
+    padding: 10px 20px;
+    background-color: vr.$blueZodiac;
+    color: vr.$white;
+    border-radius: 25px;
+    border: vr.$saharaSand 3px solid;
+    width: 90%;
+    font-family: vr.$font-nerd,Arial, Helvetica, sans-serif;
+    letter-spacing: .8px;
+    font-size: medium;
+    transition: .2s;
+}
+
+.contact input::placeholder{
+    color: vr.$whiteT;
+}
+
+.contact input:focus {
+    outline: none;
+    box-shadow: 0.3em 0.6em 0.6em -0.5em vr.$saharaSand;
+    transform: translateY(-0.20em);
+    transition: .2s;
+}
+
+.contact textarea{
+    height: 140px;
+    width: 99%;
+    font-size: medium;
+    padding: 10px 20px;
+    font-family: vr.$font-nerd,Arial, Helvetica, sans-serif;
+    letter-spacing: .8px;
+    border:vr.$astral 3px solid;
+    background-color: vr.$blackPearlT;
+    border-radius: 20px;
+    color: vr.$white;
+    resize: none;
+    transition: .2s;
+}
+
+.contact textarea:focus{
+    outline: none;
+    box-shadow: 0.3em 0.6em 0.6em -0.5em vr.$astral;
+    transform: translateY(-0.20em);
+    transition: .2s;
+}
+
+.contact textarea::placeholder{
+    color: vr.$whiteT;
+}
+
+#btn-enviar{
+    margin: 9px auto 9px auto;
+    padding: 10px 20px;
+    background-color: vr.$astral;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#btn-enviar:hover{
+    background-color: vr.$jordyBlue;
+    color: vr.$black;
+    box-shadow: 0.3em 0.6em 0.6em -0.5em vr.$jordyBlue;
+}

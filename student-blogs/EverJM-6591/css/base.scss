@@ -1,0 +1,26 @@
+@media screen and (max-width: 856px){
+    .item-notices section{
+        width: 97%;
+    }
+
+    .item-navbar ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container{
+        grid-template-areas:
+        "navbar navbar navbar"
+        "buscador buscador buscador"
+        "notices notices notices"
+        "section section section";
+    }
+
+    .item-section section{
+        display: block;
+    }
+
+    .item-section div{
+        padding: 0;
+    }
+}

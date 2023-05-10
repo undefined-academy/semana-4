@@ -1,0 +1,116 @@
+@use "./variables.scss" as v;
+
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{ 
+    background-color: v.$white;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.item-navbar{
+    grid-area: navbar;
+}
+
+.item-buscador{
+    grid-area: buscador;
+    display: flex;
+    align-items: center;
+}
+
+.item-notices{
+    grid-area: notices;
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+
+.item-section{
+    grid-area: section;
+}
+
+.container{
+    display: grid;
+    height: 100%;
+    grid-template-columns: auto 300px ;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "navbar navbar buscador"
+    "notices notices notices"
+    "section section section";
+}
+
+.item-navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+    font-weight: bold;
+    gap: 1.3em;
+    padding: 22px;
+}
+
+.item-navbar li{
+    padding: 11px 18px;
+    border-radius: 0.5em;
+}
+
+.item-navbar li:hover{
+    background-color: v.$black;
+    color: v.$ChinaIvory;
+    cursor: pointer;
+}
+
+.item-buscador input{
+    height: 40px;
+    width: 85%;
+    min-width: 110px;
+    max-width: 350px;
+    border-radius: 0.5em;
+    font-size: large;
+    padding-left: 15px;
+}
+
+.item-buscador input::placeholder{
+    font-size: large;
+}
+
+.item-notices section{
+    width: 400px;
+    padding: 10px 5px 20px 5px;
+    margin: 10px 10px;
+    text-align: justify;
+    background-color: v.$white;
+    box-shadow: v.$blackT 0px 7px 21px 0px;
+    border-radius: 0.6em;
+    h1, p{
+        margin: 12px 0
+    }
+    a{
+        text-decoration: none;
+        color: v.$white;
+        background-color: v.$black;
+        border-radius: 10px;
+        padding: 5px 8px;
+    }
+}
+
+.item-section section{
+    padding: 10px 10px 20px 10px;
+    margin: 10px 30px;
+    background-color: v.$Jonquil;
+    box-shadow: v.$blackT 0px 7px 21px 0px;
+    text-align: justify;
+    display: flex;
+}
+
+.item-section div{
+    padding: 50px;
+}
+
+
+
+
