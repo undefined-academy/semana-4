@@ -69,6 +69,7 @@ body {
   article {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     background-color: $bg_color-card;
     background-image: url(IMG_header.jpg);
     background-blend-mode: soft-light;
@@ -79,7 +80,7 @@ body {
   .circular {
     align-self: center;
     border-radius: 50%;
-    position: top;
+   
     margin: 0% 0%;
     width: 180px;
     height: 180px;
@@ -101,5 +102,10 @@ body {
     font-size: 110%;
     align-self: center;
     font-style: italic;
+  }
+
+  .fecha {
+    color: darkslategray;
+    align-self: flex-end;
   }
   
