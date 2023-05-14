@@ -1,0 +1,133 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+$cuttySark: #566B78;
+$mineShaft: #333333;
+$concrete: #f3f1f1;
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+header.main {
+    background-image: url("img/header-page.jpg");
+    image-rendering: pixelated;
+    background-position: center top;
+    background-size: 100%;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-color: gray;
+    line-height: 1.2;
+    padding: 3vw 0em;
+    text-align: center;
+}
+
+main.page {
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 0em 1em;
+    color: $cuttySark;
+}
+
+body {
+    color: $mineShaft;
+    background-color: $concrete;
+    margin: 0;
+}
+
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+h1, h2, strong {
+    color: $mineShaft;
+}
+
+code, pre {
+    background: $concrete;
+    border-bottom: 1px solid $concrete;
+    color: gray;
+}
+
+code {
+    padding: 2px 4px;
+    vertical-align: text-bottom;
+}
+
+pre {
+    padding: 1em;
+    border-left: 2px solid #6699cc;
+    white-space: pre-wrap;
+}
+
+a {
+    color: blue;
+}
+
+header h1 {
+    color: black;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-shadow: 2px 2px whitesmoke;
+    margin: 25px 25px 15px 25px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid gray;
+}
+
+table {
+    background-color: whitesmoke;
+    border: 1px solid;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid gray;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: silver;
+}
+
+footer.main {
+    text-align: center;
+}
+
+footer {
+    font-size: 0.8em;
+}
+
+nav {
+    background-color: transparent;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0;
+    padding: 0 20px;
+}
+
+nav a {
+    color: $mineShaft;
+    text-decoration: none;
+    font-weight: bold;
+    font-weight: 18px;
+}

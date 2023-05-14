@@ -1,0 +1,20 @@
+{
+  "name": "bruno33-5772",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "sass": "sass styles/main.scss styles/main.css",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.1",
+    "vite": "^4.3.5"
+  }
+}

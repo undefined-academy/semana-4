@@ -1,0 +1,93 @@
+$mineShaft: #333333;
+$bondiBlue: #0891b2;
+$cerulean: #06b6d4;
+$blueChill: #0e7490;
+
+.work {
+    display: none;
+}
+
+.work-item {
+    display: block;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+label, input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+}
+
+input {
+    vertical-align: middle;
+}
+
+input[type="text"], input[type="email"], textarea {
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: $mineShaft;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label, legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $mineShaft;
+    padding-right: 5px;
+}
+
+fieldset > label {
+    font-weight: normal;
+    text-transform: none;
+    vertical-align: auto;
+}
+
+fieldset > input {
+    vertical-align: baseline;
+}
+
+span {
+    text-transform: none;
+}
+
+.help {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+select {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+}
+
+button {
+    padding: 15px 60px;
+    text-transform: uppercase;
+    font-size: bold;
+    border: 1px solid;
+    border-radius: 8px;
+    background: $bondiBlue;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: $cerulean;
+}
+
+button:active {
+    background-color: $blueChill;
+}
+
+form {
+    accent-color: $bondiBlue;
+}

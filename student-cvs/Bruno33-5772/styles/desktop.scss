@@ -1,0 +1,12 @@
+@media screen and (min-width:992px) {
+    .work-item {
+        display: inline;
+    }
+}
+
+@media screen and (min-width:50em) {
+    header h1 {
+        margin: 25px auto 15px auto;
+        max-width: 760px;
+    }
+}
