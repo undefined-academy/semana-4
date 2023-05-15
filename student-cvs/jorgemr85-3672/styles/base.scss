@@ -1,0 +1,146 @@
+@import "./variables.scss";
+@media screen and (min-width:360px) {
+    body {
+        margin: 0 auto;
+        max-width: 50em;
+    }
+
+    .jm {
+        background: $smooth;
+        padding: 15px 10px 15px 10px
+    }
+
+    .jm,
+    h1 {
+        font-size: 16px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .jm,
+    h2 {
+        padding-top: 5px;
+        font-size: 13px;
+        color: $turques
+    }
+
+    .art {
+        display: grid;
+        grid-template-rows: 4(60px);
+    }
+
+    .illustration {
+        width: 300%;
+        height: auto;
+
+
+    }
+
+    img {
+        width: 35%;
+        height: auto;
+    }
+
+    .about h3 {
+        background: $smooth;
+        padding: 15px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+    }
+
+    .about p {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 15px;
+    }
+
+    .study h3 {
+        background: $smooth;
+        padding: 15px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+    }
+
+    .study {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        background: $smooth;
+    }
+
+    .study h4 {
+        margin-top: 10ppx;
+        padding: 15px 15px 0px 15px;
+        color: white;
+        font-size: 14px;
+    }
+
+    .study p {
+        padding: 10px 15px 15px 15px;
+        color: $turques;
+    }
+
+    .curs h3 {
+        background: $smooth;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 15px;
+        font-size: 16px;
+        color: white;
+        margin-top: 10px;
+    }
+
+
+    .curs ol {
+        counter-reset: li;
+        list-style: none;
+        *list-style: decimal;
+        font: 15px 'trebuchet MS', 'lucida sans';
+        padding: 0;
+        margin-bottom: 4em;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+    }
+
+    .curs ol {
+        margin: 0 0 0 2em;
+    }
+
+    .curs li {
+        position: relative;
+        display: block;
+        padding: .4em .4em .4em 2em;
+        *padding: .4em;
+        margin: .5em 0;
+        background: #ddd;
+        color: #444;
+        text-decoration: none;
+        border-radius: .3em;
+        transition: all .3s ease-out;
+    }
+
+    .curs li:hover {
+        background: $smooth;
+        color: white;
+    }
+
+    .curs li:hover:before {
+        transform: rotate(360deg);
+    }
+
+    .curs li:before {
+        content: counter(li);
+        counter-increment: li;
+        position: absolute;
+        left: -1.3em;
+        top: 50%;
+        margin-top: -1.3em;
+        background: $turques;
+        height: 2em;
+        width: 2em;
+        line-height: 2em;
+        border: .3em solid #fff;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 2em;
+        transition: all .3s ease-out;
+    }
+}
