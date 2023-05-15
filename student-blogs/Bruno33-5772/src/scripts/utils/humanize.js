@@ -5,8 +5,7 @@ await import("dayjs/locale/es.js");
 dayjs.locale("es");
 dayjs.extend(relativeTime);
 
-const dateInput = dayjs("2023-05-01 18:28");
-function humanizarFecha (dateInput) {
+export default function humanizeDate (dateInput) {
     const date = dayjs(dateInput);
     const today = dayjs();
     if (today.diff(date,"month") === 0) {
@@ -17,5 +16,3 @@ function humanizarFecha (dateInput) {
         return date.format("MMMM DD, YYYY");
     }
 }
-
-console.log(humanizarFecha(dateInput));

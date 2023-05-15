@@ -2,12 +2,12 @@
   "name": "bruno33-5772",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/scripts/main.js",
   "scripts": {
     "start": "vite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
-    "sass": "sass styles/main.scss styles/main.css"
+    "sass": "sass src/styles/main.scss src/styles/main.css"
   },
   "keywords": [],
   "author": "",

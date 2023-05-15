@@ -32,6 +32,7 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
+  padding: 15px 0;
   gap: 10px;
 }
 
@@ -39,16 +40,15 @@ body {
   cursor: pointer;
 }
 
-div {
+article {
   display: flex;
   flex-direction: column;
   border: 1px solid Gainsboro;
   padding: 10px;
-  max-width: 50em;
   margin: 0 auto;
 }
 
-.ad {
+.advertising {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,8 +56,8 @@ div {
   background-color: aquamarine;
 }
 
-div:last-child {
-  grid-column: 1/4;
+article:last-child {
+  grid-column: 1/5;
 }
 
 img {
