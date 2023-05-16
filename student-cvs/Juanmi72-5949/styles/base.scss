@@ -1,19 +1,23 @@
-@import "./variables.scss";
+@import "variables";
 
 
 html {
     box-sizing: border-box;
 
-    background-color: aliceblue;
+    background-color: $color-autor-aliceblue;
 }
 
 body{
     margin:0;
     box-sizing: inherit;
+    background-color: $color-prueba;
+    
 }
 main{
     display: flex;
     flex-direction: column;
+    
+    
 }
 nav {
     display:grid;

@@ -1,9 +1,11 @@
-@import "./variables.scss";
+@import "variables";
 
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 600px) {
     main{
         flex-direction: row;
+        background-color: $color-prueba;
+
     }
     section { 
         display: inline-flex;
