@@ -1,0 +1,20 @@
+{
+  "name": "joaquinesteban-2337",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "sass": "sass --watch styles/main.scss styles/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.62.1",
+    "vite": "^4.2.1"
+  }
+}
