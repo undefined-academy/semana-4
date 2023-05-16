@@ -1,0 +1,9 @@
+$smartphone: (min-width: 480px);
+$tablet:(min-width: 768px);
+
+
+@mixin container-web(){
+    max-width: 110rem;
+    height: 50rem;
+    margin: 2rem auto 12rem auto;
+}

@@ -1,0 +1,198 @@
+@media (max-width: 480px) {
+  header {
+    background-color: none;
+  }
+  header .hambur-menu {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    background-image: url("https://drive.google.com/uc?id=14EMS7uB6Fd0FGdZvsk4zVCrLxD4gk2xi");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  header nav {
+    display: none;
+  }
+  main .container .flex-container {
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  main .container .flex-container article {
+    width: 40rem;
+  }
+  main .container-2 {
+    margin-top: 115rem;
+  }
+  main .container-2 .grid-container .art-1 {
+    grid-column: 1/5;
+    grid-row: 1/5;
+  }
+  main .container-2 .grid-container .art-2 {
+    grid-column: 1/5;
+    grid-row: 5/5;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    background-color: none;
+  }
+  header .hambur-menu {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    background-image: url("https://drive.google.com/uc?id=14EMS7uB6Fd0FGdZvsk4zVCrLxD4gk2xi");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  header nav {
+    display: none;
+  }
+  main .container .flex-container {
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  main .container .flex-container article {
+    width: 40rem;
+  }
+  main .container-2 {
+    margin-top: 115rem;
+  }
+  main .container-2 .grid-container .art-1 {
+    grid-column: 1/5;
+    grid-row: 1/5;
+  }
+  main .container-2 .grid-container .art-2 {
+    grid-column: 1/5;
+    grid-row: 5/5;
+  }
+}
+header {
+  width: 100%;
+  height: 10rem;
+  background-color: rgb(181, 181, 187);
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+header nav ul li {
+  font-size: 2rem;
+  list-style: none;
+  margin: 1rem 2rem 0 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: darkolivegreen;
+}
+
+main {
+  width: 100%;
+}
+main section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: 110rem;
+  height: 50rem;
+  margin: 2rem auto 12rem auto;
+}
+main section h2 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+main section .flex-container {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+main section .flex-container article {
+  width: 30rem;
+  height: 50rem;
+  border: 0.1rem solid rgb(210, 204, 204);
+  border-radius: 1rem;
+  margin: 0.5rem;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+main section .flex-container article .img {
+  width: 100%;
+  height: 20rem;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("http://source.unsplash.com/95YRwf6CNw8");
+  overflow: hidden;
+}
+main section .flex-container article h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  padding: 1rem;
+}
+main section .flex-container article p {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+main section {
+  max-width: 110rem;
+  height: 50rem;
+  margin: 2rem auto 12rem auto;
+}
+main section .grid-container {
+  display: grid;
+  padding: 2rem;
+  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 15rem);
+  justify-content: space-around;
+}
+main section .grid-container article {
+  border: 0.1rem solid rgb(210, 204, 204);
+  border-radius: 1rem;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+main section .grid-container article .img {
+  width: 100%;
+  height: 20rem;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("http://source.unsplash.com/95YRwf6CNw8");
+  overflow: hidden;
+}
+main section .grid-container article h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  padding: 1rem;
+}
+main section .grid-container article p {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+main section .grid-container .art-1 {
+  grid-row: 1/5;
+}
+main section .grid-container .art-2 {
+  grid-column: 2/5;
+  grid-row: 1/5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,96 @@
+
+@import "variables.scss";
+
+
+
+ @media (max-width:480px){
+
+    header{
+        background-color: none;
+        .hambur-menu{
+            display: inline-block;
+            width: 5rem;
+            height: 5rem;
+            margin-top: 2rem;
+            margin-left: 2rem;
+            background-image: url('https://drive.google.com/uc?id=14EMS7uB6Fd0FGdZvsk4zVCrLxD4gk2xi');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        nav{
+            display: none;
+        }
+    }
+    main{
+
+        .container{
+
+            .flex-container{
+                margin: 0 auto;
+                flex-direction: column;
+
+                article{
+                    width: 40rem;
+                }
+            }
+            
+        }
+        .container-2{
+            margin-top: 115rem;
+
+            .grid-container{
+            
+
+            .art-1{
+                grid-column: 1/5;
+                grid-row: 1/5 ;
+                
+            }
+
+            .art-2{
+                grid-column: 1/5;
+                grid-row: 5/5;
+            }
+            
+
+            }
+        }
+    }
+ }
+
+
+
+
+
+// @mixin media-query-medium{
+//     @media($tablet){
+//         main{
+//             section{
+//                 h2{
+//                     padding-left: 1.4rem;
+                    
+//                 }
+//                 .flex-container{
+//                     padding: 1.4rem;
+                    
+        
+        
+//                     article{
+                        
+//                         h2{
+//                             margin-bottom: 0;
+//                         }
+//                     }
+//                 }
+    
+//             }
+            
+            
+//             .grid-container{
+//                 padding: 1.4rem;
+//             }
+           
+//         }
+//     }
+// }
