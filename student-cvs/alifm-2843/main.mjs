@@ -8,13 +8,7 @@ document.getElementById("myIcon").addEventListener("click", myFunction);
 
 function myFunction() {
     let respomenu = document.getElementById("myTopnav");
-    let closeIcon = document.getElementById("mycloseIcon");
-
-    if (respomenu.className === "topnav") {
-        respomenu.className += " responsive";
-    } else {
-        respomenu.className = "topnav";
-    }
+    respomenu.classList.toggle("responsive");
 }
 
 // function to prevent default behavior and reset form
@@ -43,7 +37,6 @@ function humanize(date) {
         return `${formattedDate.format("MMMM DD, YYYY"), formattedDate.fromNow()}`
     }
 }
-
 
 const $cardDates = document.querySelectorAll(".dates");
 
