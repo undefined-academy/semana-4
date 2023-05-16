@@ -1,6 +1,7 @@
-$smartphone: (min-width: 480px);
-$tablet:(min-width: 768px);
-
+//COLORS
+$Bombay:#B5B5BB;
+$Apple:#5E933E;
+$Silver: #BFBFBF;
 
 @mixin container-web(){
     max-width: 110rem;
