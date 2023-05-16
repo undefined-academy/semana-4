@@ -17,7 +17,7 @@ a:hover {
     color: variables.$white;
 }
   
-  div {
+  article, section {
     display: flex;
     flex-direction: column;
     border: 1px solid variables.$regent-st-blue;
@@ -71,7 +71,7 @@ a:hover {
     font-size: 1em;
 }
   
-  div .big {
+  article .big {
     grid-column: 1/4;
   }
 
