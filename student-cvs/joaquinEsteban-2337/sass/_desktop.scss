@@ -47,7 +47,7 @@ header{
 
             .text{
                 font-size: 2rem ;
-                color: #4e5aa8;
+                color: variables.$sanMarino;
             }
 
             p{
@@ -63,16 +63,16 @@ header{
                 padding: 1rem;
                 text-decoration: none;
                 border-radius: 1rem;
-                background-color: rgb(102, 102, 100);
-                color: #d1d3d4;
+                background-color: variables.$dustyGray;
+                color: variables.$iron;
                 cursor: pointer;
 
                 &:hover{
-                    background-color: rgb(134, 134, 15);  
+                    background-color: variables.$cornHarvest;  
                 }
 
                 &:active{
-                    background-color: rgb(58, 58, 4);
+                    background-color: variables.$madras;
                 } 
                 
             }
@@ -97,16 +97,16 @@ header{
                 padding: 1rem;
                 text-decoration: none;
                 border-radius: 1rem;
-                background-color: rgb(102, 102, 100);
-                color: #d1d3d4;
+                background-color: variables.$dustyGray;
+                color: variables.$iron;
                 cursor: pointer;
 
                 &:hover{
-                    background-color: rgb(134, 134, 15); 
+                    background-color: variables.$cornHarvest; 
                 }
 
                 &:active{
-                    background-color: rgb(58, 58, 4);
+                    background-color: variables.$madras;
                 }
             }
         }
@@ -118,13 +118,13 @@ main{
     height: 90rem;
     padding:2rem ;
     margin-bottom: 100rem;
-    background-color: #1e264a;
+    background-color: variables.$cloudBurst;
 
 
     h2{
         font-size: 1.6rem ;
         margin-bottom: 2rem ;
-        color: #d1d3d4;
+        color: variables.$iron;
     }
 
     .flex-container{
@@ -136,7 +136,7 @@ main{
             width: 100%;
             height:auto ;
             margin-bottom: 2rem;
-            background-color: #837d7d15;
+            background-color: variables.$dustyGray;
             padding: 1rem;
             /* border: 1rem solid grey; */
             box-shadow: -1px 4px 29px 9px rgba(0,0,0,0.75);
@@ -144,7 +144,7 @@ main{
             h2{
                 font-size: 1.6rem ;
                 margin-bottom: 0.6rem ;
-                color: #d1d3d4;
+                color: variables.$iron;
                 text-align: center;
             }
 
@@ -243,24 +243,24 @@ main{
                 p{
                     font-size: 1.3rem;
                     margin-bottom: 2rem;
-                    color: #d1d3d4;
+                    color: variables.$iron;
                 }
 
                 a{
                     font-size: 1.2rem;
                     text-decoration: none;
-                    background-color: #4e5aa8;
+                    background-color:variables.$sanMarino;
                     padding: 1rem 2rem;
                     border-radius: 1rem;
 
-                    color: #d1d3d4;
+                    color: variables.$iron;
 
                     &:hover{
-                        color: #1e264a;
+                        color: variables.$cloudBurst;
                     }
 
                     &:active{
-                        color: #8a97fc;
+                        color: variables.$sanMarino;
                     }
                 }
 
@@ -293,7 +293,7 @@ main{
         h2{
             font-size: 1.6rem ;
             margin: 2rem 0;
-            color: #d1d3d4;
+            color: variables.$sanMarino;
         }
 
         .grid-container{
@@ -305,7 +305,7 @@ main{
             article{
                 width: 100%;
                 height:20rem;
-                background-color: #1e264a;
+                background-color: variables.$cloudBurst;
                 border-radius: 1rem;
                 box-shadow: -1px 4px 29px 9px rgba(0,0,0,0.75);
                 align-items: center;
@@ -324,8 +324,8 @@ main{
                     display: inline-block;
                     text-decoration: none;
                     font-size: 1rem;
-                    color: #8a97fc;
-                    background-color:  #1e264a;
+                    color: variables.$sanMarino;
+                    background-color:  variables.$cloudBurst;
                     border-radius: 1rem;
                     padding: 1rem 2rem;
                     margin-top: 1rem;
@@ -336,7 +336,7 @@ main{
                     font-size: 1.4rem;
                     padding: 0.4rem;
                     margin-bottom: 10rem;
-                    color: #d1d3d4;
+                    color: variables.$iron;
                 }
             }
 
@@ -382,7 +382,7 @@ footer{
     width: 100%;
     height: 55vh;
     padding: 4rem 2rem 2rem 2rem;
-    background-color: #4e5aa8;
+    background-color: variables.$sanMarino;
 
 
     .f-text{
@@ -398,19 +398,19 @@ footer{
         .text1{
             font-size: 1rem;
             font-weight: bolder;
-            color: #1e264a;
+            color: variables.$cloudBurst;
             text-align: center;
         }
 
         .text2{
             font-size: 1.5rem;
             font-weight: bolder;
-            color: #d1d3d4;
+            color: variables.$iron;
         }
 
         .paragraph{
             font-size: 1rem;
-            color: #d1d3d4;
+            color: variables.$iron;
             text-align: center;
         }
     }
@@ -427,8 +427,8 @@ footer{
             width: 8rem;
             text-decoration: none;
             font-size: 1rem;
-            color: #8a97fc;
-            background-color:  #1e264a;
+            color: variables.$sanMarino;
+            background-color:  variables.$cloudBurst;
             border-radius: 1rem;
             padding: 1rem 2rem;
             margin: 1rem;
@@ -447,7 +447,7 @@ footer{
         div{
             width: 100%;
             height: auto;
-            border-top: 0.3rem solid #1e264a;
+            border-top: 0.3rem solid variables.$cloudBurst;
             margin-top: 10rem;
         }
     
@@ -455,7 +455,7 @@ footer{
             font-size: 1rem;
             text-align: center;
             margin-top: 1rem;
-            color: #d1d3d4;
+            color: variables.$iron;
         }
     }
 
@@ -474,18 +474,18 @@ footer{
         padding: 1rem 2rem;
         margin-top: 3rem;
         margin-left: 2rem;
-        border: 1px solid #000;
+        border: 1px solid variables.$black;
         border-radius: 1rem;
         background-color: rgb(42, 39, 39);
-        color: rgb(97, 101, 103);
+        color: variables.$dustyGray;
         cursor: pointer; 
 
         &:hover{
-            color: aliceblue;
+            color: variables.$iron;
         }
 
         &:active{
-            background-color: rgb(70, 65, 65);
+            background-color: variables.$dustyGray;
         }
     }
 
@@ -510,7 +510,7 @@ footer{
                 margin: 0.5rem 0;
                 font-size: 1.5rem;
                 font-weight: bolder;
-                color:#4e5aa8;
+                color:variables.$sanMarino;
             }
 
             .box1{
@@ -518,7 +518,7 @@ footer{
                 input{
                     width: 13rem;
                     height: 3rem;
-                    border-bottom: 0.4rem solid #8a97fc;
+                    border-bottom: 0.4rem solid variables.$sanMarino;
                     background-color: #1e264a;
                 }
                
@@ -529,7 +529,7 @@ footer{
                 input{
                     width: 13rem;
                     height: 3rem;
-                    border-bottom: 0.4rem solid #8a97fc;
+                    border-bottom: 0.4rem solid variables.$sanMarino;
                     background-color: #1e264a;
                 }
                
@@ -542,8 +542,8 @@ footer{
                 input{
                     width: 13rem;
                     height: 3rem;
-                    border-bottom: 0.4rem solid #8a97fc;
-                    background-color: #1e264a;
+                    border-bottom: 0.4rem solid variables.$sanMarino;
+                    background-color: variables.$cloudBurst;
                 }
                
             }
@@ -553,8 +553,8 @@ footer{
                 textarea{
                     width: 13rem;
                     border: none;
-                    border-bottom: 0.3rem solid #8a97fc;
-                    background-color: #1e264a;
+                    border-bottom: 0.3rem solid variables.$sanMarino;
+                    background-color: variables.$cloudBurst;
                     resize: horizontal;
                 }
                
@@ -571,16 +571,16 @@ footer{
                     text-align: center;
                     border: 1px solid #000;
                     border-radius: 1rem;
-                    background-color: rgb(42, 39, 39);
-                    color: rgb(97, 101, 103);
+                    background-color: variables.$madras;
+                    color: variables.$dustyGray;
                     cursor: pointer;
 
                     &:hover{
-                        color: aliceblue; 
+                        color: variables.$iron; 
                     }
 
                     &:active{
-                        background-color: rgb(70, 65, 65);
+                        background-color: variables.$madras;
                     }
 
                 }

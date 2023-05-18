@@ -68,15 +68,15 @@ header .flex-container .box2 a {
   padding: 1rem;
   text-decoration: none;
   border-radius: 1rem;
-  background-color: rgb(102, 102, 100);
-  color: #d1d3d4;
+  background-color: #969696;
+  color: #D1D3D4;
   cursor: pointer;
 }
 header .flex-container .box2 a:hover {
-  background-color: rgb(134, 134, 15);
+  background-color: #86860F;
 }
 header .flex-container .box2 a:active {
-  background-color: rgb(58, 58, 4);
+  background-color: #3A3A04;
 }
 header .flex-container .box3 {
   display: none;
@@ -96,15 +96,15 @@ header .flex-container .box3 a {
   padding: 1rem;
   text-decoration: none;
   border-radius: 1rem;
-  background-color: rgb(102, 102, 100);
-  color: #d1d3d4;
+  background-color: #969696;
+  color: #D1D3D4;
   cursor: pointer;
 }
 header .flex-container .box3 a:hover {
-  background-color: rgb(134, 134, 15);
+  background-color: #86860F;
 }
 header .flex-container .box3 a:active {
-  background-color: rgb(58, 58, 4);
+  background-color: #3A3A04;
 }
 
 main {
@@ -117,7 +117,7 @@ main {
 main h2 {
   font-size: 1.6rem;
   margin-bottom: 2rem;
-  color: #d1d3d4;
+  color: #D1D3D4;
 }
 main .flex-container {
   display: flex;
@@ -128,7 +128,7 @@ main .flex-container section {
   width: 100%;
   height: auto;
   margin-bottom: 2rem;
-  background-color: rgba(131, 125, 125, 0.0823529412);
+  background-color: #969696;
   padding: 1rem;
   /* border: 1rem solid grey; */
   box-shadow: -1px 4px 29px 9px rgba(0, 0, 0, 0.75);
@@ -136,7 +136,7 @@ main .flex-container section {
 main .flex-container section h2 {
   font-size: 1.6rem;
   margin-bottom: 0.6rem;
-  color: #d1d3d4;
+  color: #D1D3D4;
   text-align: center;
 }
 main .flex-container section span {
@@ -210,7 +210,7 @@ main .presentation .flex-container .text {
 main .presentation .flex-container .text p {
   font-size: 1.3rem;
   margin-bottom: 2rem;
-  color: #d1d3d4;
+  color: #D1D3D4;
 }
 main .presentation .flex-container .text a {
   font-size: 1.2rem;
@@ -218,13 +218,13 @@ main .presentation .flex-container .text a {
   background-color: #4e5aa8;
   padding: 1rem 2rem;
   border-radius: 1rem;
-  color: #d1d3d4;
+  color: #D1D3D4;
 }
 main .presentation .flex-container .text a:hover {
   color: #1e264a;
 }
 main .presentation .flex-container .text a:active {
-  color: #8a97fc;
+  color: #4e5aa8;
 }
 main .presentation .flex-container .text .img {
   width: 50%;
@@ -249,7 +249,7 @@ main .blog {
 main .blog h2 {
   font-size: 1.6rem;
   margin: 2rem 0;
-  color: #d1d3d4;
+  color: #4e5aa8;
 }
 main .blog .grid-container {
   display: grid;
@@ -277,7 +277,7 @@ main .blog .grid-container article a {
   display: inline-block;
   text-decoration: none;
   font-size: 1rem;
-  color: #8a97fc;
+  color: #4e5aa8;
   background-color: #1e264a;
   border-radius: 1rem;
   padding: 1rem 2rem;
@@ -288,7 +288,7 @@ main .blog .grid-container article h3 {
   font-size: 1.4rem;
   padding: 0.4rem;
   margin-bottom: 10rem;
-  color: #d1d3d4;
+  color: #D1D3D4;
 }
 main .blog .grid-container .article1 {
   grid-column: 1/5;
@@ -338,11 +338,11 @@ footer .f-text .text1 {
 footer .f-text .text2 {
   font-size: 1.5rem;
   font-weight: bolder;
-  color: #d1d3d4;
+  color: #D1D3D4;
 }
 footer .f-text .paragraph {
   font-size: 1rem;
-  color: #d1d3d4;
+  color: #D1D3D4;
   text-align: center;
 }
 footer .f-button {
@@ -357,7 +357,7 @@ footer .f-button a {
   width: 8rem;
   text-decoration: none;
   font-size: 1rem;
-  color: #8a97fc;
+  color: #4e5aa8;
   background-color: #1e264a;
   border-radius: 1rem;
   padding: 1rem 2rem;
@@ -380,7 +380,7 @@ footer .separator p {
   font-size: 1rem;
   text-align: center;
   margin-top: 1rem;
-  color: #d1d3d4;
+  color: #D1D3D4;
 }
 
 .main-form {
@@ -396,14 +396,14 @@ footer .separator p {
   border: 1px solid #000;
   border-radius: 1rem;
   background-color: rgb(42, 39, 39);
-  color: rgb(97, 101, 103);
+  color: #969696;
   cursor: pointer;
 }
 .main-form a:hover {
-  color: aliceblue;
+  color: #D1D3D4;
 }
 .main-form a:active {
-  background-color: rgb(70, 65, 65);
+  background-color: #969696;
 }
 .main-form .form {
   width: 100%;
@@ -428,25 +428,25 @@ footer .separator p {
 .main-form .form .form-box .box1 input {
   width: 13rem;
   height: 3rem;
-  border-bottom: 0.4rem solid #8a97fc;
+  border-bottom: 0.4rem solid #4e5aa8;
   background-color: #1e264a;
 }
 .main-form .form .form-box .box2 input {
   width: 13rem;
   height: 3rem;
-  border-bottom: 0.4rem solid #8a97fc;
+  border-bottom: 0.4rem solid #4e5aa8;
   background-color: #1e264a;
 }
 .main-form .form .form-box2 .box3 input {
   width: 13rem;
   height: 3rem;
-  border-bottom: 0.4rem solid #8a97fc;
+  border-bottom: 0.4rem solid #4e5aa8;
   background-color: #1e264a;
 }
 .main-form .form .form-box2 .box4 textarea {
   width: 13rem;
   border: none;
-  border-bottom: 0.3rem solid #8a97fc;
+  border-bottom: 0.3rem solid #4e5aa8;
   background-color: #1e264a;
   resize: horizontal;
 }
@@ -458,15 +458,15 @@ footer .separator p {
   text-align: center;
   border: 1px solid #000;
   border-radius: 1rem;
-  background-color: rgb(42, 39, 39);
-  color: rgb(97, 101, 103);
+  background-color: #3A3A04;
+  color: #969696;
   cursor: pointer;
 }
 .main-form .form .box-buttton .button a:hover {
-  color: aliceblue;
+  color: #D1D3D4;
 }
 .main-form .form .box-buttton .button a:active {
-  background-color: rgb(70, 65, 65);
+  background-color: #3A3A04;
 }
 .main-form .form .box-buttton .text p {
   display: none;
