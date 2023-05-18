@@ -1,0 +1,156 @@
+@import url(/styles/variables.scss);
+
+@media (min-width: 768px){
+    header{
+        .flex-container{
+            .box2{
+                a{
+                    width: 8rem;
+                }
+            }
+        }
+    }
+    main{
+        height: 65rem;
+    }
+    footer{
+        height: 65vh;
+    }
+
+    //Template contacto.html
+
+    .main-form{
+        .formulario{
+            .form-box{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap; 
+            }
+
+            .form-box2{
+                .box3{
+                    width: 100%;
+                    height: 3rem;
+                }
+
+                .box4{
+                    width: 100%;     
+                }
+            }
+
+            .box-button{
+                display: flex;
+                justify-content: space-between;
+
+                .button{
+                    a{
+                        width: 10rem; 
+                    }
+                }
+
+                .text{
+                    p{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px){
+    header{
+        height: 100vh;
+
+        .box2{
+            h3{
+                font-size: 10rem;
+            }
+        }
+
+        nav{
+            ul{
+                display: flex;
+            }
+        }
+
+        .flex-container{
+            .box2{
+                display: flex;
+                flex-direction: column;
+
+                h3{
+                    font-size: 10rem;
+                }
+
+                .text{
+                    font-size: 4rem;  
+                }
+
+                p{
+                    display: inline-block;
+                    font-size: 1.3rem; 
+                }
+
+                a{
+                    width: 8rem;
+                    margin: 0;
+                }
+                
+            }
+        }
+    }
+
+    main{
+        .blog{
+            .grid-container{
+                article{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    align-items: start;
+                    height: auto;
+                }
+
+                .article1{
+                    grid-column: 1/5;
+                    grid-row: 1/2;
+                    margin: 0;
+                }
+
+                .article2{
+                    grid-column: 1/4;
+                    grid-row: 2 / span 2;
+                    margin: 0;
+                }
+
+                .article3{
+                    grid-column: 4/5;
+                    grid-row: 2 / span 2;
+                    margin: 0;
+                }
+
+                .article4{
+                    grid-column: 1/5;
+                    grid-row: 4/5;
+                    gap: 1rem;
+                }
+
+       
+            }
+        }
+    }
+
+    footer{
+        height: 65vh;
+        margin-top: 45rem;
+    }
+
+      /* TEMPLATE CONTACTO.HTML */
+    .main-form{
+        .formulario {
+            max-width: 60rem;
+        }
+    }
+
+}

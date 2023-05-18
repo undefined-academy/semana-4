@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "sass": "sass --watch styles/main.scss styles/main.css"
+    "sass": "sass --watch sass/main.scss styles/main.css"
   },
   "keywords": [],
   "author": "",
