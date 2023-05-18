@@ -1,0 +1,46 @@
+@use "variables";
+
+@media screen and (min-width: variables.$desktop-media-query) {
+    /* Styles */
+  
+    body {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      
+    }
+
+    main {
+      
+      margin: 0px;
+      
+    }
+  
+    footer {
+      
+      margin-top: 200px;
+      writing-mode: vertical-rl;
+      display: flex;
+      justify-content: flex-start;
+      position: relative;
+     
+      
+    }
+
+    .footer-form{
+
+      margin-top: 0px;
+      
+    }
+  
+    .foot {
+  
+      position: sticky;
+      top: 100px; 
+  
+    }
+
+    
+}
+ 
+

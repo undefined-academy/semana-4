@@ -1,0 +1,26 @@
+@use "../variables";
+
+.heading {
+
+    color: var(--color-emerald-900);
+    
+}
+
+
+.heading-m{
+
+    color: var(--color-emerald-950);
+    font-size: 26px;
+    line-height: 29px;  
+}
+.heading-ms{
+
+    font-size: 22px;
+    line-height: 29px;
+}
+
+.heading-sm{
+    font-size: 18px;
+    line-height: 29px;
+}
+
