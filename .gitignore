@@ -12,7 +12,7 @@
 .idea/**/dictionaries
 .idea/**/shelf
 
-leo es marica
+.gitignore
 
 # AWS User-specific
 .idea/**/aws.xml
