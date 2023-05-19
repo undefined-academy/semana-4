@@ -1,9 +1,8 @@
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime.js";
+import es from "dayjs/locale/es.js";
 
-import("dayjs/locale/es-us.js");
-
-dayjs.locale("es-us");
+dayjs.locale(es);
 dayjs.extend(relativeTime);
 
 export default function humanize(date) {
