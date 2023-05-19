@@ -7,7 +7,7 @@ dayjs.locale("es-us")
 dayjs.extend(relativeTime)
 
 function humanize(date) {
-    const wrapperDate = dayjs(date)           //wrapper for the Date object
+    const wrapperDate = dayjs(date)          
     const actualDateInMiliseconds = dayjs().valueOf()
     const actualYear = dayjs().year()
     const daysDiff = Math.abs(wrapperDate.diff(actualDateInMiliseconds, "days"))
