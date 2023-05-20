@@ -13,6 +13,7 @@
 .idea/**/shelf
 
 .gitignore
+gitignore
 
 # AWS User-specific
 .idea/**/aws.xml
