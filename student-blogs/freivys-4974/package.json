@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
-    "sass": "sass --watch scss/styles.scss css/styles.css"
+    "sass": "sass --watch scss/main.scss css/styles.css"
   },
   "keywords": [],
   "author": "",

@@ -1,4 +1,4 @@
-@use 'main.scss' as m;
+@use 'variables.scss' as v;
 
 *,
 *::after,
@@ -48,8 +48,8 @@ html {
 }
 
 body {
-  background-image: linear-gradient(120deg, m.$viking 0%, m.$malibu 100%);
-  font-family: m.$fontMain;
+  background-image: linear-gradient(120deg, v.$viking 0%, v.$malibu 100%);
+  font-family: v.$fontMain;
   font-size: 100%;
   line-height: 1.5;
   margin: 0 auto;
@@ -67,8 +67,8 @@ body {
   align-items: center;
 
   &-title {
-    color: m.$malibu;
-    font-family: m.$fontTitle;
+    color: v.$malibu;
+    font-family: v.$fontTitle;
     font-size: 3em;
     margin-bottom: 15px;
     text-align: center;
@@ -85,11 +85,11 @@ body {
   }
 
   &-item {
-    background-color: m.$malibu;
+    background-color: v.$malibu;
     border-radius: 8px;
-    color: m.$white;
+    color: v.$white;
     cursor: pointer;
-    font-family: m.$fontTitle;
+    font-family: v.$fontTitle;
     font-weight: bold;
     padding: 5px 10px;
     text-transform: uppercase;
@@ -98,8 +98,8 @@ body {
 
   &-item--active,
   &-item:hover {
-    background-color: m.$viking;
-    border: 2px solid m.$malibu;
+    background-color: v.$viking;
+    border: 2px solid v.$malibu;
   }
 }
 
@@ -115,7 +115,7 @@ body {
 
 // Cards
 .Card {
-  background-color: m.$white;
+  background-color: v.$white;
   border: none;
   border-radius: 15px;
   -webkit-box-shadow: 5px 5px 10px 0px rgba(222, 222, 222, 1);
@@ -136,23 +136,23 @@ body {
   }
 
   &-category {
-    background-color: m.$malibu;
+    background-color: v.$malibu;
     border-radius: 5px;
-    color: m.$white;
+    color: v.$white;
     font-size: 10px;
     font-weight: bold;
     padding: 5px;
   }
 
   &-title {
-    color: m.$malibu;
-    font-family: m.$fontTitle;
+    color: v.$malibu;
+    font-family: v.$fontTitle;
     font-weight: bold;
     margin: 10px auto;
 
     &:hover {
-      background-color: m.$viking;
-      color: m.$white;
+      background-color: v.$viking;
+      color: v.$white;
       border-radius: 5px;
       transition: none 0.7s ease-in-out;
       transition-property: background-color, color;
@@ -164,10 +164,10 @@ body {
   }
 
   &-btn {
-    background-color: m.$malibu;
+    background-color: v.$malibu;
     border-radius: 15px;
-    color: m.$white;
-    font-family: m.$fontTitle;
+    color: v.$white;
+    font-family: v.$fontTitle;
     font-size: 12px;
     font-weight: bold;
     text-align: center;
@@ -175,14 +175,14 @@ body {
     width: 100px;
 
     &:hover {
-      background-color: m.$viking;
+      background-color: v.$viking;
       transition: none 0.7s ease-in-out;
       transition-property: color, background-color;
     }
   }
 
   &-author {
-    background-color: m.$malibu;
+    background-color: v.$malibu;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -202,7 +202,7 @@ body {
   }
 
   &-date {
-    font-family: m.$fontTitle;
+    font-family: v.$fontTitle;
     font-size: 12px;
     font-weight: bold;
   }
@@ -226,16 +226,16 @@ body {
   }
 
   &-anchor {
-    color: m.$white;
+    color: v.$white;
     font-weight: bold;
     padding: 2.5px;
     text-decoration: none;
   }
 
   &-anchor:hover {
-    background: m.$viking;
+    background: v.$viking;
     border-radius: 5px;
-    color: m.$white;
+    color: v.$white;
     transition: none 200ms ease-out;
     transition-property: color, background;
   }
