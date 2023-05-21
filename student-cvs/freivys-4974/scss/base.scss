@@ -1,4 +1,4 @@
-@use 'main.scss' as m;
+@use 'variables.scss' as v;
 
 *,
 *::after,
@@ -15,9 +15,9 @@ html {
 }
 
 body {
-  background-color: m.$athensGray;
-  color: m.$cuttySark;
-  font-family: m.$fontFamily;
+  background-color: v.$athensGray;
+  color: v.$cuttySark;
+  font-family: v.$fontFamily;
   font-size: 100%;
   line-height: 1.5;
   margin: 0 auto;
@@ -29,10 +29,10 @@ body {
 hr {
   background-image: linear-gradient(
     to right,
-    m.$gallery,
-    m.$amaranth,
-    m.$cuttySark,
-    m.$gallery
+    v.$gallery,
+    v.$amaranth,
+    v.$cuttySark,
+    v.$gallery
   );
   border: 0;
   height: 1px;
@@ -44,7 +44,7 @@ hr {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: m.$white;
+  color: v.$white;
   line-height: 1.2;
   padding: 5vh 0.5em;
   text-align: center;
@@ -68,9 +68,9 @@ hr {
   }
 
   &-github {
-    border: 1px solid m.$amaranth;
+    border: 1px solid v.$amaranth;
     border-radius: 20px;
-    color: m.$white;
+    color: v.$white;
     font-size: 0.7em;
     font-weight: bold;
     letter-spacing: 0.2em;
@@ -81,13 +81,13 @@ hr {
     transition-property: color, background;
 
     &:hover {
-      background: m.$amaranth;
+      background: v.$amaranth;
     }
   }
 }
 
 .Subtitle {
-  color: m.$mineShaft;
+  color: v.$mineShaft;
   text-align: center;
   text-decoration: underline;
   text-transform: uppercase;
@@ -123,7 +123,7 @@ hr {
 }
 
 .Form {
-  border: 2px solid m.$amaranth;
+  border: 2px solid v.$amaranth;
   border-radius: 10px;
   padding: 10px 5px;
   width: 100%;
@@ -136,14 +136,14 @@ hr {
   &-input,
   &-select,
   &-textarea {
-    color: m.$cuttySark;
+    color: v.$cuttySark;
     vertical-align: middle;
     padding: 8px 4px;
     width: 100%;
   }
 
   &-title {
-    color: m.$mineShaft;
+    color: v.$mineShaft;
     font-weight: bold;
     text-transform: uppercase;
   }
@@ -152,13 +152,13 @@ hr {
   &-select:focus,
   &-description:focus,
   &-textarea:focus {
-    border: 1px solid m.$amaranth;
+    border: 1px solid v.$amaranth;
     border-radius: 4px;
     outline: 0 none;
   }
 
   &-select {
-    background: m.$white;
+    background: v.$white;
   }
 
   &-description {
@@ -172,7 +172,7 @@ hr {
   }
 
   &-help {
-    color: m.$cuttySark;
+    color: v.$cuttySark;
     font-size: 13px;
   }
 
@@ -182,10 +182,10 @@ hr {
 }
 
 .Btn {
-  border: 1px solid m.$amaranth;
+  border: 1px solid v.$amaranth;
   border-radius: 8px;
   background: none;
-  color: m.$mineShaft;
+  color: v.$mineShaft;
   cursor: pointer;
   font-weight: bold;
   text-decoration: none;
@@ -193,14 +193,14 @@ hr {
   padding: 15px 64px;
 
   &:hover {
-    background-color: m.$amaranth;
-    color: m.$white;
+    background-color: v.$amaranth;
+    color: v.$white;
     transition: none 200ms ease-out;
     transition-property: color, background;
   }
 
   &:active {
-    background-color: m.$shiraz;
+    background-color: v.$shiraz;
   }
 }
 
@@ -214,15 +214,15 @@ hr {
   }
 
   &-anchor {
-    color: m.$amaranth;
+    color: v.$amaranth;
     padding: 2.5px;
     text-decoration: none;
   }
 
   &-anchor:hover {
-    background: m.$amaranth;
+    background: v.$amaranth;
     border-radius: 5px;
-    color: m.$white;
+    color: v.$white;
     transition: none 200ms ease-out;
     transition-property: color, background;
   }

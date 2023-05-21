@@ -30,9 +30,10 @@ function fechaTexto(date) {
     return fechaEntrada.format('MMMM DD');
   }
 }
-
+/*
 console.log(fechaTexto('2023-04-18'));
 console.log(fechaTexto('2023-02-25'));
 console.log(fechaTexto('2022-03-13'));
 console.log(fechaTexto('2021-04-01'));
 console.log(fechaTexto('2020-05-25'));
+/*
