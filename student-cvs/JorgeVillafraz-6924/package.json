@@ -2,6 +2,7 @@
   "name": "prueba-responsive",
   "version": "1.0.0",
   "main": "index.js",
+  "type":"module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -15,5 +16,8 @@
   "devDependencies": {
     "sass": "^1.62.1",
     "vite": "^4.3.8"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7"
   }
 }
