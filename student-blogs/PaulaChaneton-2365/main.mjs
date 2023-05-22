@@ -1,6 +1,10 @@
 import dayjs from 'dayjs';
 import relativeTime from "dayjs/plugin/relativeTime.js";
 
+await import("dayjs/locale/es-us.js")
+
+dayjs.locale ("es-us")
+
 dayjs.extend(relativeTime)
 
 function humanize(date) {
@@ -10,7 +14,7 @@ function humanize(date) {
     const isCurrentYear = wrappedDate.year() === new Date().getFullYear();
 
     if (!isCurrentYear) {
-        return wrappedDate.format("MMMM DD, YYYY")
+        return wrappedDate.format("DD MMMM, YYYY")
     }
 
     else if (daysDiff <= 30) {
@@ -18,17 +22,12 @@ function humanize(date) {
     }
 
     else {
-        return wrappedDate.format("MMMM DD")
+        return wrappedDate.format("DD MMMM")
     }
 }
 
-document.addEventListener("DOMContentLoaded", (event) => {
-  
-    const A = document.querySelectorAll(".event");
-  
-    A.forEach(element => {
-      const B = humanize(element.getAttribute("datetime"));
-      element.innerHTML = B;
-    });
-  
-  })
+
+const A = document.querySelectorAll(".event");
+A.forEach(B => {
+    B.innerHTML = humanize(dayjs(B.getAttribute("datetime")));
+});
