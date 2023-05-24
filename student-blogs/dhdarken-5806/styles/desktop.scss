@@ -1,0 +1,12 @@
+@media (max-width: 750px) {
+  .content {
+    background-color: rgb(175, 165, 211);
+  }
+  .medium {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+  }
+}
