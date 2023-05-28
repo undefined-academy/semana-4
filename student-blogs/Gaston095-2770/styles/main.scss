@@ -1,14 +1,6 @@
 @use "./styles/variables.scss" as *;
+@use "./styles/reset.scss";
 @use "./styles/base.scss";
 @use "./styles/desktop.scss";
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-body {
-    background-color: $gallery;
-}
