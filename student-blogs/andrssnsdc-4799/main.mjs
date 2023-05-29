@@ -6,4 +6,4 @@ function humanizarFechas ($dates, i) {
     console.log(humanizedDate)
 }
 const $dates = document.querySelectorAll("time");
-$dates.forEach(humanizarFechas);
+$dates.forEach(humanizarFechas); 
