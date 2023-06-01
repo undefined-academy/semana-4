@@ -1,8 +1,10 @@
+@use "/styles/variables.scss";
+
 body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: rgb(129, 122, 197);
+  background-color: $color-main-bg;
 }
 
 main {
@@ -47,7 +49,7 @@ h1 {
 .unorderedlist > li {
   width: 40%;
   text-align: center;
-  background-color: rgb(211, 189, 234);
+  background-color: $color-li-main;
   border-radius: 20px;
 }
 
@@ -60,19 +62,19 @@ h1 {
 }
 
 .table1 > .t1 {
-  background-color: rgb(195, 158, 214);
+  background-color: $color-table-bg;
   width: 40%;
   text-align: center;
   border-radius: 20px;
-  color: aliceblue;
+  color: $color-letter;
 }
 
 .table1 > .t2 {
-  background-color: rgb(145, 97, 168);
+  background-color: $color-letter-table;
   width: 80%;
   text-align: center;
   border-radius: 20px;
-  color: aliceblue;
+  color: $color-letter;
 }
 
 .table2 {
@@ -86,15 +88,15 @@ h1 {
 }
 
 .table2 > .p1 {
-  background-color: rgb(195, 158, 214);
+  background-color: $color-table-bg;
   width: 50%;
   border-radius: 20px;
-  color: aliceblue;
+  color: $color-letter;
 }
 
 .table2 > .p2 {
-  background-color: rgb(145, 97, 168);
+  background-color: $color-letter-table;
   width: 100%;
   border-radius: 20px;
-  color: aliceblue;
+  color: $color-letter;
 }
