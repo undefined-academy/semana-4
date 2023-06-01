@@ -1,6 +1,7 @@
+@use "/styles/variables.scss" as *;
 @media (max-width: 750px) {
   .content {
-    background-color: var(--main--color);
+    background-color: $LightSteelBlue;
   }
   .medium {
     display: flex;
