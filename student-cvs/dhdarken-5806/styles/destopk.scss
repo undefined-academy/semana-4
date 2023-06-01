@@ -1,8 +1,7 @@
-@use "/styles/variables.scss";
-
+@use "/styles/variables.scss" as *;
 @media (min-width: 700px) {
   body {
-    background-color: $color-main-bg;
+    background-color: $MediumPurple;
   }
   .table1 {
     display: grid;

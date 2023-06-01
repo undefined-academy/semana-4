@@ -1,10 +1,10 @@
-@use "/styles/variables.scss";
+@use "/styles/variables.scss" as *;
 
 body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: $color-main-bg;
+  background-color: $MediumPurple;
 }
 
 main {
@@ -49,7 +49,7 @@ h1 {
 .unorderedlist > li {
   width: 40%;
   text-align: center;
-  background-color: $color-li-main;
+  background-color: $Thistle;
   border-radius: 20px;
 }
 
@@ -62,19 +62,19 @@ h1 {
 }
 
 .table1 > .t1 {
-  background-color: $color-table-bg;
+  background-color: $Plum;
   width: 40%;
   text-align: center;
   border-radius: 20px;
-  color: $color-letter;
+  color: $Gainsboro;
 }
 
 .table1 > .t2 {
-  background-color: $color-letter-table;
+  background-color: $MediumOrchid;
   width: 80%;
   text-align: center;
   border-radius: 20px;
-  color: $color-letter;
+  color: $Gainsboro;
 }
 
 .table2 {
@@ -88,15 +88,15 @@ h1 {
 }
 
 .table2 > .p1 {
-  background-color: $color-table-bg;
+  background-color: $Plum;
   width: 50%;
   border-radius: 20px;
-  color: $color-letter;
+  color: $Gainsboro;
 }
 
 .table2 > .p2 {
-  background-color: $color-letter-table;
+  background-color: $MediumOrchid;
   width: 100%;
   border-radius: 20px;
-  color: $color-letter;
+  color: $Gainsboro;
 }
