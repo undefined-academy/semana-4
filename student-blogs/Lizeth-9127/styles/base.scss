@@ -1,8 +1,8 @@
-@use "variables.scss";
+@use "variables.scss" as *;
 
 body {
   box-sizing: border-box;
-  background-color: variables.$zircon;
+  background-color:  $zircon;
   margin: 0;
 }
 
@@ -17,7 +17,7 @@ a {
 }
 
 a:hover {
-  color: variables.$cornflower-blue;
+  color:  $cornflower-blue;
 }
 
 h1 {
@@ -43,21 +43,21 @@ footer {
   display: flex;
   flex-direction: column-reverse;
   grid-column: 1 / 4;
-  background-color: variables.$cornflower-blue;
+  background-color:  $cornflower-blue;
   justify-content: space-between;
   align-items: center;
-  border-top: 1.5px solid variables.$periwinkle;
+  border-top: 1.5px solid  $periwinkle;
 }
 
 footer > span {
-  color: variables.$alpha-zircon;
+  color:  $alpha-zircon;
   font-size: 78%;
 }
 
 header {
   grid-column: 1 /4;
   grid-row: 1 / 2;
-  border-bottom: 1px solid variables.$lavender-web;
+  border-bottom: 1px solid  $lavender-web;
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -86,7 +86,7 @@ img {
   display: flex;
   flex-direction: column;
   width: 90%;
-  border: 1px solid variables.$fog;
+  border: 1px solid  $fog;
   border-radius: 7px;
   padding: 1rem;
   margin: 1rem;
@@ -97,11 +97,11 @@ img {
   height: unset;
 }
 .caption {
-  color: variables.$cadet-gray;
+  color:  $cadet-gray;
   font-size: 14px;
 }
 
 .article:hover {
-  box-shadow: 2px 1px 16px variables.$hawkes-blue;
+  box-shadow: 2px 1px 16px  $hawkes-blue;
   cursor: pointer;
 }
