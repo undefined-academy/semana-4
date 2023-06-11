@@ -1,4 +1,4 @@
-@use "variables.scss";
+@use "variables.scss" as *;
 
 body {
   box-sizing: border-box;
@@ -21,19 +21,19 @@ body {
 body {
   background: linear-gradient(
     90deg,
-    variables.$vivid-sky-blue 0%,
-    variables.$congress-blue 53%,
-    variables.$venice-blue 100%
+     $vivid-sky-blue 0%,
+     $congress-blue 53%,
+     $venice-blue 100%
   );
 }
 
 a {
   text-decoration: none;
-  color: variables.$vivid-sky-blue;
+  color:  $vivid-sky-blue;
 }
 
 a:hover {
-  color: variables.$venice-blue;
+  color:  $venice-blue;
 }
 
 ul,
@@ -45,7 +45,7 @@ li {
 
 ul,
 p {
-  color: variables.$bluewood;
+  color:  $bluewood;
 }
 
 .heading {
@@ -68,7 +68,7 @@ p {
 }
 
 .container {
-  background: variables.$white;
+  background:  $white;
   width: 77%;
   display: flex;
   margin: 2rem auto 0 auto;
@@ -92,17 +92,17 @@ header {
 footer {
   margin-top: -1rem;
   margin-bottom: 5px;
-  color: variables.$alpha-white;
+  color:  $alpha-white;
 }
 
 input,
 textarea {
-  border: 1px solid variables.$geyser;
+  border: 1px solid  $geyser;
 }
 
 input:focus,
 textarea:focus {
-  border-color: variables.$slate;
+  border-color:  $slate;
   outline: 0;
 }
 
@@ -116,23 +116,23 @@ textarea {
 
 button {
   margin-top: 20px;
-  background: variables.$vivid-sky-blue;
+  background:  $vivid-sky-blue;
   text-transform: uppercase;
   border-radius: 3px;
-  color: variables.$ebony;
+  color:  $ebony;
   border: none;
   font-size: 1rem;
-  text-shadow: 1px 1px 3px variables.$geyser;
-  box-shadow: 1px 1px 3px variables.$ebony;
+  text-shadow: 1px 1px 3px  $geyser;
+  box-shadow: 1px 1px 3px  $ebony;
   padding: 10px 7px 10px 7px;
 }
 button:hover {
-  background-color: variables.$blue-chill;
+  background-color:  $blue-chill;
 }
 
 button:active {
-  background: variables.$blue-chill;
-  box-shadow: -1px -1px 0 variables.$alpha-black;
+  background:  $blue-chill;
+  box-shadow: -1px -1px 0  $alpha-black;
 }
 
 .input-style {
@@ -144,7 +144,7 @@ button:active {
 }
 
 .form-container {
-  background-color: variables.$white;
+  background-color:  $white;
   width: 77%;
   display: flex;
   margin: 4rem auto 1.5rem auto;
@@ -156,7 +156,7 @@ button:active {
   height: 100%;
   border-radius: 7px;
   padding: 7rem 3rem 3rem 3rem;
-  box-shadow: 1px 1px 3px variables.$alpha-black;;
+  box-shadow: 1px 1px 3px  $alpha-black;
 }
 .form-heading {
   font-size: 2rem;
