@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "vite",
-    "sass": "sass styles/main.scss styles/main.css",
+    "sass": "sass styles/main.scss main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

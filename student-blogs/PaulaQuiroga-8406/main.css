@@ -14,10 +14,9 @@ body {
   font-family: Arial;
   font-size: 18px;
   margin: 0 auto;
-  max-width: auto;
+  max-width: 800px;
   color: #333;
   background-color: #fafafa;
-  padding: 0 40px;
   line-height: 1.5;
 }
 
@@ -81,7 +80,6 @@ body {
   max-width: 800px;
   color: #333;
   background-color: #fafafa;
-  padding: 0 40px;
   line-height: 1.5;
 }
 
