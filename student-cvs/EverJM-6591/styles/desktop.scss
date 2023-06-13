@@ -1,0 +1,90 @@
+@media (min-width: 1100px){
+    body {  
+        font-size: medium;
+    }
+
+    .profile {
+        flex-direction: row;
+        padding: 100px 120px;
+        margin-bottom: 25px;
+        .content {
+            width: 52%;
+            max-width: 1000px;
+            gap: 2em;
+            .description {
+                font-size: large;
+                line-height: 25px;
+            }
+        }
+    }
+    
+    .social {
+        height: 60px;
+    }
+
+    
+    .title {
+        font-size: xx-large;
+    }
+
+    .education {
+        margin-top: 52px;
+        .title{
+            font-size: xx-large;
+        }
+        .content {
+            .item {
+                flex-direction: row;
+                div:nth-child(1) {
+                    width: 40%;
+                    padding: 0 20px;
+                }
+                div:nth-child(2) {
+                    width: 60%;
+                  
+                }
+            }
+        }
+    }
+
+    .projects {
+        .content {
+            grid-template-columns: repeat(3, 1fr);
+            section {
+                .btn {
+                    width: 50%;
+                    font-size: medium;
+                }
+            }
+        }
+    }
+
+    .me {
+        .content {
+            flex-direction: row;
+            section {
+                &:nth-child(2) {
+                    iframe {
+                        width: 600px;
+                      
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+@media (min-width: 2000px){
+    .skills {
+        .title {
+            h2 {
+                padding: 33px 6.5em;        
+            } 
+        }
+    }
+}
+    
+
+
+

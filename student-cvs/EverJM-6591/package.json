@@ -1,0 +1,31 @@
+{
+  "name": "cv-everjmm",
+  "version": "1.0.0",
+  "description": "This is my CV for Undefined Academy.",
+  "main": "index",
+  "type": "module",
+  "scripts": {
+    "sass:main": "sass main.scss  main.css",
+    "dev": "vite .",
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "CV",
+    "Portfolio",
+    "Development",
+    "Web",
+    "Projects",
+    "Programing"
+  ],
+  "author": "Ever Montero",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.1",
+    "vite": "^4.3.6"
+  },
+  "dependencies": {
+    "gh-pages": "^5.0.0",
+    "minireset.css": "^0.0.7"
+  }
+}

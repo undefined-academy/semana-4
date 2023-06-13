@@ -1,0 +1,33 @@
+@media (min-width: 1111px) {
+    .notices {
+        .content {
+            grid-template-columns: repeat(2,1fr);
+
+            .item-notices {
+                height: 570px;
+                
+            }
+
+        }
+    }
+}
+
+@media (min-width: 1300px) {
+    .notices {
+        .content {
+            grid-template-columns: repeat(3,1fr);
+
+            .item-notices {
+                height: 522px;
+                
+            }
+
+        }
+    }
+}
+
+
+
+
+
+

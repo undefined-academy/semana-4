@@ -1,0 +1,23 @@
+{
+  "name": "everjm-6591",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass main.scss main.css",
+    "dev": "vite .",
+    "build": "vite build .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.1",
+    "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "minireset.css": "^0.0.7"
+  }
+}
