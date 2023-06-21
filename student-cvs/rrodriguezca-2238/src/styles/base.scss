@@ -1,0 +1,58 @@
+@media screen and (min-width: 992px) {    
+    .features, .table-one, .table-two {
+        display: flex;
+    }
+  
+    .feature {
+        width: 100%;
+    }  
+  }
+  
+  @media (max-width: 500px) {
+    .header-info {
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       padding: 0px 6px 0px 6px;
+       box-sizing: border-box;
+    }
+  
+    
+  
+    .profile {
+        padding: 2px 40px
+    }
+  
+    h2 {
+        padding: 0px 20px 0px 20px;
+    }
+  
+    
+  }
+  
+  li {
+    padding: 0px 8px 0px 8px;
+  }
+  
+  p {
+    text-align: center;
+    padding: 2px 40px
+  }
+  
+  table {
+    margin-top: 1em;
+    
+   
+    text-align: center;
+    border-collapse: collapse;
+    width: 20em;
+  }
+  
+  thead {
+   
+    border-bottom: solid 2px rgb(234, 234, 234);
+  }
+  
+  th, td {
+    padding: 6px;
+  }
