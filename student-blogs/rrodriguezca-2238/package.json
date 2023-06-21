@@ -1,0 +1,21 @@
+{
+  "name": "rrodriguezca-2238",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.8",
+    "vite": "^4.3.9"
+  },
+  "devDependencies": {
+    "sass": "^1.63.5"
+  }
+}
