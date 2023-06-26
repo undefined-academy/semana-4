@@ -1,22 +1,7 @@
+// Variacion para escritorio:
 @use "variables.scss" as variables;
 @use "mixin.scss" as m;
-html, body {
- @include m.reset-html-body;
-}
 
-* {
-  @include m.reset-boxsizing(inherit);
-}
-body {
-  font-family: Arial;
-  font-size: 18px;
-  margin: 0 auto;
-  max-width: 800px;
-  color: variables.$color-text;
-  background-color: variables.$color-secundary;
-  // padding: 0 40px;
-  line-height: 1.5;
-}
 /* Navegador con Buscador */
 .navegador nav {
     display: flex;
@@ -36,9 +21,11 @@ body {
     gap: 20px;
 }
 
+
 button {
   background-color: WhiteSmoke;
   border: none;
+  border-radius: 16px;
   text-align: center;
   text-decoration: none;
   font-size: 14px;
@@ -84,5 +71,6 @@ input[type="search"] {
   }
   .container-img4 {
     grid-column: 1 / span 3;
+    max-width: 100%;
   }
 }
