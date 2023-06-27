@@ -1,0 +1,32 @@
+@media screen and (max-width: 596px) {/*Tablet S*/
+    /*body{ background-color: orange; }*/
+  
+    section .hobbies-list{
+      justify-content: center;
+    }
+  
+    section .hobbies-list li{
+      width: calc((100% / 3) - 0.67em);
+    }
+  }
+  
+  @media screen and (max-width: 425px) {/*Celular L*/
+    /*body{ background-color: green; }*/
+  
+    th{
+        padding: 0.5em;
+      }
+  
+    }
+  
+  @media screen and (max-width: 375px) {/*Celular M*/
+  
+    section .hobbies-list{
+        justify-content: initial;
+      }
+  
+      section .hobbies-list li{
+        width: calc((100% / 2) - .5em);
+      }
+  }
+  
