@@ -1,0 +1,21 @@
+{
+  "name": "sass_clase3_semana4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "sass": "sass styles/main.scss styles/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.1",
+    "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.8"
+  }
+}
