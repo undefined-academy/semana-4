@@ -63,4 +63,3 @@ Crear una función que dada una fecha nos permita "humanizarla" con las siguient
 │     │   └── desktop.scss
 │     └── main.mjs // Agregar función para humanizar fechas
 ```
- 
