@@ -4,10 +4,11 @@ body {
 	max-width: 90%;
 	min-height: 100vh;
 	margin: 0 auto;
+	font-family: "Poppins", sans-serif;
 }
 
 .header {
-	height: 23vh;
+	height: 27vh;
 	border-radius: 0.6rem;
 
 	background: variables.$card;
@@ -38,7 +39,7 @@ body {
 				cursor: pointer;
 
 				font-size: 17px;
-				font-weight: 600;
+				font-weight: 500;
 				padding: 0.3em 0.5em;
 				overflow: hidden;
 
@@ -85,9 +86,6 @@ main {
 			border: 1px solid black;
 			transform: scale(1.05);
 		}
-		&:active {
-			transform: scale(0.95) rotateZ(1.7deg);
-		}
 
 		.card-image {
 			width: 100%;
@@ -109,13 +107,14 @@ main {
 			font-size: 2rem;
 			font-weight: 600;
 			color: variables.$font-author;
-			padding: 10px 7px 0;
+			padding: 0 0.7rem;
+			margin-bottom: -1.6rem;
 		}
 		.card-description {
-			font-weight: 600;
+			font-weight: 400;
 			font-size: 1.6rem;
 			color: #e4dbdb;
-			padding: 7px;
+			padding: 0.7rem;
 		}
 		.author {
 			color: variables.$font-author;
@@ -175,25 +174,24 @@ main {
 		.second-title {
 			font-size: 2rem;
 			color: variables.$font;
+			text-transform: uppercase;
 		}
 
 		.second-description {
 			font-size: 1.6rem;
-			font-weight: 600;
+			font-weight: 500;
 			color: #e4dbdb;
 			line-height: 1.5;
-
-			&:hover {
-				cursor: pointer;
-			}
 		}
 		.author {
 			color: variables.$font-author;
 			font-weight: 900;
 			font-size: 1.4rem;
-
-			&:hover {
-				cursor: pointer;
+			.name {
+				font-weight: bold;
+				&:hover {
+					cursor: pointer;
+				}
 			}
 		}
 	}
