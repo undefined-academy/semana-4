@@ -1,0 +1,24 @@
+{
+	"name": "byrokii-3761",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev:src": "vite dev src",
+		"dev:sass": "sass --watch src/sass/_main.scss src/styles/main.css",
+		"dev": "concurrently \"npm run dev:sass\" \"npm run dev:src\""
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"concurrently": "^8.2.0",
+		"lodash": "^4.17.21",
+		"sass": "^1.63.6",
+		"vite": "^4.3.9"
+	},
+	"dependencies": {
+		"dayjs": "^1.11.9"
+	}
+}

@@ -1,0 +1,24 @@
+@use "variables";
+
+@media (max-width: 768px) {
+	.container {
+		margin: 0 1.4em;
+	}
+}
+@media (max-width: 400px) {
+	.header h1 {
+		text-align: center;
+	}
+
+	.btn {
+		max-width: 50%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 998px) {
+	.container {
+		margin: 0 1.4em;
+	}
+	.btn {
+	}
+}
