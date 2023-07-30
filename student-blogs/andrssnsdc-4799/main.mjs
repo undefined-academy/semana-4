@@ -1,4 +1,4 @@
-import humanizarFecha from "./scripts /humanizar_fechas";
+import humanizarFecha from "./scripts/humanizar_fechas";
 function humanizarFechas ($dates, i) {
     const datetime = $dates.getAttribute("datetime");
     const humanizedDate = humanizarFecha(datetime)
