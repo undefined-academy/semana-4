@@ -1,0 +1,53 @@
+@use '/src/sass/settings.scss';
+
+
+//button primary
+.button-primary{
+    border: 1px solid #e8dcdccc;
+    border-radius: 2px;
+    padding: 12px 16px;
+    gap: 10px;
+    background-color: settings.$aquarius-600;
+
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    color: settings.$aquarius-50;
+
+     transition: 0.2s;
+    box-shadow: 0px 6px 10px rgba(44, 159, 175, 0.17);
+}
+
+.button-primary:hover{
+    background-color: settings.$aquarius-700; 
+}
+
+.button-primary:disabled{
+    background-color: settings.$aquarius-200;
+}
+
+//Button secundary
+.button-secundary{
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
+    background-color: settings.$blackPeart-900;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    border-radius: 2px;
+    color: settings.$aquarius-50;
+    transition: 0.2s;
+}
+
+.button-secundary:hover{
+    background-color: settings.$blackPeart-800;
+    box-shadow: 0px 6px 10px rgba(27, 38, 44, 0.16);
+}
+
+.button-secundary:disabled{
+    background-color: settings.$blackPeart-200;
+}
+
+

@@ -1,0 +1,15 @@
+@use '/src/sass/settings';
+
+.post-list__card__tag{
+    padding: 8px;
+    gap: 16px;
+    width: 124px;
+    height: 35px;
+    background-color: settings.$marroncanBlue-100;
+    border-radius: 2px;
+
+    font-weight: regular;
+    font-size: 13px;
+    line-height: 40px;
+}
+

@@ -1,0 +1,26 @@
+@use '/src/sass/settings';
+
+.post-list__card__title{
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 29px;
+    color: settings.$blackPeart-900;
+}
+
+.post-list__card__paragraph{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: settings.$blackPeart-700;
+}
+
+.post-list__card__date{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #7799AC;font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #7799AC;
+}
+

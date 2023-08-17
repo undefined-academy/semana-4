@@ -1,0 +1,62 @@
+
+@use '/src/sass/settings';
+@use 'buttons';
+
+//Nav header
+
+
+
+.post-list__link{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.post-list__link--aquarius600{
+    color: settings.$aquarius-600;
+}
+
+.post-list__link--aquarius900{
+    color: settings.$aquarius-900;
+}
+
+
+
+//Nav Main
+.post-list__lists a{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: settings.$blackPeart-900;
+}
+
+.post-list__imput{
+    align-items: flex-start;
+    padding: 12px;
+    gap: 10px;
+    width: 294px;
+    height: 48px;
+    background-color: settings.$blackPeart-100  ;
+    border: 1px solid #e8dcdccc;
+    border-radius: 2px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+//footer networks
+.networks__anchor{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: settings.$blackPeart-900;
+}   
+
+
+.contact__button {
+    width: 116px;
+    height: 49px;
+    border: none;
+    
+}

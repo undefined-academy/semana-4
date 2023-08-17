@@ -1,0 +1,14 @@
+//Atoms
+@use '/src/sass/components/heading';
+@use '/src/sass/components/paragraph';
+@use "/src/sass/components/link";
+@use '/src/sass/components/picture';
+@use '/src/sass/components/avatar';
+@use '/src/sass/components/buttons';
+
+
+//Molecules
+@use '/src/sass/components/tag';
+
+//Organisms
+@use '/src/sass/components/card';

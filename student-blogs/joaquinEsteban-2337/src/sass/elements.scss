@@ -1,0 +1,46 @@
+//En esta hoja se ubica, todo el Layout como va organizado
+
+@use 'settings';
+@use 'tools';
+
+
+body{
+   
+    font-family: Inter;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    background-color: settings.$blackPeart-50;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+
+   
+}
+
+body > footer{
+    width: 100%;
+    height: 289px;
+    gap: 48px;
+    margin-top: 40px;
+    background-color: settings.$blackPeart-900;
+
+    
+    
+}
+
+
+
+
+
