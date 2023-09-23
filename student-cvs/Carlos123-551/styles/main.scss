@@ -1,0 +1,73 @@
+@use "base.scss";
+@use "desktop.scss";
+
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+$emperorColorText: #555555;
+$clamShellBody: #D5B4B4;
+$amaranthLinkColor: #E81C4F;
+$labelColorWheat: #F5DEB3;
+$strongMineShaft: #333333;
+
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
+body {
+  margin: 0 auto;
+  max-width: 50em;
+  line-height: 1.5;
+  padding: 2em 1em;
+  color: $emperorColorText;
+  background: $clamShellBody;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+h1,
+h2,
+strong {
+  color: $strongMineShaft;
+}
+a {
+    color: $amaranthLinkColor;
+}
+
+/* Form */
+.form{
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 10px 40px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background: $amaranthLinkColor;
+  border-radius: 5px;
+  color: $labelColorWheat;
+}
+.form-group {
+  margin: 20px 0;
+}
+label, input:not([type="radio"], [type="checkbox"]) {
+  width: 100%;
+}
+textarea {
+  width: 100%;
+  display: block;
+  resize: vertical;
+  border-radius: 10px;
+  padding: 10px;
+}
+input {
+  border-radius: 5px;
+  padding: 10px;
+}
+label{
+  font-weight: bold;
+  color: $labelColorWheat;
+}
+button {
+  padding: 10px;
+}
