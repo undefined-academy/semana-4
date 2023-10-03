@@ -1,0 +1,24 @@
+@use "variables";
+
+@media only screen and (min-width: 600px) {
+  .cards {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .card {
+    border: 1px solid variables.$base-color;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 10px;
+  }
+
+  .card h2 {
+    margin-top: 0;
+  }
+
+  .card p {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,103 @@
+@use "variables";
+
+body {
+  margin: 0 auto;
+  max-width: 60em;
+  line-height: 1.2;
+  padding: 1.5em; 
+  background-color: variables.$base-color;
+  color: variables.$base-color-text;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+header {
+  line-height: 1.2;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  background-color: variables.$saffron;
+}
+
+h1,
+h2 {
+  display: flex;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: variables.$base-color-text;
+}
+
+p {
+  align-items: baseline;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2,
+strong {
+  color: variables.$base-color-text;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.card {
+  flex-direction: row;
+  border: 1px solid variables.$base-color;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+.form-group {
+  margin: 20px 0;
+}
+
+label,
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  height: 40px;
+  margin-top: -10px;
+  display: inline-block;
+  color: variables.$base-color-text;
+  
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+button {
+  padding: 16px 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: variables.$energyYellow;
+  border: 1px solid variables.$sweetCorn;
+  color: variables.$base-color-text;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+button:hover {
+  background: variables.$saffron;
+}
+
+button:active {
+  background: variables.$pirateGold;
+  box-shadow: none;
+}
