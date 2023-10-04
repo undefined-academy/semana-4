@@ -64,10 +64,12 @@ h1 {
 }
 
 .post {
-  flex: 1;
-  padding: 10px;
   background-color: variables.$baliHai;
-  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  border: 1px solid variables.$base-color;
+  padding: 10px;
 
   img {
     max-width: 100%;
@@ -83,8 +85,39 @@ h1 {
   padding: 5px 10px;
   background-color: variables.$ebonyClay;
   color: variables.$base-color;
-  text-decoration: none;
-  border-radius: 5px;
+  text-decoration: underline;
+  gap: 15px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: variables.$ebonyClay;
+  color: variables.$base-color;
+  padding: 5px 10px;
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-create time {
+  font-size: 12px;
+  color: variables.$mystic;
+  
+}
+
+.card-create {
+  text-align: right;
+  display: flex;
+  align-items: center;
 }
 
 footer {
