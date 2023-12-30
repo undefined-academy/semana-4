@@ -111,13 +111,15 @@ body {
     height: 10%;
     width: 100%;
   }
-  .navbar ul {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-  }
-  .navbar ul li {
-    padding: 0 10px;
+  .navbar {
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      list-style: none;
+      li {
+        padding: 0 10px;
+      }
+    }
   }
   
   .presentation {
@@ -142,8 +144,12 @@ body {
     .navbar {
       font-size: 1em;
     }
-    .navbar ul li {
-      padding: 0 5px;
+    .navbar {
+      ul{
+        li{
+          padding: 0 5px;
+        }
+      }
     }
   
     .gallery {
