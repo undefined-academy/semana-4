@@ -45,10 +45,12 @@ $main-white-color: #f5f5f5;
     list-style: none;
     align-content: space-between;
   }
-  .list a {
-    text-decoration: none;
-    color: $main-white-color;
-    font-weight: 800;
+  .list{
+    a{
+      text-decoration: none;
+      color: $main-white-color;
+      font-weight: 800;
+    }
   }
   
   .logo {
